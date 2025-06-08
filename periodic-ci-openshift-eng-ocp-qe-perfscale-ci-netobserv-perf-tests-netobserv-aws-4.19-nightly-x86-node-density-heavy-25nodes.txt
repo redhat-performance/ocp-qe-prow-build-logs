@@ -1,0 +1,100 @@
+[36mINFO[0m[2025-05-11T00:02:49Z] ci-operator version v20250509-245a237f3      
+[36mINFO[0m[2025-05-11T00:02:49Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@netobserv-perf-tests [netobserv-aws-4.19-nightly-x86] 
+[36mINFO[0m[2025-05-11T00:02:49Z] Resolved SHA missing for netobserv-perf-tests in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+[33mWARN[0m[2025-05-11T00:02:49Z] skipped directory "..2025_05_11_00_02_43.631540160" when creating secret from directory "/secrets/ci-pull-credentials" 
+[36mINFO[0m[2025-05-11T00:02:49Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+[36mINFO[0m[2025-05-11T00:02:49Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-05-10-095315 
+[36mINFO[0m[2025-05-11T00:02:49Z] Using namespace https://console-openshift-console.apps.build10.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-c48yds2c 
+[36mINFO[0m[2025-05-11T00:02:49Z] Setting arch for src                          [36march[0m=amd64 [36mreasons[0m=netobserv-perfscale
+[36mINFO[0m[2025-05-11T00:02:49Z] Running [input:root], [input:opm-builder], [input:cli], [input:ocp-qe-perfscale-ci], [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [release:latest], src, netobserv-perfscale, [output:stable:netobserv-perfscale], [images], node-density-heavy-25nodes 
+[36mINFO[0m[2025-05-11T00:02:50Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale-qe 
+[36mINFO[0m[2025-05-11T00:02:50Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ocp-qe-perfscale-ci. 
+[36mINFO[0m[2025-05-11T00:02:50Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+[36mINFO[0m[2025-05-11T00:02:50Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+[36mINFO[0m[2025-05-11T00:02:50Z] Tagging ci/opm-builder:latest into pipeline:opm-builder. 
+[36mINFO[0m[2025-05-11T00:02:50Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+[36mINFO[0m[2025-05-11T00:02:50Z] Tagging ocp/4.18:cli into pipeline:cli.      
+[36mINFO[0m[2025-05-11T00:02:50Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+[36mINFO[0m[2025-05-11T00:02:50Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+[36mINFO[0m[2025-05-11T00:02:50Z] Tagging ci/ci-tools-build-root:latest into pipeline:root. 
+[36mINFO[0m[2025-05-11T00:02:50Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+[36mINFO[0m[2025-05-11T00:02:50Z] Importing release image latest.              
+[36mINFO[0m[2025-05-11T00:02:50Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+[36mINFO[0m[2025-05-11T00:02:50Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-05-10-095315 
+[36mINFO[0m[2025-05-11T00:02:56Z] Building src                                 
+[36mINFO[0m[2025-05-11T00:02:56Z] Created build "src-amd64"                    
+[36mINFO[0m[2025-05-11T00:03:11Z] Importing release 4.19.0-0.nightly-2025-05-10-095315 created at 2025-05-10 09:54:58 +0000 UTC with 189 images to tag release:latest ... 
+[36mINFO[0m[2025-05-11T00:04:46Z] Imported release 4.19.0-0.nightly-2025-05-10-095315 created at 2025-05-10 09:54:58 +0000 UTC with 189 images to tag release:latest 
+[36mINFO[0m[2025-05-11T00:10:52Z] Build src-amd64 succeeded after 7m56s        
+[36mINFO[0m[2025-05-11T00:10:53Z] Retrieving digests of member images          
+[36mINFO[0m[2025-05-11T00:10:55Z] Image ci-op-c48yds2c/pipeline:src created     [36mdigest[0m=sha256:308da62fdc84ea598735ffb2d0114ba78d27b5d78283da21f32e5b42bfd3ee66 [36mfor-build[0m=src
+[36mINFO[0m[2025-05-11T00:10:55Z] Building netobserv-perfscale                 
+[36mINFO[0m[2025-05-11T00:10:55Z] Created build "netobserv-perfscale-amd64"    
+[36mINFO[0m[2025-05-11T00:27:23Z] Build netobserv-perfscale-amd64 succeeded after 16m28s 
+[36mINFO[0m[2025-05-11T00:27:23Z] Retrieving digests of member images          
+[36mINFO[0m[2025-05-11T00:27:25Z] Image ci-op-c48yds2c/pipeline:netobserv-perfscale created  [36mdigest[0m=sha256:dc7ddae17cf72f4ae7044aa52351acfb1c0da447e75954783b9f2bebd832881f [36mfor-build[0m=netobserv-perfscale
+[36mINFO[0m[2025-05-11T00:27:25Z] Tagging netobserv-perfscale into stable      
+[36mINFO[0m[2025-05-11T00:27:25Z] Acquiring leases for test node-density-heavy-25nodes: [aws-perfscale-qe-quota-slice] 
+[36mINFO[0m[2025-05-11T00:27:26Z] Acquired 1 lease(s) for aws-perfscale-qe-quota-slice: [us-west-2--aws-perfscale-qe-quota-slice-0] 
+[36mINFO[0m[2025-05-11T00:27:26Z] Running multi-stage test node-density-heavy-25nodes 
+[36mINFO[0m[2025-05-11T00:27:28Z] Running multi-stage phase pre                
+[36mINFO[0m[2025-05-11T00:27:28Z] Running step node-density-heavy-25nodes-ipi-conf. 
+[36mINFO[0m[2025-05-11T00:27:40Z] Step node-density-heavy-25nodes-ipi-conf succeeded after 11s. 
+[36mINFO[0m[2025-05-11T00:27:40Z] Running step node-density-heavy-25nodes-ipi-conf-telemetry. 
+[36mINFO[0m[2025-05-11T00:27:51Z] Step node-density-heavy-25nodes-ipi-conf-telemetry succeeded after 11s. 
+[36mINFO[0m[2025-05-11T00:27:51Z] Running step node-density-heavy-25nodes-ipi-conf-aws. 
+[36mINFO[0m[2025-05-11T00:28:06Z] Step node-density-heavy-25nodes-ipi-conf-aws succeeded after 15s. 
+[36mINFO[0m[2025-05-11T00:28:06Z] Running step node-density-heavy-25nodes-ipi-conf-aws-byo-ipv4-pool-public. 
+[36mINFO[0m[2025-05-11T00:28:16Z] Step node-density-heavy-25nodes-ipi-conf-aws-byo-ipv4-pool-public succeeded after 10s. 
+[36mINFO[0m[2025-05-11T00:28:16Z] Running step node-density-heavy-25nodes-ipi-install-monitoringpvc. 
+[36mINFO[0m[2025-05-11T00:28:24Z] Step node-density-heavy-25nodes-ipi-install-monitoringpvc succeeded after 8s. 
+[36mINFO[0m[2025-05-11T00:28:24Z] Running step node-density-heavy-25nodes-ipi-conf-aws-user-min-permissions. 
+[36mINFO[0m[2025-05-11T00:28:38Z] Step node-density-heavy-25nodes-ipi-conf-aws-user-min-permissions succeeded after 13s. 
+[36mINFO[0m[2025-05-11T00:28:38Z] Running step node-density-heavy-25nodes-aws-provision-iam-user. 
+[36mINFO[0m[2025-05-11T00:28:46Z] Step node-density-heavy-25nodes-aws-provision-iam-user succeeded after 8s. 
+[36mINFO[0m[2025-05-11T00:28:46Z] Running step node-density-heavy-25nodes-ipi-install-rbac. 
+[36mINFO[0m[2025-05-11T00:28:55Z] Step node-density-heavy-25nodes-ipi-install-rbac succeeded after 9s. 
+[36mINFO[0m[2025-05-11T00:28:55Z] Running step node-density-heavy-25nodes-openshift-cluster-bot-rbac. 
+[36mINFO[0m[2025-05-11T00:29:04Z] Step node-density-heavy-25nodes-openshift-cluster-bot-rbac succeeded after 9s. 
+[36mINFO[0m[2025-05-11T00:29:04Z] Running step node-density-heavy-25nodes-ipi-install-hosted-loki. 
+[36mINFO[0m[2025-05-11T00:29:14Z] Step node-density-heavy-25nodes-ipi-install-hosted-loki succeeded after 10s. 
+[36mINFO[0m[2025-05-11T00:29:14Z] Running step node-density-heavy-25nodes-ipi-install-install. 
+[36mINFO[0m[2025-05-11T01:12:21Z] Step node-density-heavy-25nodes-ipi-install-install succeeded after 43m7s. 
+[36mINFO[0m[2025-05-11T01:12:21Z] Running step node-density-heavy-25nodes-ipi-install-times-collection. 
+[36mINFO[0m[2025-05-11T01:12:32Z] Step node-density-heavy-25nodes-ipi-install-times-collection succeeded after 11s. 
+[36mINFO[0m[2025-05-11T01:12:32Z] Running step node-density-heavy-25nodes-nodes-readiness. 
+[36mINFO[0m[2025-05-11T01:12:45Z] Step node-density-heavy-25nodes-nodes-readiness succeeded after 12s. 
+[36mINFO[0m[2025-05-11T01:12:45Z] Running step node-density-heavy-25nodes-multiarch-validate-nodes. 
+[36mINFO[0m[2025-05-11T01:12:53Z] Step node-density-heavy-25nodes-multiarch-validate-nodes succeeded after 8s. 
+[36mINFO[0m[2025-05-11T01:12:53Z] Running step node-density-heavy-25nodes-openshift-qe-workers-infra-workload. 
+[36mINFO[0m[2025-05-11T01:32:17Z] Step node-density-heavy-25nodes-openshift-qe-workers-infra-workload succeeded after 19m24s. 
+[36mINFO[0m[2025-05-11T01:32:17Z] Running step node-density-heavy-25nodes-openshift-qe-move-pods-infra. 
+[36mINFO[0m[2025-05-11T01:37:47Z] Step node-density-heavy-25nodes-openshift-qe-move-pods-infra succeeded after 5m30s. 
+[36mINFO[0m[2025-05-11T01:37:47Z] Step phase pre succeeded after 1h10m19s.     
+[36mINFO[0m[2025-05-11T01:37:47Z] Running multi-stage phase test               
+[36mINFO[0m[2025-05-11T01:37:47Z] Running step node-density-heavy-25nodes-netobserv-perf-test-deploy. 
+[36mINFO[0m[2025-05-11T01:48:01Z] Step node-density-heavy-25nodes-netobserv-perf-test-deploy succeeded after 10m13s. 
+[36mINFO[0m[2025-05-11T01:48:01Z] Running step node-density-heavy-25nodes-openshift-qe-kube-burner-ingress-perf. 
+[36mINFO[0m[2025-05-11T02:48:30Z] Step node-density-heavy-25nodes-openshift-qe-kube-burner-ingress-perf succeeded after 1h0m29s. 
+[36mINFO[0m[2025-05-11T02:48:30Z] Running step node-density-heavy-25nodes-redhat-chaos-cerberus-one-run. 
+[36mINFO[0m[2025-05-11T02:49:13Z] Step node-density-heavy-25nodes-redhat-chaos-cerberus-one-run succeeded after 42s. 
+[36mINFO[0m[2025-05-11T02:49:13Z] Running step node-density-heavy-25nodes-netobserv-perf-test-metrics-upload. 
+[36mINFO[0m[2025-05-11T02:55:37Z] Step node-density-heavy-25nodes-netobserv-perf-test-metrics-upload succeeded after 6m24s. 
+[36mINFO[0m[2025-05-11T02:55:37Z] Running step node-density-heavy-25nodes-openshift-qe-orion. 
+[36mINFO[0m[2025-05-11T02:55:50Z] Step node-density-heavy-25nodes-openshift-qe-orion succeeded after 12s. 
+[36mINFO[0m[2025-05-11T02:55:50Z] Step phase test succeeded after 1h18m2s.     
+[36mINFO[0m[2025-05-11T02:55:50Z] Running multi-stage phase post               
+[36mINFO[0m[2025-05-11T02:55:50Z] Skipping optional step node-density-heavy-25nodes-gather-aws-console 
+[36mINFO[0m[2025-05-11T02:55:50Z] Skipping optional step node-density-heavy-25nodes-gather-must-gather 
+[36mINFO[0m[2025-05-11T02:55:50Z] Skipping optional step node-density-heavy-25nodes-gather-extra 
+[36mINFO[0m[2025-05-11T02:55:50Z] Skipping optional step node-density-heavy-25nodes-gather-audit-logs 
+[36mINFO[0m[2025-05-11T02:55:50Z] Running step node-density-heavy-25nodes-netobserv-perf-test-cleanup. 
+[36mINFO[0m[2025-05-11T02:58:28Z] Step node-density-heavy-25nodes-netobserv-perf-test-cleanup succeeded after 2m38s. 
+[36mINFO[0m[2025-05-11T02:58:28Z] Running step node-density-heavy-25nodes-ipi-deprovision-deprovision. 
+[36mINFO[0m[2025-05-11T03:04:20Z] Step node-density-heavy-25nodes-ipi-deprovision-deprovision succeeded after 5m52s. 
+[36mINFO[0m[2025-05-11T03:04:20Z] Running step node-density-heavy-25nodes-aws-deprovision-users-and-policies. 
+[36mINFO[0m[2025-05-11T03:04:30Z] Step node-density-heavy-25nodes-aws-deprovision-users-and-policies succeeded after 10s. 
+[36mINFO[0m[2025-05-11T03:04:30Z] Step phase post succeeded after 8m40s.       
+[36mINFO[0m[2025-05-11T03:04:30Z] Releasing leases for test node-density-heavy-25nodes 
+[36mINFO[0m[2025-05-11T03:04:31Z] Ran for 3h1m41s                              
+[36mINFO[0m[2025-05-11T03:04:31Z] Reporting job state 'succeeded'              

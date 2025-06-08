@@ -1,0 +1,82 @@
+␛[36mINFO␛[0m[2025-06-08T02:01:19Z] ci-operator version v20250606-ead9efe03      
+␛[36mINFO␛[0m[2025-06-08T02:01:19Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [aws-4.20-nightly-x86] 
+␛[36mINFO␛[0m[2025-06-08T02:01:19Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-06-08T02:01:19Z] skipped directory "..2025_06_08_02_01_12.2602941810" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-06-08T02:01:19Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.20.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-08T02:01:19Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.20.0-0.nightly-2025-06-07-191535 
+␛[36mINFO␛[0m[2025-06-08T02:01:19Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-ji7y4v5f 
+␛[36mINFO␛[0m[2025-06-08T02:01:19Z] Running [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [release:latest], [images], udn-density-l3-24nodes 
+␛[36mINFO␛[0m[2025-06-08T02:01:20Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale-qe 
+␛[36mINFO␛[0m[2025-06-08T02:01:20Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-06-08T02:01:20Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-06-08T02:01:20Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-06-08T02:01:20Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-06-08T02:01:20Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-06-08T02:01:20Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-06-08T02:01:20Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.20.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-08T02:01:20Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.20.0-0.nightly-2025-06-07-191535 
+␛[36mINFO␛[0m[2025-06-08T02:01:40Z] Importing release 4.20.0-0.nightly-2025-06-07-191535 created at 2025-06-07 19:17:24 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-06-08T02:03:17Z] Imported release 4.20.0-0.nightly-2025-06-07-191535 created at 2025-06-07 19:17:24 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-06-08T02:03:17Z] Acquiring leases for test udn-density-l3-24nodes: [aws-perfscale-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-06-08T03:28:39Z] Acquired 1 lease(s) for aws-perfscale-qe-quota-slice: [us-west-2--aws-perfscale-qe-quota-slice-6] 
+␛[36mINFO␛[0m[2025-06-08T03:28:39Z] Running multi-stage test udn-density-l3-24nodes 
+␛[36mINFO␛[0m[2025-06-08T03:28:41Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-06-08T03:28:41Z] Running step udn-density-l3-24nodes-ipi-conf. 
+␛[36mINFO␛[0m[2025-06-08T03:28:52Z] Step udn-density-l3-24nodes-ipi-conf succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-08T03:28:52Z] Running step udn-density-l3-24nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-06-08T03:29:02Z] Step udn-density-l3-24nodes-ipi-conf-telemetry succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-08T03:29:02Z] Running step udn-density-l3-24nodes-ipi-conf-aws. 
+␛[36mINFO␛[0m[2025-06-08T03:29:16Z] Step udn-density-l3-24nodes-ipi-conf-aws succeeded after 13s. 
+␛[36mINFO␛[0m[2025-06-08T03:29:16Z] Running step udn-density-l3-24nodes-ipi-conf-aws-byo-ipv4-pool-public. 
+␛[36mINFO␛[0m[2025-06-08T03:29:26Z] Step udn-density-l3-24nodes-ipi-conf-aws-byo-ipv4-pool-public succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-08T03:29:26Z] Running step udn-density-l3-24nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-06-08T03:29:33Z] Step udn-density-l3-24nodes-ipi-install-monitoringpvc succeeded after 7s. 
+␛[36mINFO␛[0m[2025-06-08T03:29:33Z] Running step udn-density-l3-24nodes-ipi-conf-aws-user-min-permissions. 
+␛[36mINFO␛[0m[2025-06-08T03:29:44Z] Step udn-density-l3-24nodes-ipi-conf-aws-user-min-permissions succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-08T03:29:44Z] Running step udn-density-l3-24nodes-aws-provision-iam-user. 
+␛[36mINFO␛[0m[2025-06-08T03:29:52Z] Step udn-density-l3-24nodes-aws-provision-iam-user succeeded after 7s. 
+␛[36mINFO␛[0m[2025-06-08T03:29:52Z] Running step udn-density-l3-24nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-06-08T03:30:01Z] Step udn-density-l3-24nodes-ipi-install-rbac succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-08T03:30:01Z] Running step udn-density-l3-24nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-06-08T03:30:09Z] Step udn-density-l3-24nodes-openshift-cluster-bot-rbac succeeded after 7s. 
+␛[36mINFO␛[0m[2025-06-08T03:30:09Z] Running step udn-density-l3-24nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-06-08T03:30:17Z] Step udn-density-l3-24nodes-ipi-install-hosted-loki succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-08T03:30:17Z] Running step udn-density-l3-24nodes-ipi-install-install. 
+␛[36mINFO␛[0m[2025-06-08T04:13:17Z] Step udn-density-l3-24nodes-ipi-install-install succeeded after 42m59s. 
+␛[36mINFO␛[0m[2025-06-08T04:13:17Z] Running step udn-density-l3-24nodes-ipi-install-times-collection. 
+␛[36mINFO␛[0m[2025-06-08T04:13:28Z] Step udn-density-l3-24nodes-ipi-install-times-collection succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-08T04:13:28Z] Running step udn-density-l3-24nodes-nodes-readiness. 
+␛[36mINFO␛[0m[2025-06-08T04:13:36Z] Step udn-density-l3-24nodes-nodes-readiness succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-08T04:13:36Z] Running step udn-density-l3-24nodes-multiarch-validate-nodes. 
+␛[36mINFO␛[0m[2025-06-08T04:13:43Z] Step udn-density-l3-24nodes-multiarch-validate-nodes succeeded after 7s. 
+␛[36mINFO␛[0m[2025-06-08T04:13:43Z] Running step udn-density-l3-24nodes-openshift-qe-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-06-08T04:26:10Z] Step udn-density-l3-24nodes-openshift-qe-workers-infra-workload succeeded after 12m26s. 
+␛[36mINFO␛[0m[2025-06-08T04:26:10Z] Running step udn-density-l3-24nodes-openshift-qe-move-pods-infra. 
+␛[36mINFO␛[0m[2025-06-08T04:31:46Z] Step udn-density-l3-24nodes-openshift-qe-move-pods-infra succeeded after 5m35s. 
+␛[36mINFO␛[0m[2025-06-08T04:31:46Z] Running step udn-density-l3-24nodes-openshift-qe-workers-scale. 
+␛[36mINFO␛[0m[2025-06-08T04:38:05Z] Step udn-density-l3-24nodes-openshift-qe-workers-scale succeeded after 6m18s. 
+␛[36mINFO␛[0m[2025-06-08T04:38:05Z] Step phase pre succeeded after 1h9m23s.      
+␛[36mINFO␛[0m[2025-06-08T04:38:05Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-06-08T04:38:05Z] Running step udn-density-l3-24nodes-openshift-qe-udn-density-pods. 
+␛[36mINFO␛[0m[2025-06-08T04:51:29Z] Step udn-density-l3-24nodes-openshift-qe-udn-density-pods succeeded after 13m24s. 
+␛[36mINFO␛[0m[2025-06-08T04:51:29Z] Running step udn-density-l3-24nodes-openshift-qe-orion-udn-l3. 
+␛[36mINFO␛[0m[2025-06-08T04:53:00Z] Step udn-density-l3-24nodes-openshift-qe-orion-udn-l3 succeeded after 1m30s. 
+␛[36mINFO␛[0m[2025-06-08T04:53:00Z] Step phase test succeeded after 14m55s.      
+␛[36mINFO␛[0m[2025-06-08T04:53:00Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-06-08T04:53:00Z] Running step udn-density-l3-24nodes-gather-aws-console. 
+␛[36mINFO␛[0m[2025-06-08T04:53:58Z] Step udn-density-l3-24nodes-gather-aws-console succeeded after 57s. 
+␛[36mINFO␛[0m[2025-06-08T04:53:58Z] Running step udn-density-l3-24nodes-gather-must-gather. 
+␛[36mINFO␛[0m[2025-06-08T05:00:23Z] Step udn-density-l3-24nodes-gather-must-gather succeeded after 6m25s. 
+␛[36mINFO␛[0m[2025-06-08T05:00:23Z] Running step udn-density-l3-24nodes-gather-extra. 
+␛[36mINFO␛[0m[2025-06-08T05:13:00Z] Step udn-density-l3-24nodes-gather-extra succeeded after 12m36s. 
+␛[36mINFO␛[0m[2025-06-08T05:13:00Z] Running step udn-density-l3-24nodes-gather-audit-logs. 
+␛[36mINFO␛[0m[2025-06-08T05:13:57Z] Step udn-density-l3-24nodes-gather-audit-logs succeeded after 56s. 
+␛[36mINFO␛[0m[2025-06-08T05:13:57Z] Running step udn-density-l3-24nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-06-08T05:19:06Z] Step udn-density-l3-24nodes-ipi-deprovision-deprovision succeeded after 5m9s. 
+␛[36mINFO␛[0m[2025-06-08T05:19:06Z] Running step udn-density-l3-24nodes-aws-deprovision-users-and-policies. 
+␛[36mINFO␛[0m[2025-06-08T05:19:18Z] Step udn-density-l3-24nodes-aws-deprovision-users-and-policies succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-08T05:19:18Z] Step phase post succeeded after 26m17s.      
+␛[36mINFO␛[0m[2025-06-08T05:19:18Z] Releasing leases for test udn-density-l3-24nodes 
+␛[36mINFO␛[0m[2025-06-08T05:19:18Z] Ran for 3h17m58s                             
+␛[36mINFO␛[0m[2025-06-08T05:19:18Z] Reporting job state 'succeeded'              
+␛[36mINFO␛[0m[2025-06-08T05:19:18Z] Flushing 3 insights events                   

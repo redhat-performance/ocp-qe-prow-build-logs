@@ -1,0 +1,75 @@
+␛[36mINFO␛[0m[2025-05-13T12:01:47Z] ci-operator version v20250509-245a237f3      
+␛[36mINFO␛[0m[2025-05-13T12:01:47Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [aws-4.20-nightly-x86] 
+␛[36mINFO␛[0m[2025-05-13T12:01:48Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-05-13T12:01:48Z] skipped directory "..2025_05_13_12_01_42.961283482" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-05-13T12:01:48Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.20.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-13T12:01:48Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.20.0-0.nightly-2025-05-09-045335 
+␛[36mINFO␛[0m[2025-05-13T12:01:48Z] Using namespace https://console-openshift-console.apps.build07.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-92cgxzfl 
+␛[36mINFO␛[0m[2025-05-13T12:01:48Z] Running [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [release:latest], [images], netpol-24nodes 
+␛[36mINFO␛[0m[2025-05-13T12:01:49Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale-qe 
+␛[36mINFO␛[0m[2025-05-13T12:01:49Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-05-13T12:01:49Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-05-13T12:01:49Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-05-13T12:01:49Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-05-13T12:01:49Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-05-13T12:01:49Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-05-13T12:01:49Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.20.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-13T12:01:49Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.20.0-0.nightly-2025-05-09-045335 
+␛[36mINFO␛[0m[2025-05-13T12:02:10Z] Importing release 4.20.0-0.nightly-2025-05-09-045335 created at 2025-05-09 04:55:12 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-05-13T12:03:45Z] Imported release 4.20.0-0.nightly-2025-05-09-045335 created at 2025-05-09 04:55:12 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-05-13T12:03:45Z] Acquiring leases for test netpol-24nodes: [aws-perfscale-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-05-13T12:03:45Z] Acquired 1 lease(s) for aws-perfscale-qe-quota-slice: [us-west-2--aws-perfscale-qe-quota-slice-9] 
+␛[36mINFO␛[0m[2025-05-13T12:03:45Z] Running multi-stage test netpol-24nodes      
+␛[36mINFO␛[0m[2025-05-13T12:03:47Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-05-13T12:03:47Z] Running step netpol-24nodes-ipi-conf.        
+␛[36mINFO␛[0m[2025-05-13T12:03:57Z] Step netpol-24nodes-ipi-conf succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-13T12:03:57Z] Running step netpol-24nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-05-13T12:04:06Z] Step netpol-24nodes-ipi-conf-telemetry succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-13T12:04:06Z] Running step netpol-24nodes-ipi-conf-aws.    
+␛[36mINFO␛[0m[2025-05-13T12:04:20Z] Step netpol-24nodes-ipi-conf-aws succeeded after 14s. 
+␛[36mINFO␛[0m[2025-05-13T12:04:20Z] Running step netpol-24nodes-ipi-conf-aws-byo-ipv4-pool-public. 
+␛[36mINFO␛[0m[2025-05-13T12:04:29Z] Step netpol-24nodes-ipi-conf-aws-byo-ipv4-pool-public succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-13T12:04:29Z] Running step netpol-24nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-05-13T12:04:38Z] Step netpol-24nodes-ipi-install-monitoringpvc succeeded after 8s. 
+␛[36mINFO␛[0m[2025-05-13T12:04:38Z] Running step netpol-24nodes-ipi-conf-aws-user-min-permissions. 
+␛[36mINFO␛[0m[2025-05-13T12:05:20Z] Step netpol-24nodes-ipi-conf-aws-user-min-permissions succeeded after 42s. 
+␛[36mINFO␛[0m[2025-05-13T12:05:20Z] Running step netpol-24nodes-aws-provision-iam-user. 
+␛[36mINFO␛[0m[2025-05-13T12:05:28Z] Step netpol-24nodes-aws-provision-iam-user succeeded after 8s. 
+␛[36mINFO␛[0m[2025-05-13T12:05:28Z] Running step netpol-24nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-05-13T12:05:37Z] Step netpol-24nodes-ipi-install-rbac succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-13T12:05:37Z] Running step netpol-24nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-05-13T12:05:46Z] Step netpol-24nodes-openshift-cluster-bot-rbac succeeded after 8s. 
+␛[36mINFO␛[0m[2025-05-13T12:05:46Z] Running step netpol-24nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-05-13T12:05:55Z] Step netpol-24nodes-ipi-install-hosted-loki succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-13T12:05:55Z] Running step netpol-24nodes-ipi-install-install. 
+␛[36mINFO␛[0m[2025-05-13T12:47:12Z] Step netpol-24nodes-ipi-install-install succeeded after 41m16s. 
+␛[36mINFO␛[0m[2025-05-13T12:47:12Z] Running step netpol-24nodes-ipi-install-times-collection. 
+␛[36mINFO␛[0m[2025-05-13T12:47:23Z] Step netpol-24nodes-ipi-install-times-collection succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-13T12:47:23Z] Running step netpol-24nodes-nodes-readiness. 
+␛[36mINFO␛[0m[2025-05-13T12:47:33Z] Step netpol-24nodes-nodes-readiness succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-13T12:47:33Z] Running step netpol-24nodes-multiarch-validate-nodes. 
+␛[36mINFO␛[0m[2025-05-13T12:47:43Z] Step netpol-24nodes-multiarch-validate-nodes succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-13T12:47:43Z] Running step netpol-24nodes-openshift-qe-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-05-13T13:08:14Z] Step netpol-24nodes-openshift-qe-workers-infra-workload succeeded after 20m30s. 
+␛[36mINFO␛[0m[2025-05-13T13:08:14Z] Running step netpol-24nodes-openshift-qe-move-pods-infra. 
+␛[36mINFO␛[0m[2025-05-13T13:14:12Z] Step netpol-24nodes-openshift-qe-move-pods-infra succeeded after 5m58s. 
+␛[36mINFO␛[0m[2025-05-13T13:14:12Z] Step phase pre succeeded after 1h10m25s.     
+␛[36mINFO␛[0m[2025-05-13T13:14:12Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-05-13T13:14:12Z] Running step netpol-24nodes-openshift-qe-workers-scale. 
+␛[36mINFO␛[0m[2025-05-13T13:22:07Z] Step netpol-24nodes-openshift-qe-workers-scale succeeded after 7m54s. 
+␛[36mINFO␛[0m[2025-05-13T13:22:07Z] Running step netpol-24nodes-openshift-qe-netpol-v2. 
+␛[36mINFO␛[0m[2025-05-13T13:40:25Z] Step netpol-24nodes-openshift-qe-netpol-v2 succeeded after 18m18s. 
+␛[36mINFO␛[0m[2025-05-13T13:40:25Z] Step phase test succeeded after 26m12s.      
+␛[36mINFO␛[0m[2025-05-13T13:40:25Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-05-13T13:40:25Z] Skipping optional step netpol-24nodes-gather-aws-console 
+␛[36mINFO␛[0m[2025-05-13T13:40:25Z] Skipping optional step netpol-24nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-05-13T13:40:25Z] Skipping optional step netpol-24nodes-gather-extra 
+␛[36mINFO␛[0m[2025-05-13T13:40:25Z] Skipping optional step netpol-24nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-05-13T13:40:25Z] Running step netpol-24nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-05-13T13:46:41Z] Step netpol-24nodes-ipi-deprovision-deprovision succeeded after 6m15s. 
+␛[36mINFO␛[0m[2025-05-13T13:46:41Z] Running step netpol-24nodes-aws-deprovision-users-and-policies. 
+␛[36mINFO␛[0m[2025-05-13T13:46:50Z] Step netpol-24nodes-aws-deprovision-users-and-policies succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-13T13:46:50Z] Step phase post succeeded after 6m25s.       
+␛[36mINFO␛[0m[2025-05-13T13:46:50Z] Releasing leases for test netpol-24nodes     
+␛[36mINFO␛[0m[2025-05-13T13:46:50Z] Ran for 1h45m2s                              
+␛[36mINFO␛[0m[2025-05-13T13:46:50Z] Reporting job state 'succeeded'              

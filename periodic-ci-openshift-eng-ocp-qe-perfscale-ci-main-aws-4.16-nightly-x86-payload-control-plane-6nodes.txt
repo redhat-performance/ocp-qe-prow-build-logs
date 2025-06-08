@@ -1,0 +1,86 @@
+␛[36mINFO␛[0m[2025-06-07T12:40:27Z] ci-operator version v20250606-ead9efe03      
+␛[36mINFO␛[0m[2025-06-07T12:40:27Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [aws-4.16-nightly-x86] 
+␛[36mINFO␛[0m[2025-06-07T12:40:28Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-06-07T12:40:28Z] skipped directory "..2025_06_07_12_40_21.1223208873" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-06-07T12:40:28Z] Using explicitly provided pull-spec for release latest (registry.ci.openshift.org/ocp/release:4.16.0-0.nightly-2025-06-07-123613) 
+␛[36mINFO␛[0m[2025-06-07T12:40:28Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-hm27g790 
+␛[36mINFO␛[0m[2025-06-07T12:40:28Z] Running [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [release:latest], [images], payload-control-plane-6nodes 
+␛[36mINFO␛[0m[2025-06-07T12:40:28Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale-qe 
+␛[36mINFO␛[0m[2025-06-07T12:40:28Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-06-07T12:40:28Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-06-07T12:40:28Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-06-07T12:40:28Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-06-07T12:40:28Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-06-07T12:40:28Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-06-07T12:40:28Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-06-07T12:48:21Z] Importing release 4.16.0-0.nightly-2025-06-07-123613 created at 2025-06-07 12:37:55 +0000 UTC with 190 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-06-07T12:49:56Z] Imported release 4.16.0-0.nightly-2025-06-07-123613 created at 2025-06-07 12:37:55 +0000 UTC with 190 images to tag release:latest 
+␛[36mINFO␛[0m[2025-06-07T12:49:56Z] Acquiring leases for test payload-control-plane-6nodes: [aws-perfscale-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-06-07T12:49:56Z] Acquired 1 lease(s) for aws-perfscale-qe-quota-slice: [us-west-2--aws-perfscale-qe-quota-slice-4] 
+␛[36mINFO␛[0m[2025-06-07T12:49:56Z] Running multi-stage test payload-control-plane-6nodes 
+␛[36mINFO␛[0m[2025-06-07T12:49:58Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-06-07T12:49:58Z] Running step payload-control-plane-6nodes-ipi-conf. 
+␛[36mINFO␛[0m[2025-06-07T12:50:10Z] Step payload-control-plane-6nodes-ipi-conf succeeded after 12s. 
+␛[36mINFO␛[0m[2025-06-07T12:50:10Z] Running step payload-control-plane-6nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-06-07T12:50:21Z] Step payload-control-plane-6nodes-ipi-conf-telemetry succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-07T12:50:21Z] Running step payload-control-plane-6nodes-ipi-conf-aws. 
+␛[36mINFO␛[0m[2025-06-07T12:50:35Z] Step payload-control-plane-6nodes-ipi-conf-aws succeeded after 14s. 
+␛[36mINFO␛[0m[2025-06-07T12:50:35Z] Running step payload-control-plane-6nodes-ipi-conf-aws-byo-ipv4-pool-public. 
+␛[36mINFO␛[0m[2025-06-07T12:50:45Z] Step payload-control-plane-6nodes-ipi-conf-aws-byo-ipv4-pool-public succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-07T12:50:45Z] Running step payload-control-plane-6nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-06-07T12:50:53Z] Step payload-control-plane-6nodes-ipi-install-monitoringpvc succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-07T12:50:53Z] Running step payload-control-plane-6nodes-ipi-conf-aws-user-min-permissions. 
+␛[36mINFO␛[0m[2025-06-07T12:51:41Z] Step payload-control-plane-6nodes-ipi-conf-aws-user-min-permissions succeeded after 47s. 
+␛[36mINFO␛[0m[2025-06-07T12:51:41Z] Running step payload-control-plane-6nodes-aws-provision-iam-user. 
+␛[36mINFO␛[0m[2025-06-07T12:51:51Z] Step payload-control-plane-6nodes-aws-provision-iam-user succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-07T12:51:51Z] Running step payload-control-plane-6nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-06-07T12:52:01Z] Step payload-control-plane-6nodes-ipi-install-rbac succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-07T12:52:01Z] Running step payload-control-plane-6nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-06-07T12:52:09Z] Step payload-control-plane-6nodes-openshift-cluster-bot-rbac succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-07T12:52:09Z] Running step payload-control-plane-6nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-06-07T12:52:20Z] Step payload-control-plane-6nodes-ipi-install-hosted-loki succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-07T12:52:20Z] Running step payload-control-plane-6nodes-ipi-install-install. 
+␛[36mINFO␛[0m[2025-06-07T13:29:12Z] Step payload-control-plane-6nodes-ipi-install-install succeeded after 36m51s. 
+␛[36mINFO␛[0m[2025-06-07T13:29:12Z] Running step payload-control-plane-6nodes-ipi-install-times-collection. 
+␛[36mINFO␛[0m[2025-06-07T13:29:24Z] Step payload-control-plane-6nodes-ipi-install-times-collection succeeded after 12s. 
+␛[36mINFO␛[0m[2025-06-07T13:29:24Z] Running step payload-control-plane-6nodes-nodes-readiness. 
+␛[36mINFO␛[0m[2025-06-07T13:29:35Z] Step payload-control-plane-6nodes-nodes-readiness succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-07T13:29:35Z] Running step payload-control-plane-6nodes-multiarch-validate-nodes. 
+␛[36mINFO␛[0m[2025-06-07T13:29:43Z] Step payload-control-plane-6nodes-multiarch-validate-nodes succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-07T13:29:43Z] Running step payload-control-plane-6nodes-openshift-qe-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-06-07T13:47:44Z] Step payload-control-plane-6nodes-openshift-qe-workers-infra-workload succeeded after 18m0s. 
+␛[36mINFO␛[0m[2025-06-07T13:47:44Z] Running step payload-control-plane-6nodes-openshift-qe-move-pods-infra. 
+␛[36mINFO␛[0m[2025-06-07T13:54:01Z] Step payload-control-plane-6nodes-openshift-qe-move-pods-infra succeeded after 6m17s. 
+␛[36mINFO␛[0m[2025-06-07T13:54:01Z] Step phase pre succeeded after 1h4m2s.       
+␛[36mINFO␛[0m[2025-06-07T13:54:01Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-06-07T13:54:01Z] Running step payload-control-plane-6nodes-openshift-qe-workers-scale. 
+␛[36mINFO␛[0m[2025-06-07T13:58:14Z] Step payload-control-plane-6nodes-openshift-qe-workers-scale succeeded after 4m12s. 
+␛[36mINFO␛[0m[2025-06-07T13:58:14Z] Running step payload-control-plane-6nodes-openshift-qe-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-06-07T14:30:18Z] Step payload-control-plane-6nodes-openshift-qe-cluster-density-v2 succeeded after 32m4s. 
+␛[36mINFO␛[0m[2025-06-07T14:30:18Z] Running step payload-control-plane-6nodes-redhat-chaos-cerberus-one-run-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-06-07T14:30:40Z] Step payload-control-plane-6nodes-redhat-chaos-cerberus-one-run-cluster-density-v2 succeeded after 21s. 
+␛[36mINFO␛[0m[2025-06-07T14:30:40Z] Running step payload-control-plane-6nodes-openshift-qe-node-density. 
+␛[36mINFO␛[0m[2025-06-07T14:37:14Z] Step payload-control-plane-6nodes-openshift-qe-node-density succeeded after 6m33s. 
+␛[36mINFO␛[0m[2025-06-07T14:37:14Z] Running step payload-control-plane-6nodes-redhat-chaos-cerberus-one-run-node-density. 
+␛[36mINFO␛[0m[2025-06-07T14:37:34Z] Step payload-control-plane-6nodes-redhat-chaos-cerberus-one-run-node-density succeeded after 20s. 
+␛[36mINFO␛[0m[2025-06-07T14:37:34Z] Running step payload-control-plane-6nodes-openshift-qe-node-density-cni. 
+␛[36mINFO␛[0m[2025-06-07T14:46:31Z] Step payload-control-plane-6nodes-openshift-qe-node-density-cni succeeded after 8m56s. 
+␛[36mINFO␛[0m[2025-06-07T14:46:31Z] Running step payload-control-plane-6nodes-redhat-chaos-cerberus-one-run-node-density-cni. 
+␛[36mINFO␛[0m[2025-06-07T14:47:07Z] Step payload-control-plane-6nodes-redhat-chaos-cerberus-one-run-node-density-cni succeeded after 35s. 
+␛[36mINFO␛[0m[2025-06-07T14:47:07Z] Running step payload-control-plane-6nodes-openshift-qe-crd-scale. 
+␛[36mINFO␛[0m[2025-06-07T14:50:19Z] Step payload-control-plane-6nodes-openshift-qe-crd-scale succeeded after 3m12s. 
+␛[36mINFO␛[0m[2025-06-07T14:50:19Z] Step phase test succeeded after 56m18s.      
+␛[36mINFO␛[0m[2025-06-07T14:50:19Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-06-07T14:50:19Z] Skipping optional step payload-control-plane-6nodes-gather-aws-console 
+␛[36mINFO␛[0m[2025-06-07T14:50:19Z] Skipping optional step payload-control-plane-6nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-06-07T14:50:19Z] Skipping optional step payload-control-plane-6nodes-gather-extra 
+␛[36mINFO␛[0m[2025-06-07T14:50:19Z] Skipping optional step payload-control-plane-6nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-06-07T14:50:19Z] Running step payload-control-plane-6nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-06-07T14:55:47Z] Step payload-control-plane-6nodes-ipi-deprovision-deprovision succeeded after 5m27s. 
+␛[36mINFO␛[0m[2025-06-07T14:55:47Z] Running step payload-control-plane-6nodes-aws-deprovision-users-and-policies. 
+␛[36mINFO␛[0m[2025-06-07T14:55:57Z] Step payload-control-plane-6nodes-aws-deprovision-users-and-policies succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-07T14:55:57Z] Step phase post succeeded after 5m37s.       
+␛[36mINFO␛[0m[2025-06-07T14:55:57Z] Releasing leases for test payload-control-plane-6nodes 
+␛[36mINFO␛[0m[2025-06-07T14:55:57Z] Ran for 2h15m29s                             
+␛[36mINFO␛[0m[2025-06-07T14:55:57Z] Reporting job state 'succeeded'              
+␛[36mINFO␛[0m[2025-06-07T14:55:57Z] Flushing 3 insights events                   

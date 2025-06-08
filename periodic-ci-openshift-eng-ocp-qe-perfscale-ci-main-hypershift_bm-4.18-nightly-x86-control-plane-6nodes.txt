@@ -1,0 +1,91 @@
+␛[36mINFO␛[0m[2025-05-16T02:00:49Z] ci-operator version v20250514-f09368241      
+␛[36mINFO␛[0m[2025-05-16T02:00:49Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [hypershift_bm-4.18-nightly-x86] 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-05-16T02:00:50Z] skipped directory "..2025_05_16_02_00_44.1070358473" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-05-15-130442 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Using namespace https://console-openshift-console.apps.build07.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-lbgns8zj 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Running [input:assisted-service-scripts], [input:dev-scripts], [input:hypershift-operator], [input:upi-installer], [input:ocp-4.14-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [input:ocp-4.16-upi-installer], [release:latest], [images], control-plane-6nodes 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Loading information from https://config.ci.openshift.org for cluster profile equinix-ocp-hcp 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Tagging hypershift/hypershift-operator:latest into pipeline:hypershift-operator. 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Tagging edge-infrastructure/ocm-2.13:assisted-service-scripts into pipeline:assisted-service-scripts. 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Tagging ocp/4.18:upi-installer into pipeline:upi-installer. 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Tagging ocp-kni/test:dev-scripts into pipeline:dev-scripts. 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-16T02:00:50Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-05-15-130442 
+␛[36mINFO␛[0m[2025-05-16T02:01:11Z] Importing release 4.18.0-0.nightly-2025-05-15-130442 created at 2025-05-15 13:07:47 +0000 UTC with 188 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-05-16T02:02:46Z] Imported release 4.18.0-0.nightly-2025-05-15-130442 created at 2025-05-15 13:07:47 +0000 UTC with 188 images to tag release:latest 
+␛[36mINFO␛[0m[2025-05-16T02:02:46Z] Acquiring leases for test control-plane-6nodes: [equinix-ocp-hcp-quota-slice] 
+␛[36mINFO␛[0m[2025-05-16T02:02:46Z] Acquired 1 lease(s) for equinix-ocp-hcp-quota-slice: [919a9e2e-8d22-4178-9785-c1a932b96bc3] 
+␛[36mINFO␛[0m[2025-05-16T02:02:46Z] Running multi-stage test control-plane-6nodes 
+␛[36mINFO␛[0m[2025-05-16T02:02:48Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-05-16T02:02:48Z] Running step control-plane-6nodes-baremetalds-packet-setup. 
+␛[36mINFO␛[0m[2025-05-16T02:09:36Z] Step control-plane-6nodes-baremetalds-packet-setup succeeded after 6m47s. 
+␛[36mINFO␛[0m[2025-05-16T02:09:36Z] Running step control-plane-6nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-05-16T02:09:44Z] Step control-plane-6nodes-ipi-install-rbac succeeded after 7s. 
+␛[36mINFO␛[0m[2025-05-16T02:09:44Z] Running step control-plane-6nodes-baremetalds-devscripts-proxy. 
+␛[36mINFO␛[0m[2025-05-16T02:11:11Z] Step control-plane-6nodes-baremetalds-devscripts-proxy succeeded after 1m27s. 
+␛[36mINFO␛[0m[2025-05-16T02:11:11Z] Running step control-plane-6nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-05-16T02:11:21Z] Step control-plane-6nodes-ipi-install-hosted-loki succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-16T02:11:21Z] Running step control-plane-6nodes-baremetalds-devscripts-setup. 
+␛[36mINFO␛[0m[2025-05-16T03:07:11Z] Step control-plane-6nodes-baremetalds-devscripts-setup succeeded after 55m50s. 
+␛[36mINFO␛[0m[2025-05-16T03:07:11Z] Running step control-plane-6nodes-enable-qe-catalogsource. 
+␛[36mINFO␛[0m[2025-05-16T03:10:13Z] Step control-plane-6nodes-enable-qe-catalogsource succeeded after 3m1s. 
+␛[36mINFO␛[0m[2025-05-16T03:10:13Z] Running step control-plane-6nodes-operatorhub-subscribe-lvm-operator. 
+␛[36mINFO␛[0m[2025-05-16T03:11:23Z] Step control-plane-6nodes-operatorhub-subscribe-lvm-operator succeeded after 1m10s. 
+␛[36mINFO␛[0m[2025-05-16T03:11:23Z] Running step control-plane-6nodes-hypershift-mce-agent-lvm. 
+␛[36mINFO␛[0m[2025-05-16T03:11:48Z] Step control-plane-6nodes-hypershift-mce-agent-lvm succeeded after 25s. 
+␛[36mINFO␛[0m[2025-05-16T03:11:48Z] Running step control-plane-6nodes-hypershift-mce-install. 
+␛[36mINFO␛[0m[2025-05-16T03:20:59Z] Step control-plane-6nodes-hypershift-mce-install succeeded after 9m11s. 
+␛[36mINFO␛[0m[2025-05-16T03:20:59Z] Running step control-plane-6nodes-hypershift-mce-conf-os-images. 
+␛[36mINFO␛[0m[2025-05-16T03:21:47Z] Step control-plane-6nodes-hypershift-mce-conf-os-images succeeded after 48s. 
+␛[36mINFO␛[0m[2025-05-16T03:21:47Z] Running step control-plane-6nodes-hypershift-mce-agent-create-agentserviceconfig. 
+␛[36mINFO␛[0m[2025-05-16T03:23:15Z] Step control-plane-6nodes-hypershift-mce-agent-create-agentserviceconfig succeeded after 1m27s. 
+␛[36mINFO␛[0m[2025-05-16T03:23:15Z] Running step control-plane-6nodes-hypershift-agent-create-config-dns. 
+␛[36mINFO␛[0m[2025-05-16T03:23:25Z] Step control-plane-6nodes-hypershift-agent-create-config-dns succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-16T03:23:25Z] Running step control-plane-6nodes-hypershift-mce-agent-create-hostedcluster. 
+␛[36mINFO␛[0m[2025-05-16T03:26:00Z] Step control-plane-6nodes-hypershift-mce-agent-create-hostedcluster succeeded after 2m34s. 
+␛[36mINFO␛[0m[2025-05-16T03:26:00Z] Running step control-plane-6nodes-hypershift-agent-create-proxy. 
+␛[36mINFO␛[0m[2025-05-16T03:26:43Z] Step control-plane-6nodes-hypershift-agent-create-proxy succeeded after 43s. 
+␛[36mINFO␛[0m[2025-05-16T03:26:43Z] Running step control-plane-6nodes-hypershift-agent-create-add-worker-metal3. 
+␛[36mINFO␛[0m[2025-05-16T03:41:39Z] Step control-plane-6nodes-hypershift-agent-create-add-worker-metal3 succeeded after 14m56s. 
+␛[36mINFO␛[0m[2025-05-16T03:41:39Z] Running step control-plane-6nodes-cucushift-hypershift-extended-enable-qe-catalogsource. 
+␛[36mINFO␛[0m[2025-05-16T03:42:33Z] Step control-plane-6nodes-cucushift-hypershift-extended-enable-qe-catalogsource succeeded after 54s. 
+␛[36mINFO␛[0m[2025-05-16T03:42:33Z] Running step control-plane-6nodes-hypershift-agent-create-metallb. 
+␛[36mINFO␛[0m[2025-05-16T03:52:54Z] Step control-plane-6nodes-hypershift-agent-create-metallb succeeded after 10m20s. 
+␛[36mINFO␛[0m[2025-05-16T03:52:54Z] Step phase pre succeeded after 1h50m5s.      
+␛[36mINFO␛[0m[2025-05-16T03:52:54Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-05-16T03:52:54Z] Running step control-plane-6nodes-openshift-qe-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-05-16T04:20:39Z] Step control-plane-6nodes-openshift-qe-cluster-density-v2 succeeded after 27m45s. 
+␛[36mINFO␛[0m[2025-05-16T04:20:39Z] Running step control-plane-6nodes-redhat-chaos-cerberus-one-run-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-05-16T04:20:50Z] Step control-plane-6nodes-redhat-chaos-cerberus-one-run-cluster-density-v2 succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-16T04:20:50Z] Running step control-plane-6nodes-openshift-qe-node-density. 
+␛[36mINFO␛[0m[2025-05-16T04:26:07Z] Step control-plane-6nodes-openshift-qe-node-density succeeded after 5m17s. 
+␛[36mINFO␛[0m[2025-05-16T04:26:07Z] Running step control-plane-6nodes-redhat-chaos-cerberus-one-run-node-density. 
+␛[36mINFO␛[0m[2025-05-16T04:26:26Z] Step control-plane-6nodes-redhat-chaos-cerberus-one-run-node-density succeeded after 19s. 
+␛[36mINFO␛[0m[2025-05-16T04:26:26Z] Running step control-plane-6nodes-openshift-qe-node-density-cni. 
+␛[36mINFO␛[0m[2025-05-16T04:33:57Z] Step control-plane-6nodes-openshift-qe-node-density-cni succeeded after 7m31s. 
+␛[36mINFO␛[0m[2025-05-16T04:33:57Z] Running step control-plane-6nodes-redhat-chaos-cerberus-one-run-node-density-cni. 
+␛[36mINFO␛[0m[2025-05-16T04:34:07Z] Step control-plane-6nodes-redhat-chaos-cerberus-one-run-node-density-cni succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-16T04:34:07Z] Running step control-plane-6nodes-openshift-qe-crd-scale. 
+␛[36mINFO␛[0m[2025-05-16T04:37:06Z] Step control-plane-6nodes-openshift-qe-crd-scale succeeded after 2m58s. 
+␛[36mINFO␛[0m[2025-05-16T04:37:06Z] Step phase test succeeded after 44m12s.      
+␛[36mINFO␛[0m[2025-05-16T04:37:06Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-05-16T04:37:06Z] Skipping optional step control-plane-6nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-05-16T04:37:06Z] Skipping optional step control-plane-6nodes-gather-extra 
+␛[36mINFO␛[0m[2025-05-16T04:37:06Z] Skipping optional step control-plane-6nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-05-16T04:37:06Z] Running step control-plane-6nodes-destroy.   
+␛[36mINFO␛[0m[2025-05-16T04:51:22Z] Step control-plane-6nodes-destroy succeeded after 14m16s. 
+␛[36mINFO␛[0m[2025-05-16T04:51:22Z] Running step control-plane-6nodes-baremetalds-devscripts-gather. 
+␛[36mINFO␛[0m[2025-05-16T04:53:34Z] Step control-plane-6nodes-baremetalds-devscripts-gather succeeded after 2m12s. 
+␛[36mINFO␛[0m[2025-05-16T04:53:34Z] Running step control-plane-6nodes-baremetalds-packet-teardown. 
+␛[36mINFO␛[0m[2025-05-16T04:53:47Z] Step control-plane-6nodes-baremetalds-packet-teardown succeeded after 12s. 
+␛[36mINFO␛[0m[2025-05-16T04:53:47Z] Step phase post succeeded after 16m40s.      
+␛[36mINFO␛[0m[2025-05-16T04:53:47Z] Releasing leases for test control-plane-6nodes 
+␛[36mINFO␛[0m[2025-05-16T04:53:47Z] Ran for 2h52m57s                             
+␛[36mINFO␛[0m[2025-05-16T04:53:47Z] Reporting job state 'succeeded'              

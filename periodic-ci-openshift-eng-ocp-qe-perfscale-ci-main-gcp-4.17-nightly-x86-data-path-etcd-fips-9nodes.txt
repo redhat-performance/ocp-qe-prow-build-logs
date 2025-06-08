@@ -1,0 +1,82 @@
+␛[36mINFO␛[0m[2025-05-15T07:00:44Z] ci-operator version v20250514-f09368241      
+␛[36mINFO␛[0m[2025-05-15T07:00:44Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [gcp-4.17-nightly-x86] 
+␛[36mINFO␛[0m[2025-05-15T07:00:44Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-05-15T07:00:44Z] skipped directory "..2025_05_15_07_00_37.1862739071" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-05-15T07:00:44Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.17.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.17.0-0.nightly-2025-05-14-141753 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Using namespace https://console.build02.ci.openshift.org/k8s/cluster/projects/ci-op-fzbntiiz 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Running [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ocp-cli-jq-latest], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [release:latest], [images], data-path-etcd-fips-9nodes 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Loading information from https://config.ci.openshift.org for cluster profile gcp-qe 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Tagging ocp/cli-jq:latest into pipeline:ocp-cli-jq-latest. 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.17.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-15T07:00:45Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.17.0-0.nightly-2025-05-14-141753 
+␛[36mINFO␛[0m[2025-05-15T07:01:08Z] Importing release 4.17.0-0.nightly-2025-05-14-141753 created at 2025-05-14 14:19:55 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-05-15T07:02:42Z] Imported release 4.17.0-0.nightly-2025-05-14-141753 created at 2025-05-14 14:19:55 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-05-15T07:02:42Z] Acquiring leases for test data-path-etcd-fips-9nodes: [gcp-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-05-15T07:02:42Z] Acquired 1 lease(s) for gcp-qe-quota-slice: [us-central1--gcp-qe-quota-slice-27] 
+␛[36mINFO␛[0m[2025-05-15T07:02:42Z] Running multi-stage test data-path-etcd-fips-9nodes 
+␛[36mINFO␛[0m[2025-05-15T07:02:44Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-05-15T07:02:44Z] Running step data-path-etcd-fips-9nodes-ipi-conf. 
+␛[36mINFO␛[0m[2025-05-15T07:02:56Z] Step data-path-etcd-fips-9nodes-ipi-conf succeeded after 12s. 
+␛[36mINFO␛[0m[2025-05-15T07:02:56Z] Running step data-path-etcd-fips-9nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-05-15T07:03:06Z] Step data-path-etcd-fips-9nodes-ipi-conf-telemetry succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-15T07:03:06Z] Running step data-path-etcd-fips-9nodes-ipi-conf-gcp. 
+␛[36mINFO␛[0m[2025-05-15T07:03:17Z] Step data-path-etcd-fips-9nodes-ipi-conf-gcp succeeded after 11s. 
+␛[36mINFO␛[0m[2025-05-15T07:03:17Z] Running step data-path-etcd-fips-9nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-05-15T07:03:28Z] Step data-path-etcd-fips-9nodes-ipi-install-monitoringpvc succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-15T07:03:28Z] Running step data-path-etcd-fips-9nodes-ovn-conf. 
+␛[36mINFO␛[0m[2025-05-15T07:03:42Z] Step data-path-etcd-fips-9nodes-ovn-conf succeeded after 14s. 
+␛[36mINFO␛[0m[2025-05-15T07:03:42Z] Running step data-path-etcd-fips-9nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-05-15T07:04:03Z] Step data-path-etcd-fips-9nodes-ipi-install-rbac succeeded after 20s. 
+␛[36mINFO␛[0m[2025-05-15T07:04:03Z] Running step data-path-etcd-fips-9nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-05-15T07:04:14Z] Step data-path-etcd-fips-9nodes-openshift-cluster-bot-rbac succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-15T07:04:14Z] Running step data-path-etcd-fips-9nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-05-15T07:04:26Z] Step data-path-etcd-fips-9nodes-ipi-install-hosted-loki succeeded after 12s. 
+␛[36mINFO␛[0m[2025-05-15T07:04:26Z] Running step data-path-etcd-fips-9nodes-ipi-install-install. 
+␛[36mINFO␛[0m[2025-05-15T07:53:49Z] Step data-path-etcd-fips-9nodes-ipi-install-install succeeded after 49m23s. 
+␛[36mINFO␛[0m[2025-05-15T07:53:49Z] Running step data-path-etcd-fips-9nodes-ipi-install-times-collection. 
+␛[36mINFO␛[0m[2025-05-15T07:54:01Z] Step data-path-etcd-fips-9nodes-ipi-install-times-collection succeeded after 12s. 
+␛[36mINFO␛[0m[2025-05-15T07:54:01Z] Running step data-path-etcd-fips-9nodes-nodes-readiness. 
+␛[36mINFO␛[0m[2025-05-15T07:54:12Z] Step data-path-etcd-fips-9nodes-nodes-readiness succeeded after 11s. 
+␛[36mINFO␛[0m[2025-05-15T07:54:12Z] Running step data-path-etcd-fips-9nodes-multiarch-validate-nodes. 
+␛[36mINFO␛[0m[2025-05-15T07:54:22Z] Step data-path-etcd-fips-9nodes-multiarch-validate-nodes succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-15T07:54:22Z] Running step data-path-etcd-fips-9nodes-fips-check-node-scan. 
+␛[36mINFO␛[0m[2025-05-15T07:55:36Z] Step data-path-etcd-fips-9nodes-fips-check-node-scan succeeded after 1m13s. 
+␛[36mINFO␛[0m[2025-05-15T07:55:36Z] Running step data-path-etcd-fips-9nodes-etcd-encryption. 
+␛[36mINFO␛[0m[2025-05-15T08:21:51Z] Step data-path-etcd-fips-9nodes-etcd-encryption succeeded after 26m15s. 
+␛[36mINFO␛[0m[2025-05-15T08:21:51Z] Running step data-path-etcd-fips-9nodes-XXXXXXXXXXXX-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-05-15T08:36:09Z] Step data-path-etcd-fips-9nodes-XXXXXXXXXXXX-workers-infra-workload succeeded after 14m18s. 
+␛[36mINFO␛[0m[2025-05-15T08:36:09Z] Running step data-path-etcd-fips-9nodes-XXXXXXXXXXXX-move-pods-infra. 
+␛[36mINFO␛[0m[2025-05-15T08:43:04Z] Step data-path-etcd-fips-9nodes-XXXXXXXXXXXX-move-pods-infra succeeded after 6m54s. 
+␛[36mINFO␛[0m[2025-05-15T08:43:04Z] Step phase pre succeeded after 1h40m20s.     
+␛[36mINFO␛[0m[2025-05-15T08:43:04Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-05-15T08:43:04Z] Running step data-path-etcd-fips-9nodes-XXXXXXXXXXXX-perfscale-gcp-data-path-fw. 
+␛[36mINFO␛[0m[2025-05-15T08:43:48Z] Step data-path-etcd-fips-9nodes-XXXXXXXXXXXX-perfscale-gcp-data-path-fw succeeded after 43s. 
+␛[36mINFO␛[0m[2025-05-15T08:43:48Z] Running step data-path-etcd-fips-9nodes-XXXXXXXXXXXX-network-smoke. 
+␛[36mINFO␛[0m[2025-05-15T08:47:21Z] Step data-path-etcd-fips-9nodes-XXXXXXXXXXXX-network-smoke succeeded after 3m33s. 
+␛[36mINFO␛[0m[2025-05-15T08:47:21Z] Running step data-path-etcd-fips-9nodes-XXXXXXXXXXXX-network-perf. 
+␛[36mINFO␛[0m[2025-05-15T10:54:15Z] Step data-path-etcd-fips-9nodes-XXXXXXXXXXXX-network-perf succeeded after 2h6m54s. 
+␛[36mINFO␛[0m[2025-05-15T10:54:15Z] Running step data-path-etcd-fips-9nodes-redhat-chaos-cerberus-one-run. 
+␛[36mINFO␛[0m[2025-05-15T10:57:25Z] Step data-path-etcd-fips-9nodes-redhat-chaos-cerberus-one-run succeeded after 3m9s. 
+␛[36mINFO␛[0m[2025-05-15T10:57:25Z] Running step data-path-etcd-fips-9nodes-XXXXXXXXXXXX-ingress-perf. 
+␛[36mINFO␛[0m[2025-05-15T11:55:44Z] Step data-path-etcd-fips-9nodes-XXXXXXXXXXXX-ingress-perf succeeded after 58m19s. 
+␛[36mINFO␛[0m[2025-05-15T11:55:44Z] Running step data-path-etcd-fips-9nodes-redhat-chaos-cerberus-one-run-ingress-perf. 
+␛[36mINFO␛[0m[2025-05-15T11:56:27Z] Step data-path-etcd-fips-9nodes-redhat-chaos-cerberus-one-run-ingress-perf succeeded after 43s. 
+␛[36mINFO␛[0m[2025-05-15T11:56:27Z] Step phase test succeeded after 3h13m22s.    
+␛[36mINFO␛[0m[2025-05-15T11:56:27Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-05-15T11:56:27Z] Skipping optional step data-path-etcd-fips-9nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-05-15T11:56:27Z] Skipping optional step data-path-etcd-fips-9nodes-gather-extra 
+␛[36mINFO␛[0m[2025-05-15T11:56:27Z] Skipping optional step data-path-etcd-fips-9nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-05-15T11:56:27Z] Running step data-path-etcd-fips-9nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-05-15T12:04:33Z] Step data-path-etcd-fips-9nodes-ipi-deprovision-deprovision succeeded after 8m5s. 
+␛[36mINFO␛[0m[2025-05-15T12:04:33Z] Step phase post succeeded after 8m5s.        
+␛[36mINFO␛[0m[2025-05-15T12:04:33Z] Releasing leases for test data-path-etcd-fips-9nodes 
+␛[36mINFO␛[0m[2025-05-15T12:04:33Z] Ran for 5h3m48s                              
+␛[36mINFO␛[0m[2025-05-15T12:04:33Z] Reporting job state 'succeeded'              

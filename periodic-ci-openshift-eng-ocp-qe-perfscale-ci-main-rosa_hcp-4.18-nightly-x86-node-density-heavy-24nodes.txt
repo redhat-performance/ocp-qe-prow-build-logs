@@ -1,0 +1,80 @@
+␛[36mINFO␛[0m[2025-06-05T05:00:56Z] ci-operator version v20250604-63d4da5c3      
+␛[36mINFO␛[0m[2025-06-05T05:00:56Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [rosa_hcp-4.18-nightly-x86] 
+␛[36mINFO␛[0m[2025-06-05T05:00:56Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-06-05T05:00:56Z] skipped directory "..2025_06_05_05_00_50.4044668533" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-06-05T05:00:56Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-05T05:00:56Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-06-04-164035 
+␛[36mINFO␛[0m[2025-06-05T05:00:56Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-zbk2zqsx 
+␛[36mINFO␛[0m[2025-06-05T05:00:56Z] Running [input:cli-ocm], [input:rosa-aws-cli], [input:ocp-4.18-upi-installer], [input:ocp-4.12-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [release:latest], [images], node-density-heavy-24nodes 
+␛[36mINFO␛[0m[2025-06-05T05:00:57Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale-qe 
+␛[36mINFO␛[0m[2025-06-05T05:00:57Z] Tagging ci/cli-ocm:latest into pipeline:cli-ocm. 
+␛[36mINFO␛[0m[2025-06-05T05:00:57Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-06-05T05:00:57Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-06-05T05:00:57Z] Tagging ci/rosa-aws-cli:latest into pipeline:rosa-aws-cli. 
+␛[36mINFO␛[0m[2025-06-05T05:00:57Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-06-05T05:00:57Z] Tagging ocp/4.18:upi-installer into pipeline:ocp-4.18-upi-installer. 
+␛[36mINFO␛[0m[2025-06-05T05:00:57Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-06-05T05:00:57Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-05T05:00:57Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-06-04-164035 
+␛[36mINFO␛[0m[2025-06-05T05:01:32Z] Importing release 4.18.0-0.nightly-2025-06-04-164035 created at 2025-06-04 16:44:40 +0000 UTC with 188 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-06-05T05:03:06Z] Imported release 4.18.0-0.nightly-2025-06-04-164035 created at 2025-06-04 16:44:40 +0000 UTC with 188 images to tag release:latest 
+␛[36mINFO␛[0m[2025-06-05T05:03:06Z] Acquiring leases for test node-density-heavy-24nodes: [aws-perfscale-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-06-05T05:49:44Z] Acquired 1 lease(s) for aws-perfscale-qe-quota-slice: [us-west-2--aws-perfscale-qe-quota-slice-1] 
+␛[36mINFO␛[0m[2025-06-05T05:49:44Z] Running multi-stage test node-density-heavy-24nodes 
+␛[36mINFO␛[0m[2025-06-05T05:49:45Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-06-05T05:49:45Z] Running step node-density-heavy-24nodes-aws-provision-vpc-shared. 
+␛[36mINFO␛[0m[2025-06-05T05:52:34Z] Step node-density-heavy-24nodes-aws-provision-vpc-shared succeeded after 2m48s. 
+␛[36mINFO␛[0m[2025-06-05T05:52:34Z] Running step node-density-heavy-24nodes-aws-provision-tags-for-byo-vpc-ocm-pre. 
+␛[36mINFO␛[0m[2025-06-05T05:52:44Z] Step node-density-heavy-24nodes-aws-provision-tags-for-byo-vpc-ocm-pre succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-05T05:52:44Z] Running step node-density-heavy-24nodes-rosa-cluster-prefix. 
+␛[36mINFO␛[0m[2025-06-05T05:52:57Z] Step node-density-heavy-24nodes-rosa-cluster-prefix succeeded after 13s. 
+␛[36mINFO␛[0m[2025-06-05T05:52:57Z] Running step node-density-heavy-24nodes-rosa-sts-account-roles-create. 
+␛[36mINFO␛[0m[2025-06-05T05:53:51Z] Step node-density-heavy-24nodes-rosa-sts-account-roles-create succeeded after 53s. 
+␛[36mINFO␛[0m[2025-06-05T05:53:51Z] Running step node-density-heavy-24nodes-rosa-sts-oidc-config-create. 
+␛[36mINFO␛[0m[2025-06-05T05:54:03Z] Step node-density-heavy-24nodes-rosa-sts-oidc-config-create succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-05T05:54:03Z] Running step node-density-heavy-24nodes-rosa-sts-operator-roles-create. 
+␛[36mINFO␛[0m[2025-06-05T05:55:22Z] Step node-density-heavy-24nodes-rosa-sts-operator-roles-create succeeded after 1m19s. 
+␛[36mINFO␛[0m[2025-06-05T05:55:22Z] Running step node-density-heavy-24nodes-rosa-cluster-provision. 
+␛[36mINFO␛[0m[2025-06-05T05:56:18Z] Step node-density-heavy-24nodes-rosa-cluster-provision succeeded after 56s. 
+␛[36mINFO␛[0m[2025-06-05T05:56:18Z] Running step node-density-heavy-24nodes-rosa-cluster-wait-ready-cluster. 
+␛[36mINFO␛[0m[2025-06-05T06:10:04Z] Step node-density-heavy-24nodes-rosa-cluster-wait-ready-cluster succeeded after 13m45s. 
+␛[36mINFO␛[0m[2025-06-05T06:10:04Z] Running step node-density-heavy-24nodes-rosa-cluster-notify-error. 
+␛[36mINFO␛[0m[2025-06-05T06:10:18Z] Step node-density-heavy-24nodes-rosa-cluster-notify-error succeeded after 13s. 
+␛[36mINFO␛[0m[2025-06-05T06:10:18Z] Running step node-density-heavy-24nodes-rosa-conf-idp-htpasswd. 
+␛[36mINFO␛[0m[2025-06-05T06:12:02Z] Step node-density-heavy-24nodes-rosa-conf-idp-htpasswd succeeded after 1m43s. 
+␛[36mINFO␛[0m[2025-06-05T06:12:02Z] Running step node-density-heavy-24nodes-rosa-cluster-wait-ready-operators. 
+␛[36mINFO␛[0m[2025-06-05T06:27:20Z] Step node-density-heavy-24nodes-rosa-cluster-wait-ready-operators succeeded after 15m18s. 
+␛[36mINFO␛[0m[2025-06-05T06:27:20Z] Running step node-density-heavy-24nodes-aws-provision-tags-for-byo-vpc. 
+␛[36mINFO␛[0m[2025-06-05T06:27:32Z] Step node-density-heavy-24nodes-aws-provision-tags-for-byo-vpc succeeded after 12s. 
+␛[36mINFO␛[0m[2025-06-05T06:27:32Z] Running step node-density-heavy-24nodes-osd-ccs-conf-idp-htpasswd-multi-users. 
+␛[36mINFO␛[0m[2025-06-05T06:28:58Z] Step node-density-heavy-24nodes-osd-ccs-conf-idp-htpasswd-multi-users succeeded after 1m25s. 
+␛[36mINFO␛[0m[2025-06-05T06:28:58Z] Running step node-density-heavy-24nodes-rosa-cluster-wait-ready-nodes. 
+␛[36mINFO␛[0m[2025-06-05T06:33:52Z] Step node-density-heavy-24nodes-rosa-cluster-wait-ready-nodes succeeded after 4m54s. 
+␛[36mINFO␛[0m[2025-06-05T06:33:52Z] Step phase pre succeeded after 44m7s.        
+␛[36mINFO␛[0m[2025-06-05T06:33:52Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-06-05T06:33:52Z] Running step node-density-heavy-24nodes-openshift-qe-node-density-heavy. 
+␛[36mINFO␛[0m[2025-06-05T06:49:56Z] Step node-density-heavy-24nodes-openshift-qe-node-density-heavy succeeded after 16m4s. 
+␛[36mINFO␛[0m[2025-06-05T06:49:56Z] Running step node-density-heavy-24nodes-redhat-chaos-cerberus-one-run-node-density-heavy. 
+␛[36mINFO␛[0m[2025-06-05T06:50:32Z] Step node-density-heavy-24nodes-redhat-chaos-cerberus-one-run-node-density-heavy succeeded after 36s. 
+␛[36mINFO␛[0m[2025-06-05T06:50:32Z] Step phase test succeeded after 16m40s.      
+␛[36mINFO␛[0m[2025-06-05T06:50:32Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-06-05T06:50:32Z] Skipping optional step node-density-heavy-24nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-06-05T06:50:32Z] Skipping optional step node-density-heavy-24nodes-gather-extra 
+␛[36mINFO␛[0m[2025-06-05T06:50:32Z] Skipping optional step node-density-heavy-24nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-06-05T06:50:32Z] Running step node-density-heavy-24nodes-rosa-cluster-deprovision. 
+␛[36mINFO␛[0m[2025-06-05T07:17:41Z] Step node-density-heavy-24nodes-rosa-cluster-deprovision succeeded after 27m8s. 
+␛[36mINFO␛[0m[2025-06-05T07:17:41Z] Running step node-density-heavy-24nodes-rosa-cluster-index. 
+␛[36mINFO␛[0m[2025-06-05T07:17:53Z] Step node-density-heavy-24nodes-rosa-cluster-index succeeded after 12s. 
+␛[36mINFO␛[0m[2025-06-05T07:17:53Z] Running step node-density-heavy-24nodes-rosa-sts-operator-roles-delete. 
+␛[36mINFO␛[0m[2025-06-05T07:18:08Z] Step node-density-heavy-24nodes-rosa-sts-operator-roles-delete succeeded after 14s. 
+␛[36mINFO␛[0m[2025-06-05T07:18:08Z] Running step node-density-heavy-24nodes-rosa-sts-oidc-config-delete. 
+␛[36mINFO␛[0m[2025-06-05T07:18:18Z] Step node-density-heavy-24nodes-rosa-sts-oidc-config-delete succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-05T07:18:18Z] Running step node-density-heavy-24nodes-rosa-sts-account-roles-delete. 
+␛[36mINFO␛[0m[2025-06-05T07:18:29Z] Step node-density-heavy-24nodes-rosa-sts-account-roles-delete succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-05T07:18:29Z] Running step node-density-heavy-24nodes-aws-deprovision-stacks. 
+␛[36mINFO␛[0m[2025-06-05T07:20:09Z] Step node-density-heavy-24nodes-aws-deprovision-stacks succeeded after 1m40s. 
+␛[36mINFO␛[0m[2025-06-05T07:20:09Z] Step phase post succeeded after 29m36s.      
+␛[36mINFO␛[0m[2025-06-05T07:20:09Z] Releasing leases for test node-density-heavy-24nodes 
+␛[36mINFO␛[0m[2025-06-05T07:20:09Z] Ran for 2h19m12s                             
+␛[36mINFO␛[0m[2025-06-05T07:20:09Z] Reporting job state 'succeeded'              
+␛[36mINFO␛[0m[2025-06-05T07:20:09Z] Flushing 3 insights events                   

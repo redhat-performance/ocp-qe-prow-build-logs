@@ -1,0 +1,94 @@
+␛[36mINFO␛[0m[2025-06-06T03:00:49Z] ci-operator version v20250605-6bde8d96d      
+␛[36mINFO␛[0m[2025-06-06T03:00:49Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [aws-4.19-nightly-x86] 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-06-06T03:00:50Z] skipped directory "..2025_06_06_03_00_44.1801679582" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-06-03-070127 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-b72sq2p9 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Running [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [input:ocp-cli-jq-latest], [release:latest], [images], control-plane-etcdencrypt-24nodes 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale-qe 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-06-06T03:00:50Z] Tagging ocp/cli-jq:latest into pipeline:ocp-cli-jq-latest. 
+␛[36mINFO␛[0m[2025-06-06T03:00:51Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-06-06T03:00:51Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-06T03:00:51Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-06-03-070127 
+␛[36mINFO␛[0m[2025-06-06T03:01:11Z] Importing release 4.19.0-0.nightly-2025-06-03-070127 created at 2025-06-03 07:03:04 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-06-06T03:02:46Z] Imported release 4.19.0-0.nightly-2025-06-03-070127 created at 2025-06-03 07:03:04 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-06-06T03:02:46Z] Acquiring leases for test control-plane-etcdencrypt-24nodes: [aws-perfscale-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-06-06T04:07:03Z] Acquired 1 lease(s) for aws-perfscale-qe-quota-slice: [us-west-2--aws-perfscale-qe-quota-slice-8] 
+␛[36mINFO␛[0m[2025-06-06T04:07:03Z] Running multi-stage test control-plane-etcdencrypt-24nodes 
+␛[36mINFO␛[0m[2025-06-06T04:07:05Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-06-06T04:07:05Z] Running step control-plane-etcdencrypt-24nodes-ipi-conf. 
+␛[36mINFO␛[0m[2025-06-06T04:07:18Z] Step control-plane-etcdencrypt-24nodes-ipi-conf succeeded after 12s. 
+␛[36mINFO␛[0m[2025-06-06T04:07:18Z] Running step control-plane-etcdencrypt-24nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-06-06T04:07:27Z] Step control-plane-etcdencrypt-24nodes-ipi-conf-telemetry succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-06T04:07:27Z] Running step control-plane-etcdencrypt-24nodes-ipi-conf-aws. 
+␛[36mINFO␛[0m[2025-06-06T04:07:40Z] Step control-plane-etcdencrypt-24nodes-ipi-conf-aws succeeded after 13s. 
+␛[36mINFO␛[0m[2025-06-06T04:07:40Z] Running step control-plane-etcdencrypt-24nodes-ipi-conf-aws-byo-ipv4-pool-public. 
+␛[36mINFO␛[0m[2025-06-06T04:07:50Z] Step control-plane-etcdencrypt-24nodes-ipi-conf-aws-byo-ipv4-pool-public succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-06T04:07:50Z] Running step control-plane-etcdencrypt-24nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-06-06T04:07:57Z] Step control-plane-etcdencrypt-24nodes-ipi-install-monitoringpvc succeeded after 7s. 
+␛[36mINFO␛[0m[2025-06-06T04:07:57Z] Running step control-plane-etcdencrypt-24nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-06-06T04:08:06Z] Step control-plane-etcdencrypt-24nodes-ipi-install-rbac succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-06T04:08:06Z] Running step control-plane-etcdencrypt-24nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-06-06T04:08:14Z] Step control-plane-etcdencrypt-24nodes-openshift-cluster-bot-rbac succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-06T04:08:14Z] Running step control-plane-etcdencrypt-24nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-06-06T04:08:23Z] Step control-plane-etcdencrypt-24nodes-ipi-install-hosted-loki succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-06T04:08:23Z] Running step control-plane-etcdencrypt-24nodes-ipi-install-install. 
+␛[36mINFO␛[0m[2025-06-06T04:52:10Z] Step control-plane-etcdencrypt-24nodes-ipi-install-install succeeded after 43m47s. 
+␛[36mINFO␛[0m[2025-06-06T04:52:10Z] Running step control-plane-etcdencrypt-24nodes-ipi-install-times-collection. 
+␛[36mINFO␛[0m[2025-06-06T04:52:20Z] Step control-plane-etcdencrypt-24nodes-ipi-install-times-collection succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-06T04:52:20Z] Running step control-plane-etcdencrypt-24nodes-nodes-readiness. 
+␛[36mINFO␛[0m[2025-06-06T04:52:30Z] Step control-plane-etcdencrypt-24nodes-nodes-readiness succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-06T04:52:30Z] Running step control-plane-etcdencrypt-24nodes-multiarch-validate-nodes. 
+␛[36mINFO␛[0m[2025-06-06T04:52:37Z] Step control-plane-etcdencrypt-24nodes-multiarch-validate-nodes succeeded after 7s. 
+␛[36mINFO␛[0m[2025-06-06T04:52:37Z] Running step control-plane-etcdencrypt-24nodes-etcd-encryption. 
+␛[36mINFO␛[0m[2025-06-06T05:22:00Z] Step control-plane-etcdencrypt-24nodes-etcd-encryption succeeded after 29m22s. 
+␛[36mINFO␛[0m[2025-06-06T05:22:00Z] Running step control-plane-etcdencrypt-24nodes-openshift-qe-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-06-06T05:40:12Z] Step control-plane-etcdencrypt-24nodes-openshift-qe-workers-infra-workload succeeded after 18m12s. 
+␛[36mINFO␛[0m[2025-06-06T05:40:12Z] Running step control-plane-etcdencrypt-24nodes-openshift-qe-move-pods-infra. 
+␛[36mINFO␛[0m[2025-06-06T05:45:54Z] Step control-plane-etcdencrypt-24nodes-openshift-qe-move-pods-infra succeeded after 5m41s. 
+␛[36mINFO␛[0m[2025-06-06T05:45:54Z] Step phase pre succeeded after 1h38m48s.     
+␛[36mINFO␛[0m[2025-06-06T05:45:54Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-06-06T05:45:54Z] Running step control-plane-etcdencrypt-24nodes-openshift-qe-workers-scale. 
+␛[36mINFO␛[0m[2025-06-06T05:52:13Z] Step control-plane-etcdencrypt-24nodes-openshift-qe-workers-scale succeeded after 6m19s. 
+␛[36mINFO␛[0m[2025-06-06T05:52:13Z] Running step control-plane-etcdencrypt-24nodes-openshift-qe-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-06-06T06:34:22Z] Step control-plane-etcdencrypt-24nodes-openshift-qe-cluster-density-v2 succeeded after 42m9s. 
+␛[36mINFO␛[0m[2025-06-06T06:34:22Z] Running step control-plane-etcdencrypt-24nodes-redhat-chaos-cerberus-one-run-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-06-06T06:34:50Z] Step control-plane-etcdencrypt-24nodes-redhat-chaos-cerberus-one-run-cluster-density-v2 succeeded after 27s. 
+␛[36mINFO␛[0m[2025-06-06T06:34:50Z] Running step control-plane-etcdencrypt-24nodes-openshift-qe-node-density. 
+␛[36mINFO␛[0m[2025-06-06T06:47:15Z] Step control-plane-etcdencrypt-24nodes-openshift-qe-node-density succeeded after 12m25s. 
+␛[36mINFO␛[0m[2025-06-06T06:47:15Z] Running step control-plane-etcdencrypt-24nodes-redhat-chaos-cerberus-one-run-node-density. 
+␛[36mINFO␛[0m[2025-06-06T06:47:40Z] Step control-plane-etcdencrypt-24nodes-redhat-chaos-cerberus-one-run-node-density succeeded after 24s. 
+␛[36mINFO␛[0m[2025-06-06T06:47:40Z] Running step control-plane-etcdencrypt-24nodes-openshift-qe-node-density-cni. 
+␛[36mINFO␛[0m[2025-06-06T07:05:16Z] Step control-plane-etcdencrypt-24nodes-openshift-qe-node-density-cni succeeded after 17m36s. 
+␛[36mINFO␛[0m[2025-06-06T07:05:16Z] Running step control-plane-etcdencrypt-24nodes-redhat-chaos-cerberus-one-run-node-density-cni. 
+␛[36mINFO␛[0m[2025-06-06T07:05:45Z] Step control-plane-etcdencrypt-24nodes-redhat-chaos-cerberus-one-run-node-density-cni succeeded after 29s. 
+␛[36mINFO␛[0m[2025-06-06T07:05:45Z] Running step control-plane-etcdencrypt-24nodes-openshift-qe-crd-scale. 
+␛[36mINFO␛[0m[2025-06-06T07:09:51Z] Step control-plane-etcdencrypt-24nodes-openshift-qe-crd-scale succeeded after 4m5s. 
+␛[36mINFO␛[0m[2025-06-06T07:09:51Z] Step phase test succeeded after 1h23m57s.    
+␛[36mINFO␛[0m[2025-06-06T07:09:51Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-06-06T07:09:51Z] Running step control-plane-etcdencrypt-24nodes-gather-core-dump. 
+␛[36mINFO␛[0m[2025-06-06T07:10:27Z] Step control-plane-etcdencrypt-24nodes-gather-core-dump succeeded after 35s. 
+␛[36mINFO␛[0m[2025-06-06T07:10:27Z] Running step control-plane-etcdencrypt-24nodes-gather-aws-console. 
+␛[36mINFO␛[0m[2025-06-06T07:11:26Z] Step control-plane-etcdencrypt-24nodes-gather-aws-console succeeded after 59s. 
+␛[36mINFO␛[0m[2025-06-06T07:11:26Z] Running step control-plane-etcdencrypt-24nodes-gather-must-gather. 
+␛[36mINFO␛[0m[2025-06-06T07:17:36Z] Step control-plane-etcdencrypt-24nodes-gather-must-gather succeeded after 6m9s. 
+␛[36mINFO␛[0m[2025-06-06T07:17:36Z] Running step control-plane-etcdencrypt-24nodes-gather-extra. 
+␛[36mINFO␛[0m[2025-06-06T07:35:34Z] Step control-plane-etcdencrypt-24nodes-gather-extra succeeded after 17m58s. 
+␛[36mINFO␛[0m[2025-06-06T07:35:34Z] Running step control-plane-etcdencrypt-24nodes-gather-audit-logs. 
+␛[36mINFO␛[0m[2025-06-06T07:36:50Z] Step control-plane-etcdencrypt-24nodes-gather-audit-logs succeeded after 1m15s. 
+␛[36mINFO␛[0m[2025-06-06T07:36:50Z] Running step control-plane-etcdencrypt-24nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-06-06T07:42:36Z] Step control-plane-etcdencrypt-24nodes-ipi-deprovision-deprovision succeeded after 5m46s. 
+␛[36mINFO␛[0m[2025-06-06T07:42:36Z] Running step control-plane-etcdencrypt-24nodes-aws-deprovision-users-and-policies. 
+␛[36mINFO␛[0m[2025-06-06T07:42:46Z] Step control-plane-etcdencrypt-24nodes-aws-deprovision-users-and-policies succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-06T07:42:46Z] Step phase post succeeded after 32m54s.      
+␛[36mINFO␛[0m[2025-06-06T07:42:46Z] Releasing leases for test control-plane-etcdencrypt-24nodes 
+␛[36mINFO␛[0m[2025-06-06T07:42:46Z] Ran for 4h41m56s                             
+␛[36mINFO␛[0m[2025-06-06T07:42:46Z] Reporting job state 'succeeded'              
+␛[36mINFO␛[0m[2025-06-06T07:42:46Z] Flushing 3 insights events                   

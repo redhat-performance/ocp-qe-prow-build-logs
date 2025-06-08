@@ -1,0 +1,52 @@
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] ci-operator version v20250526-8d9f86432      
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [metal-4.17-latest-x86] 
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-05-28T00:02:25Z] skipped directory "..2025_05_28_00_02_20.1199730026" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.17.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.17.0-0.nightly-2025-05-27-103624 
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Using namespace https://console-openshift-console.apps.build10.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-60xkjy2c 
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Running [input:ci-telco-bastion-latest], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [release:latest], [images], weekly-6nodes 
+␛[33mWARN␛[0m[2025-05-28T00:02:25Z] Warning: egress firewall does not exist: egressfirewalls.k8s.ovn.org "default" not found 
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Loading information from https://config.ci.openshift.org for cluster profile metal-perscale-cpt 
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Tagging ci/telco-bastion:latest into pipeline:ci-telco-bastion-latest. 
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.17.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-28T00:02:25Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.17.0-0.nightly-2025-05-27-103624 
+␛[36mINFO␛[0m[2025-05-28T00:02:53Z] Importing release 4.17.0-0.nightly-2025-05-27-103624 created at 2025-05-27 10:39:17 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-05-28T00:04:29Z] Imported release 4.17.0-0.nightly-2025-05-27-103624 created at 2025-05-27 10:39:17 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-05-28T00:04:29Z] Acquiring leases for test weekly-6nodes: [metal-perscale-cpt-quota-slice] 
+␛[36mINFO␛[0m[2025-05-28T00:04:29Z] Acquired 1 lease(s) for metal-perscale-cpt-quota-slice: [rdu3] 
+␛[36mINFO␛[0m[2025-05-28T00:04:29Z] Running multi-stage test weekly-6nodes       
+␛[36mINFO␛[0m[2025-05-28T00:04:30Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-05-28T00:04:30Z] Step phase pre succeeded after 0s.           
+␛[36mINFO␛[0m[2025-05-28T00:04:30Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-05-28T00:04:30Z] Running step weekly-6nodes-openshift-qe-installer-bm-ping. 
+␛[36mINFO␛[0m[2025-05-28T00:05:03Z] Step weekly-6nodes-openshift-qe-installer-bm-ping succeeded after 33s. 
+␛[36mINFO␛[0m[2025-05-28T00:05:03Z] Running step weekly-6nodes-openshift-qe-installer-bm-deploy. 
+␛[36mINFO␛[0m[2025-05-28T01:05:21Z] Step weekly-6nodes-openshift-qe-installer-bm-deploy succeeded after 1h0m18s. 
+␛[36mINFO␛[0m[2025-05-28T01:05:21Z] Running step weekly-6nodes-openshift-qe-cluster-health. 
+␛[36mINFO␛[0m[2025-05-28T01:08:12Z] Step weekly-6nodes-openshift-qe-cluster-health succeeded after 2m50s. 
+␛[36mINFO␛[0m[2025-05-28T01:08:12Z] Running step weekly-6nodes-openshift-qe-installer-bm-day2-label. 
+␛[36mINFO␛[0m[2025-05-28T01:08:23Z] Step weekly-6nodes-openshift-qe-installer-bm-day2-label succeeded after 11s. 
+␛[36mINFO␛[0m[2025-05-28T01:08:23Z] Running step weekly-6nodes-openshift-qe-network-smoke. 
+␛[36mINFO␛[0m[2025-05-28T01:11:50Z] Step weekly-6nodes-openshift-qe-network-smoke succeeded after 3m26s. 
+␛[36mINFO␛[0m[2025-05-28T01:11:50Z] Running step weekly-6nodes-openshift-qe-network-perf. 
+␛[36mINFO␛[0m[2025-05-28T03:18:17Z] Step weekly-6nodes-openshift-qe-network-perf succeeded after 2h6m27s. 
+␛[36mINFO␛[0m[2025-05-28T03:18:17Z] Running step weekly-6nodes-redhat-chaos-cerberus-one-run. 
+␛[36mINFO␛[0m[2025-05-28T03:18:37Z] Step weekly-6nodes-redhat-chaos-cerberus-one-run succeeded after 20s. 
+␛[36mINFO␛[0m[2025-05-28T03:18:37Z] Running step weekly-6nodes-openshift-qe-ingress-perf. 
+␛[36mINFO␛[0m[2025-05-28T04:03:28Z] Step weekly-6nodes-openshift-qe-ingress-perf succeeded after 44m51s. 
+␛[36mINFO␛[0m[2025-05-28T04:03:28Z] Running step weekly-6nodes-redhat-chaos-cerberus-one-run-ingress-perf. 
+␛[36mINFO␛[0m[2025-05-28T04:03:48Z] Step weekly-6nodes-redhat-chaos-cerberus-one-run-ingress-perf succeeded after 19s. 
+␛[36mINFO␛[0m[2025-05-28T04:03:48Z] Running step weekly-6nodes-openshift-qe-node-density-heavy. 
+␛[36mINFO␛[0m[2025-05-28T04:11:02Z] Step weekly-6nodes-openshift-qe-node-density-heavy succeeded after 7m14s. 
+␛[36mINFO␛[0m[2025-05-28T04:11:02Z] Running step weekly-6nodes-redhat-chaos-cerberus-one-run-node-density-heavy. 
+␛[36mINFO␛[0m[2025-05-28T04:11:09Z] Step weekly-6nodes-redhat-chaos-cerberus-one-run-node-density-heavy succeeded after 7s. 
+␛[36mINFO␛[0m[2025-05-28T04:11:09Z] Step phase test succeeded after 4h6m38s.     
+␛[36mINFO␛[0m[2025-05-28T04:11:09Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-05-28T04:11:09Z] Step phase post succeeded after 0s.          
+␛[36mINFO␛[0m[2025-05-28T04:11:09Z] Releasing leases for test weekly-6nodes      
+␛[36mINFO␛[0m[2025-05-28T04:11:09Z] Ran for 4h8m44s                              
+␛[36mINFO␛[0m[2025-05-28T04:11:09Z] Reporting job state 'succeeded'              

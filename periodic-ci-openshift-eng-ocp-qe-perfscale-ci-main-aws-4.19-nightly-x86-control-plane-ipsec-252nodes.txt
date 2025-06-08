@@ -1,0 +1,89 @@
+␛[36mINFO␛[0m[2025-05-11T14:00:53Z] ci-operator version v20250509-245a237f3      
+␛[36mINFO␛[0m[2025-05-11T14:00:53Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [aws-4.19-nightly-x86] 
+␛[36mINFO␛[0m[2025-05-11T14:00:53Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-05-11T14:00:53Z] skipped directory "..2025_05_11_14_00_46.1140464680" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-05-11T14:00:53Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-05-10-095315 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-395x6slc 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Running [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [input:ocp-cli-yq-latest], [release:latest], [images], control-plane-ipsec-252nodes 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Tagging ocp/cli-yq:latest into pipeline:ocp-cli-yq-latest. 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-11T14:00:54Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-05-10-095315 
+␛[36mINFO␛[0m[2025-05-11T14:01:17Z] Importing release 4.19.0-0.nightly-2025-05-10-095315 created at 2025-05-10 09:54:58 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-05-11T14:02:55Z] Imported release 4.19.0-0.nightly-2025-05-10-095315 created at 2025-05-10 09:54:58 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-05-11T14:02:55Z] Acquiring leases for test control-plane-ipsec-252nodes: [aws-perfscale-quota-slice] 
+␛[36mINFO␛[0m[2025-05-11T14:02:55Z] Acquired 1 lease(s) for aws-perfscale-quota-slice: [us-west-2--aws-perfscale-quota-slice-0] 
+␛[36mINFO␛[0m[2025-05-11T14:02:55Z] Running multi-stage test control-plane-ipsec-252nodes 
+␛[36mINFO␛[0m[2025-05-11T14:02:57Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-05-11T14:02:57Z] Running step control-plane-ipsec-252nodes-ipi-conf. 
+␛[36mINFO␛[0m[2025-05-11T14:03:12Z] Step control-plane-ipsec-252nodes-ipi-conf succeeded after 14s. 
+␛[36mINFO␛[0m[2025-05-11T14:03:12Z] Running step control-plane-ipsec-252nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-05-11T14:03:22Z] Step control-plane-ipsec-252nodes-ipi-conf-telemetry succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-11T14:03:22Z] Running step control-plane-ipsec-252nodes-ipi-conf-aws. 
+␛[36mINFO␛[0m[2025-05-11T14:03:38Z] Step control-plane-ipsec-252nodes-ipi-conf-aws succeeded after 16s. 
+␛[36mINFO␛[0m[2025-05-11T14:03:38Z] Running step control-plane-ipsec-252nodes-ipi-conf-aws-byo-ipv4-pool-public. 
+␛[36mINFO␛[0m[2025-05-11T14:03:49Z] Step control-plane-ipsec-252nodes-ipi-conf-aws-byo-ipv4-pool-public succeeded after 11s. 
+␛[36mINFO␛[0m[2025-05-11T14:03:49Z] Running step control-plane-ipsec-252nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-05-11T14:03:58Z] Step control-plane-ipsec-252nodes-ipi-install-monitoringpvc succeeded after 8s. 
+␛[36mINFO␛[0m[2025-05-11T14:03:58Z] Running step control-plane-ipsec-252nodes-ovn-conf. 
+␛[36mINFO␛[0m[2025-05-11T14:04:06Z] Step control-plane-ipsec-252nodes-ovn-conf succeeded after 8s. 
+␛[36mINFO␛[0m[2025-05-11T14:04:06Z] Running step control-plane-ipsec-252nodes-ovn-conf-ipsec-manifest. 
+␛[36mINFO␛[0m[2025-05-11T14:04:22Z] Step control-plane-ipsec-252nodes-ovn-conf-ipsec-manifest succeeded after 16s. 
+␛[36mINFO␛[0m[2025-05-11T14:04:22Z] Running step control-plane-ipsec-252nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-05-11T14:04:33Z] Step control-plane-ipsec-252nodes-ipi-install-rbac succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-11T14:04:33Z] Running step control-plane-ipsec-252nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-05-11T14:04:43Z] Step control-plane-ipsec-252nodes-openshift-cluster-bot-rbac succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-11T14:04:43Z] Running step control-plane-ipsec-252nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-05-11T14:04:51Z] Step control-plane-ipsec-252nodes-ipi-install-hosted-loki succeeded after 8s. 
+␛[36mINFO␛[0m[2025-05-11T14:04:51Z] Running step control-plane-ipsec-252nodes-ipi-install-install. 
+␛[36mINFO␛[0m[2025-05-11T14:58:05Z] Step control-plane-ipsec-252nodes-ipi-install-install succeeded after 53m14s. 
+␛[36mINFO␛[0m[2025-05-11T14:58:05Z] Running step control-plane-ipsec-252nodes-ipi-install-times-collection. 
+␛[36mINFO␛[0m[2025-05-11T14:58:19Z] Step control-plane-ipsec-252nodes-ipi-install-times-collection succeeded after 13s. 
+␛[36mINFO␛[0m[2025-05-11T14:58:19Z] Running step control-plane-ipsec-252nodes-nodes-readiness. 
+␛[36mINFO␛[0m[2025-05-11T14:58:31Z] Step control-plane-ipsec-252nodes-nodes-readiness succeeded after 12s. 
+␛[36mINFO␛[0m[2025-05-11T14:58:31Z] Running step control-plane-ipsec-252nodes-multiarch-validate-nodes. 
+␛[36mINFO␛[0m[2025-05-11T14:58:43Z] Step control-plane-ipsec-252nodes-multiarch-validate-nodes succeeded after 11s. 
+␛[36mINFO␛[0m[2025-05-11T14:58:43Z] Running step control-plane-ipsec-252nodes-openshift-qe-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-05-11T15:12:34Z] Step control-plane-ipsec-252nodes-openshift-qe-workers-infra-workload succeeded after 13m51s. 
+␛[36mINFO␛[0m[2025-05-11T15:12:34Z] Running step control-plane-ipsec-252nodes-openshift-qe-move-pods-infra. 
+␛[36mINFO␛[0m[2025-05-11T15:18:13Z] Step control-plane-ipsec-252nodes-openshift-qe-move-pods-infra succeeded after 5m39s. 
+␛[36mINFO␛[0m[2025-05-11T15:18:13Z] Step phase pre succeeded after 1h15m16s.     
+␛[36mINFO␛[0m[2025-05-11T15:18:13Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-05-11T15:18:13Z] Running step control-plane-ipsec-252nodes-openshift-qe-workers-scale. 
+␛[36mINFO␛[0m[2025-05-11T15:37:26Z] Step control-plane-ipsec-252nodes-openshift-qe-workers-scale succeeded after 19m12s. 
+␛[36mINFO␛[0m[2025-05-11T15:37:26Z] Running step control-plane-ipsec-252nodes-openshift-qe-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-05-11T18:42:16Z] Step control-plane-ipsec-252nodes-openshift-qe-cluster-density-v2 succeeded after 3h4m49s. 
+␛[36mINFO␛[0m[2025-05-11T18:42:16Z] Running step control-plane-ipsec-252nodes-redhat-chaos-cerberus-one-run-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-05-11T18:45:40Z] Step control-plane-ipsec-252nodes-redhat-chaos-cerberus-one-run-cluster-density-v2 succeeded after 3m23s. 
+␛[36mINFO␛[0m[2025-05-11T18:45:40Z] Running step control-plane-ipsec-252nodes-openshift-qe-node-density. 
+␛[36mINFO␛[0m[2025-05-11T20:45:54Z] Step control-plane-ipsec-252nodes-openshift-qe-node-density succeeded after 2h0m13s. 
+␛[36mINFO␛[0m[2025-05-11T20:45:54Z] Running step control-plane-ipsec-252nodes-redhat-chaos-cerberus-one-run-node-density. 
+␛[36mINFO␛[0m[2025-05-11T20:48:15Z] Step control-plane-ipsec-252nodes-redhat-chaos-cerberus-one-run-node-density succeeded after 2m21s. 
+␛[36mINFO␛[0m[2025-05-11T20:48:15Z] Running step control-plane-ipsec-252nodes-openshift-qe-node-density-cni. 
+␛[36mINFO␛[0m[2025-05-11T22:38:32Z] Step control-plane-ipsec-252nodes-openshift-qe-node-density-cni succeeded after 1h50m17s. 
+␛[36mINFO␛[0m[2025-05-11T22:38:32Z] Running step control-plane-ipsec-252nodes-redhat-chaos-cerberus-one-run-node-density-cni. 
+␛[36mINFO␛[0m[2025-05-11T22:41:17Z] Step control-plane-ipsec-252nodes-redhat-chaos-cerberus-one-run-node-density-cni succeeded after 2m44s. 
+␛[36mINFO␛[0m[2025-05-11T22:41:17Z] Running step control-plane-ipsec-252nodes-openshift-qe-crd-scale. 
+␛[36mINFO␛[0m[2025-05-11T22:46:52Z] Step control-plane-ipsec-252nodes-openshift-qe-crd-scale succeeded after 5m35s. 
+␛[36mINFO␛[0m[2025-05-11T22:46:52Z] Step phase test succeeded after 7h28m39s.    
+␛[36mINFO␛[0m[2025-05-11T22:46:52Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-05-11T22:46:52Z] Skipping optional step control-plane-ipsec-252nodes-gather-aws-console 
+␛[36mINFO␛[0m[2025-05-11T22:46:52Z] Skipping optional step control-plane-ipsec-252nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-05-11T22:46:52Z] Skipping optional step control-plane-ipsec-252nodes-gather-extra 
+␛[36mINFO␛[0m[2025-05-11T22:46:52Z] Skipping optional step control-plane-ipsec-252nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-05-11T22:46:52Z] Running step control-plane-ipsec-252nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-05-11T22:58:52Z] Step control-plane-ipsec-252nodes-ipi-deprovision-deprovision succeeded after 12m0s. 
+␛[36mINFO␛[0m[2025-05-11T22:58:52Z] Running step control-plane-ipsec-252nodes-aws-deprovision-users-and-policies. 
+␛[36mINFO␛[0m[2025-05-11T22:59:27Z] Step control-plane-ipsec-252nodes-aws-deprovision-users-and-policies succeeded after 34s. 
+␛[36mINFO␛[0m[2025-05-11T22:59:27Z] Step phase post succeeded after 12m34s.      
+␛[36mINFO␛[0m[2025-05-11T22:59:27Z] Releasing leases for test control-plane-ipsec-252nodes 
+␛[36mINFO␛[0m[2025-05-11T22:59:27Z] Ran for 8h58m33s                             
+␛[36mINFO␛[0m[2025-05-11T22:59:27Z] Reporting job state 'succeeded'              

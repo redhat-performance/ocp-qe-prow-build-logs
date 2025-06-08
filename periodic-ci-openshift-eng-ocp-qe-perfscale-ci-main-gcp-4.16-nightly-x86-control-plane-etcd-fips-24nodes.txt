@@ -1,0 +1,84 @@
+i␛[36mINFO␛[0m[2025-05-02T06:01:04Z] ci-operator version v20250501-e088352d0      
+␛[36mINFO␛[0m[2025-05-02T06:01:04Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [gcp-4.16-nightly-x86] 
+␛[36mINFO␛[0m[2025-05-02T06:01:04Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-05-02T06:01:04Z] skipped directory "..2025_05_02_06_00_57.3647515847" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-05-02T06:01:04Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.16.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-02T06:01:04Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.16.0-0.nightly-2025-05-01-084351 
+␛[36mINFO␛[0m[2025-05-02T06:01:04Z] Using namespace https://console.build02.ci.openshift.org/k8s/cluster/projects/ci-op-ws2pyq04 
+␛[36mINFO␛[0m[2025-05-02T06:01:04Z] Running [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ocp-cli-jq-latest], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [release:latest], [images], control-plane-etcd-fips-24nodes 
+␛[36mINFO␛[0m[2025-05-02T06:01:05Z] Loading information from https://config.ci.openshift.org for cluster profile gcp-qe 
+␛[36mINFO␛[0m[2025-05-02T06:01:05Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-05-02T06:01:05Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-05-02T06:01:05Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-05-02T06:01:05Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-05-02T06:01:05Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-05-02T06:01:05Z] Tagging ocp/cli-jq:latest into pipeline:ocp-cli-jq-latest. 
+␛[36mINFO␛[0m[2025-05-02T06:01:05Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-05-02T06:01:05Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-05-02T06:01:05Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.16.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-02T06:01:05Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.16.0-0.nightly-2025-05-01-084351 
+␛[36mINFO␛[0m[2025-05-02T06:01:37Z] Importing release 4.16.0-0.nightly-2025-05-01-084351 created at 2025-05-01 08:46:45 +0000 UTC with 190 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-05-02T06:04:15Z] Imported release 4.16.0-0.nightly-2025-05-01-084351 created at 2025-05-01 08:46:45 +0000 UTC with 190 images to tag release:latest 
+␛[36mINFO␛[0m[2025-05-02T06:04:15Z] Acquiring leases for test control-plane-etcd-fips-24nodes: [gcp-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-05-02T06:04:15Z] Acquired 1 lease(s) for gcp-qe-quota-slice: [us-central1--gcp-qe-quota-slice-29] 
+␛[36mINFO␛[0m[2025-05-02T06:04:15Z] Running multi-stage test control-plane-etcd-fips-24nodes 
+␛[36mINFO␛[0m[2025-05-02T06:04:18Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-05-02T06:04:18Z] Running step control-plane-etcd-fips-24nodes-ipi-conf. 
+␛[36mINFO␛[0m[2025-05-02T06:04:31Z] Step control-plane-etcd-fips-24nodes-ipi-conf succeeded after 12s. 
+␛[36mINFO␛[0m[2025-05-02T06:04:31Z] Running step control-plane-etcd-fips-24nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-05-02T06:04:48Z] Step control-plane-etcd-fips-24nodes-ipi-conf-telemetry succeeded after 17s. 
+␛[36mINFO␛[0m[2025-05-02T06:04:48Z] Running step control-plane-etcd-fips-24nodes-ipi-conf-gcp. 
+␛[36mINFO␛[0m[2025-05-02T06:04:58Z] Step control-plane-etcd-fips-24nodes-ipi-conf-gcp succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-02T06:04:58Z] Running step control-plane-etcd-fips-24nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-05-02T06:05:11Z] Step control-plane-etcd-fips-24nodes-ipi-install-monitoringpvc succeeded after 12s. 
+␛[36mINFO␛[0m[2025-05-02T06:05:11Z] Running step control-plane-etcd-fips-24nodes-ovn-conf. 
+␛[36mINFO␛[0m[2025-05-02T06:05:20Z] Step control-plane-etcd-fips-24nodes-ovn-conf succeeded after 8s. 
+␛[36mINFO␛[0m[2025-05-02T06:05:20Z] Running step control-plane-etcd-fips-24nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-05-02T06:05:35Z] Step control-plane-etcd-fips-24nodes-ipi-install-rbac succeeded after 15s. 
+␛[36mINFO␛[0m[2025-05-02T06:05:35Z] Running step control-plane-etcd-fips-24nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-05-02T06:05:50Z] Step control-plane-etcd-fips-24nodes-openshift-cluster-bot-rbac succeeded after 14s. 
+␛[36mINFO␛[0m[2025-05-02T06:05:50Z] Running step control-plane-etcd-fips-24nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-05-02T06:06:01Z] Step control-plane-etcd-fips-24nodes-ipi-install-hosted-loki succeeded after 11s. 
+␛[36mINFO␛[0m[2025-05-02T06:06:01Z] Running step control-plane-etcd-fips-24nodes-ipi-install-install. 
+␛[36mINFO␛[0m[2025-05-02T06:39:39Z] Step control-plane-etcd-fips-24nodes-ipi-install-install succeeded after 33m38s. 
+␛[36mINFO␛[0m[2025-05-02T06:39:39Z] Running step control-plane-etcd-fips-24nodes-ipi-install-times-collection. 
+␛[36mINFO␛[0m[2025-05-02T06:39:55Z] Step control-plane-etcd-fips-24nodes-ipi-install-times-collection succeeded after 15s. 
+␛[36mINFO␛[0m[2025-05-02T06:39:55Z] Running step control-plane-etcd-fips-24nodes-nodes-readiness. 
+␛[36mINFO␛[0m[2025-05-02T06:40:09Z] Step control-plane-etcd-fips-24nodes-nodes-readiness succeeded after 14s. 
+␛[36mINFO␛[0m[2025-05-02T06:40:09Z] Running step control-plane-etcd-fips-24nodes-multiarch-validate-nodes. 
+␛[36mINFO␛[0m[2025-05-02T06:40:21Z] Step control-plane-etcd-fips-24nodes-multiarch-validate-nodes succeeded after 11s. 
+␛[36mINFO␛[0m[2025-05-02T06:40:21Z] Running step control-plane-etcd-fips-24nodes-fips-check-node-scan. 
+␛[36mINFO␛[0m[2025-05-02T06:41:51Z] Step control-plane-etcd-fips-24nodes-fips-check-node-scan succeeded after 1m30s. 
+␛[36mINFO␛[0m[2025-05-02T06:41:51Z] Running step control-plane-etcd-fips-24nodes-etcd-encryption. 
+␛[36mINFO␛[0m[2025-05-02T07:05:57Z] Step control-plane-etcd-fips-24nodes-etcd-encryption succeeded after 24m5s. 
+␛[36mINFO␛[0m[2025-05-02T07:05:57Z] Running step control-plane-etcd-fips-24nodes-XXXXXXXXXXXX-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-05-02T07:20:17Z] Step control-plane-etcd-fips-24nodes-XXXXXXXXXXXX-workers-infra-workload succeeded after 14m20s. 
+␛[36mINFO␛[0m[2025-05-02T07:20:17Z] Running step control-plane-etcd-fips-24nodes-XXXXXXXXXXXX-move-pods-infra. 
+␛[36mINFO␛[0m[2025-05-02T07:27:05Z] Step control-plane-etcd-fips-24nodes-XXXXXXXXXXXX-move-pods-infra succeeded after 6m47s. 
+␛[36mINFO␛[0m[2025-05-02T07:27:05Z] Step phase pre succeeded after 1h22m47s.     
+␛[36mINFO␛[0m[2025-05-02T07:27:05Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-05-02T07:27:05Z] Running step control-plane-etcd-fips-24nodes-XXXXXXXXXXXX-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-05-02T08:07:49Z] Step control-plane-etcd-fips-24nodes-XXXXXXXXXXXX-cluster-density-v2 succeeded after 40m44s. 
+␛[36mINFO␛[0m[2025-05-02T08:07:49Z] Running step control-plane-etcd-fips-24nodes-redhat-chaos-cerberus-one-run-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-05-02T08:08:51Z] Step control-plane-etcd-fips-24nodes-redhat-chaos-cerberus-one-run-cluster-density-v2 succeeded after 1m1s. 
+␛[36mINFO␛[0m[2025-05-02T08:08:51Z] Running step control-plane-etcd-fips-24nodes-XXXXXXXXXXXX-node-density. 
+␛[36mINFO␛[0m[2025-05-02T08:31:19Z] Step control-plane-etcd-fips-24nodes-XXXXXXXXXXXX-node-density succeeded after 22m27s. 
+␛[36mINFO␛[0m[2025-05-02T08:31:19Z] Running step control-plane-etcd-fips-24nodes-redhat-chaos-cerberus-one-run-node-density. 
+␛[36mINFO␛[0m[2025-05-02T08:32:00Z] Step control-plane-etcd-fips-24nodes-redhat-chaos-cerberus-one-run-node-density succeeded after 41s. 
+␛[36mINFO␛[0m[2025-05-02T08:32:00Z] Running step control-plane-etcd-fips-24nodes-XXXXXXXXXXXX-node-density-cni. 
+␛[36mINFO␛[0m[2025-05-02T08:57:22Z] Step control-plane-etcd-fips-24nodes-XXXXXXXXXXXX-node-density-cni succeeded after 25m21s. 
+␛[36mINFO␛[0m[2025-05-02T08:57:22Z] Running step control-plane-etcd-fips-24nodes-redhat-chaos-cerberus-one-run-node-density-cni. 
+␛[36mINFO␛[0m[2025-05-02T08:57:57Z] Step control-plane-etcd-fips-24nodes-redhat-chaos-cerberus-one-run-node-density-cni succeeded after 34s. 
+␛[36mINFO␛[0m[2025-05-02T08:57:57Z] Running step control-plane-etcd-fips-24nodes-XXXXXXXXXXXX-crd-scale. 
+␛[36mINFO␛[0m[2025-05-02T09:01:13Z] Step control-plane-etcd-fips-24nodes-XXXXXXXXXXXX-crd-scale succeeded after 3m15s. 
+␛[36mINFO␛[0m[2025-05-02T09:01:13Z] Step phase test succeeded after 1h34m8s.     
+␛[36mINFO␛[0m[2025-05-02T09:01:13Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-05-02T09:01:13Z] Skipping optional step control-plane-etcd-fips-24nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-05-02T09:01:13Z] Skipping optional step control-plane-etcd-fips-24nodes-gather-extra 
+␛[36mINFO␛[0m[2025-05-02T09:01:13Z] Skipping optional step control-plane-etcd-fips-24nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-05-02T09:01:13Z] Running step control-plane-etcd-fips-24nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-05-02T09:10:27Z] Step control-plane-etcd-fips-24nodes-ipi-deprovision-deprovision succeeded after 9m14s. 
+␛[36mINFO␛[0m[2025-05-02T09:10:27Z] Step phase post succeeded after 9m14s.       
+␛[36mINFO␛[0m[2025-05-02T09:10:27Z] Releasing leases for test control-plane-etcd-fips-24nodes 
+␛[36mINFO␛[0m[2025-05-02T09:10:27Z] Ran for 3h9m23s                              
+␛[36mINFO␛[0m[2025-05-02T09:10:27Z] Reporting job state 'succeeded'              

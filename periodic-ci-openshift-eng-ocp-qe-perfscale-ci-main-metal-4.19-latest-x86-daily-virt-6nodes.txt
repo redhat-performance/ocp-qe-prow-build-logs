@@ -1,0 +1,53 @@
+␛[36mINFO␛[0m[2025-06-06T08:02:12Z] ci-operator version v20250605-6bde8d96d      
+␛[36mINFO␛[0m[2025-06-06T08:02:12Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [metal-4.19-latest-x86] 
+␛[36mINFO␛[0m[2025-06-06T08:02:12Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-06-06T08:02:12Z] skipped directory "..2025_06_06_08_02_06.458222822" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-06-06T08:02:12Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-06T08:02:12Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-06-03-070127 
+␛[36mINFO␛[0m[2025-06-06T08:02:12Z] Using namespace https://console-openshift-console.apps.build10.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-l0rm9m7g 
+␛[36mINFO␛[0m[2025-06-06T08:02:12Z] Running [input:ci-telco-bastion-latest], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [release:latest], [images], daily-virt-6nodes 
+␛[33mWARN␛[0m[2025-06-06T08:02:12Z] Warning: egress firewall does not exist: egressfirewalls.k8s.ovn.org "default" not found 
+␛[36mINFO␛[0m[2025-06-06T08:02:12Z] Loading information from https://config.ci.openshift.org for cluster profile metal-perscale-cpt 
+␛[36mINFO␛[0m[2025-06-06T08:02:12Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-06-06T08:02:12Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-06-06T08:02:12Z] Tagging ci/telco-bastion:latest into pipeline:ci-telco-bastion-latest. 
+␛[36mINFO␛[0m[2025-06-06T08:02:13Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-06-06T08:02:13Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-06T08:02:13Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-06-03-070127 
+␛[36mINFO␛[0m[2025-06-06T08:09:54Z] Importing release 4.19.0-0.nightly-2025-06-03-070127 created at 2025-06-03 07:03:04 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-06-06T08:11:29Z] Imported release 4.19.0-0.nightly-2025-06-03-070127 created at 2025-06-03 07:03:04 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-06-06T08:11:29Z] Acquiring leases for test daily-virt-6nodes: [metal-perscale-cpt-quota-slice] 
+␛[36mINFO␛[0m[2025-06-06T08:11:29Z] Acquired 1 lease(s) for metal-perscale-cpt-quota-slice: [rdu3] 
+␛[36mINFO␛[0m[2025-06-06T08:11:29Z] Running multi-stage test daily-virt-6nodes   
+␛[36mINFO␛[0m[2025-06-06T08:11:31Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-06-06T08:11:31Z] Step phase pre succeeded after 0s.           
+␛[36mINFO␛[0m[2025-06-06T08:11:31Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-06-06T08:11:31Z] Running step daily-virt-6nodes-openshift-qe-installer-bm-ping. 
+␛[36mINFO␛[0m[2025-06-06T08:12:01Z] Step daily-virt-6nodes-openshift-qe-installer-bm-ping succeeded after 29s. 
+␛[36mINFO␛[0m[2025-06-06T08:12:01Z] Running step daily-virt-6nodes-openshift-qe-installer-bm-deploy. 
+␛[36mINFO␛[0m[2025-06-06T09:22:15Z] Step daily-virt-6nodes-openshift-qe-installer-bm-deploy succeeded after 1h10m14s. 
+␛[36mINFO␛[0m[2025-06-06T09:22:15Z] Running step daily-virt-6nodes-openshift-qe-installer-bm-day2-cnv. 
+␛[36mINFO␛[0m[2025-06-06T09:25:48Z] Step daily-virt-6nodes-openshift-qe-installer-bm-day2-cnv succeeded after 3m32s. 
+␛[36mINFO␛[0m[2025-06-06T09:25:48Z] Running step daily-virt-6nodes-openshift-qe-cluster-health. 
+␛[36mINFO␛[0m[2025-06-06T09:28:11Z] Step daily-virt-6nodes-openshift-qe-cluster-health succeeded after 2m23s. 
+␛[36mINFO␛[0m[2025-06-06T09:28:11Z] Running step daily-virt-6nodes-openshift-qe-installer-bm-day2-label. 
+␛[36mINFO␛[0m[2025-06-06T09:28:46Z] Step daily-virt-6nodes-openshift-qe-installer-bm-day2-label succeeded after 34s. 
+␛[36mINFO␛[0m[2025-06-06T09:28:46Z] Running step daily-virt-6nodes-openshift-qe-network-smoke. 
+␛[36mINFO␛[0m[2025-06-06T09:31:55Z] Step daily-virt-6nodes-openshift-qe-network-smoke succeeded after 3m9s. 
+␛[36mINFO␛[0m[2025-06-06T09:31:55Z] Running step daily-virt-6nodes-openshift-qe-network-perf. 
+␛[36mINFO␛[0m[2025-06-06T11:38:39Z] Step daily-virt-6nodes-openshift-qe-network-perf succeeded after 2h6m43s. 
+␛[36mINFO␛[0m[2025-06-06T11:38:39Z] Running step daily-virt-6nodes-redhat-chaos-cerberus-one-run. 
+␛[36mINFO␛[0m[2025-06-06T11:39:17Z] Step daily-virt-6nodes-redhat-chaos-cerberus-one-run succeeded after 37s. 
+␛[36mINFO␛[0m[2025-06-06T11:39:17Z] Running step daily-virt-6nodes-openshift-qe-ingress-perf. 
+␛[36mINFO␛[0m[2025-06-06T12:24:31Z] Step daily-virt-6nodes-openshift-qe-ingress-perf succeeded after 45m13s. 
+␛[36mINFO␛[0m[2025-06-06T12:24:31Z] Running step daily-virt-6nodes-redhat-chaos-cerberus-one-run-ingress-perf. 
+␛[36mINFO␛[0m[2025-06-06T12:25:04Z] Step daily-virt-6nodes-redhat-chaos-cerberus-one-run-ingress-perf succeeded after 32s. 
+␛[36mINFO␛[0m[2025-06-06T12:25:04Z] Running step daily-virt-6nodes-openshift-qe-virt-density. 
+␛[36mINFO␛[0m[2025-06-06T12:35:04Z] Step daily-virt-6nodes-openshift-qe-virt-density succeeded after 9m59s. 
+␛[36mINFO␛[0m[2025-06-06T12:35:04Z] Step phase test succeeded after 4h23m32s.    
+␛[36mINFO␛[0m[2025-06-06T12:35:04Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-06-06T12:35:04Z] Step phase post succeeded after 0s.          
+␛[36mINFO␛[0m[2025-06-06T12:35:04Z] Releasing leases for test daily-virt-6nodes  
+␛[36mINFO␛[0m[2025-06-06T12:35:04Z] Ran for 4h32m51s                             
+␛[36mINFO␛[0m[2025-06-06T12:35:04Z] Reporting job state 'succeeded'              
+␛[36mINFO␛[0m[2025-06-06T12:35:04Z] Flushing 3 insights events                   

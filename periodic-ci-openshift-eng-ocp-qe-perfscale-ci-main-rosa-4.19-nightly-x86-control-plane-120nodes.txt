@@ -1,0 +1,71 @@
+␛[36mINFO␛[0m[2025-05-25T06:00:36Z] ci-operator version v20250522-8d9f86432      
+␛[36mINFO␛[0m[2025-05-25T06:00:36Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [rosa-4.19-nightly-x86] 
+␛[36mINFO␛[0m[2025-05-25T06:00:36Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-05-25T06:00:36Z] skipped directory "..2025_05_25_06_00_31.1014384007" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-05-25T06:00:36Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-25T06:00:36Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-05-24-144935 
+␛[36mINFO␛[0m[2025-05-25T06:00:36Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-81k9lgzz 
+␛[36mINFO␛[0m[2025-05-25T06:00:36Z] Running [input:cli-ocm], [input:rosa-aws-cli], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [release:latest], [images], control-plane-120nodes 
+␛[36mINFO␛[0m[2025-05-25T06:00:36Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale 
+␛[36mINFO␛[0m[2025-05-25T06:00:36Z] Tagging ci/rosa-aws-cli:latest into pipeline:rosa-aws-cli. 
+␛[36mINFO␛[0m[2025-05-25T06:00:36Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-05-25T06:00:36Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-05-25T06:00:36Z] Tagging ci/cli-ocm:latest into pipeline:cli-ocm. 
+␛[36mINFO␛[0m[2025-05-25T06:00:37Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-05-25T06:00:37Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-25T06:00:37Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-05-24-144935 
+␛[36mINFO␛[0m[2025-05-25T06:00:57Z] Importing release 4.19.0-0.nightly-2025-05-24-144935 created at 2025-05-24 14:51:34 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-05-25T06:02:32Z] Imported release 4.19.0-0.nightly-2025-05-24-144935 created at 2025-05-24 14:51:34 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-05-25T06:02:32Z] Acquiring leases for test control-plane-120nodes: [aws-perfscale-quota-slice] 
+␛[36mINFO␛[0m[2025-05-25T06:02:32Z] Acquired 1 lease(s) for aws-perfscale-quota-slice: [us-west-2--aws-perfscale-quota-slice-1] 
+␛[36mINFO␛[0m[2025-05-25T06:02:32Z] Running multi-stage test control-plane-120nodes 
+␛[36mINFO␛[0m[2025-05-25T06:02:33Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-05-25T06:02:33Z] Running step control-plane-120nodes-rosa-cluster-prefix. 
+␛[36mINFO␛[0m[2025-05-25T06:02:49Z] Step control-plane-120nodes-rosa-cluster-prefix succeeded after 16s. 
+␛[36mINFO␛[0m[2025-05-25T06:02:49Z] Running step control-plane-120nodes-rosa-sts-account-roles-create. 
+␛[36mINFO␛[0m[2025-05-25T06:03:16Z] Step control-plane-120nodes-rosa-sts-account-roles-create succeeded after 26s. 
+␛[36mINFO␛[0m[2025-05-25T06:03:16Z] Running step control-plane-120nodes-rosa-cluster-provision. 
+␛[36mINFO␛[0m[2025-05-25T06:03:53Z] Step control-plane-120nodes-rosa-cluster-provision succeeded after 37s. 
+␛[36mINFO␛[0m[2025-05-25T06:03:53Z] Running step control-plane-120nodes-rosa-cluster-wait-ready-cluster. 
+␛[36mINFO␛[0m[2025-05-25T06:53:40Z] Step control-plane-120nodes-rosa-cluster-wait-ready-cluster succeeded after 49m46s. 
+␛[36mINFO␛[0m[2025-05-25T06:53:40Z] Running step control-plane-120nodes-rosa-cluster-notify-error. 
+␛[36mINFO␛[0m[2025-05-25T06:53:53Z] Step control-plane-120nodes-rosa-cluster-notify-error succeeded after 13s. 
+␛[36mINFO␛[0m[2025-05-25T06:53:53Z] Running step control-plane-120nodes-rosa-conf-idp-htpasswd. 
+␛[36mINFO␛[0m[2025-05-25T07:09:52Z] Step control-plane-120nodes-rosa-conf-idp-htpasswd succeeded after 15m58s. 
+␛[36mINFO␛[0m[2025-05-25T07:09:52Z] Running step control-plane-120nodes-rosa-cluster-wait-ready-operators. 
+␛[36mINFO␛[0m[2025-05-25T07:46:06Z] Step control-plane-120nodes-rosa-cluster-wait-ready-operators succeeded after 36m14s. 
+␛[36mINFO␛[0m[2025-05-25T07:46:06Z] Running step control-plane-120nodes-osd-ccs-conf-idp-htpasswd-multi-users. 
+␛[36mINFO␛[0m[2025-05-25T07:46:43Z] Step control-plane-120nodes-osd-ccs-conf-idp-htpasswd-multi-users succeeded after 37s. 
+␛[36mINFO␛[0m[2025-05-25T07:46:43Z] Running step control-plane-120nodes-rosa-cluster-wait-ready-nodes. 
+␛[36mINFO␛[0m[2025-05-25T08:03:09Z] Step control-plane-120nodes-rosa-cluster-wait-ready-nodes succeeded after 16m26s. 
+␛[36mINFO␛[0m[2025-05-25T08:03:09Z] Step phase pre succeeded after 2h0m36s.      
+␛[36mINFO␛[0m[2025-05-25T08:03:09Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-05-25T08:03:09Z] Running step control-plane-120nodes-openshift-qe-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-05-25T09:41:47Z] Step control-plane-120nodes-openshift-qe-cluster-density-v2 succeeded after 1h38m37s. 
+␛[36mINFO␛[0m[2025-05-25T09:41:47Z] Running step control-plane-120nodes-redhat-chaos-cerberus-one-run-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-05-25T09:43:03Z] Step control-plane-120nodes-redhat-chaos-cerberus-one-run-cluster-density-v2 succeeded after 1m15s. 
+␛[36mINFO␛[0m[2025-05-25T09:43:03Z] Running step control-plane-120nodes-openshift-qe-node-density. 
+␛[36mINFO␛[0m[2025-05-25T10:22:44Z] Step control-plane-120nodes-openshift-qe-node-density succeeded after 39m41s. 
+␛[36mINFO␛[0m[2025-05-25T10:22:44Z] Running step control-plane-120nodes-redhat-chaos-cerberus-one-run-node-density. 
+␛[36mINFO␛[0m[2025-05-25T10:23:32Z] Step control-plane-120nodes-redhat-chaos-cerberus-one-run-node-density succeeded after 48s. 
+␛[36mINFO␛[0m[2025-05-25T10:23:32Z] Running step control-plane-120nodes-openshift-qe-node-density-cni. 
+␛[36mINFO␛[0m[2025-05-25T11:15:04Z] Step control-plane-120nodes-openshift-qe-node-density-cni succeeded after 51m31s. 
+␛[36mINFO␛[0m[2025-05-25T11:15:04Z] Running step control-plane-120nodes-redhat-chaos-cerberus-one-run-node-density-cni. 
+␛[36mINFO␛[0m[2025-05-25T11:16:03Z] Step control-plane-120nodes-redhat-chaos-cerberus-one-run-node-density-cni succeeded after 59s. 
+␛[36mINFO␛[0m[2025-05-25T11:16:03Z] Running step control-plane-120nodes-openshift-qe-crd-scale. 
+␛[36mINFO␛[0m[2025-05-25T11:20:01Z] Step control-plane-120nodes-openshift-qe-crd-scale succeeded after 3m58s. 
+␛[36mINFO␛[0m[2025-05-25T11:20:01Z] Step phase test succeeded after 3h16m51s.    
+␛[36mINFO␛[0m[2025-05-25T11:20:01Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-05-25T11:20:01Z] Skipping optional step control-plane-120nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-05-25T11:20:01Z] Skipping optional step control-plane-120nodes-gather-extra 
+␛[36mINFO␛[0m[2025-05-25T11:20:01Z] Skipping optional step control-plane-120nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-05-25T11:20:01Z] Running step control-plane-120nodes-rosa-cluster-deprovision. 
+␛[36mINFO␛[0m[2025-05-25T11:32:43Z] Step control-plane-120nodes-rosa-cluster-deprovision succeeded after 12m42s. 
+␛[36mINFO␛[0m[2025-05-25T11:32:43Z] Running step control-plane-120nodes-rosa-cluster-index. 
+␛[36mINFO␛[0m[2025-05-25T11:32:55Z] Step control-plane-120nodes-rosa-cluster-index succeeded after 11s. 
+␛[36mINFO␛[0m[2025-05-25T11:32:55Z] Running step control-plane-120nodes-rosa-sts-account-roles-delete. 
+␛[36mINFO␛[0m[2025-05-25T11:33:08Z] Step control-plane-120nodes-rosa-sts-account-roles-delete succeeded after 13s. 
+␛[36mINFO␛[0m[2025-05-25T11:33:08Z] Step phase post succeeded after 13m7s.       
+␛[36mINFO␛[0m[2025-05-25T11:33:08Z] Releasing leases for test control-plane-120nodes 
+␛[36mINFO␛[0m[2025-05-25T11:33:08Z] Ran for 5h32m32s                             
+␛[36mINFO␛[0m[2025-05-25T11:33:08Z] Reporting job state 'succeeded'              

@@ -1,0 +1,107 @@
+␛[36mINFO␛[0m[2025-05-10T02:01:09Z] ci-operator version v20250509-245a237f3      
+␛[36mINFO␛[0m[2025-05-10T02:01:09Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [aws-sdn2ovn-4.15-nightly-x86-loaded-upgrade-from-4.14] 
+␛[36mINFO␛[0m[2025-05-10T02:01:09Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-05-10T02:01:09Z] skipped directory "..2025_05_10_02_01_03.1970723242" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-05-10T02:01:09Z] Requesting 4.14 from https://api.integration.openshift.com/api/upgrades_info/graph?arch=amd64&channel=fast-4.14 
+␛[36mINFO␛[0m[2025-05-10T02:01:09Z] Resolved release latest to quay.io/openshift-release-dev/ocp-release@sha256:8ba5619d0cd45f27ab5f6ec4ff098620719871368b776190e77764a72b5d49b1 
+␛[36mINFO␛[0m[2025-05-10T02:01:09Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.15.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Resolved release target to registry.ci.openshift.org/ocp/release:4.15.0-0.nightly-2025-05-08-151402 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Using namespace https://console-openshift-console.apps.build10.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-yigph5dz 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Running [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ocp-cli-yq-latest], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [input:ci-verification-tests-latest], [release:latest], [release:target], [images], sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale-qe 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Tagging ocp/cli-yq:latest into pipeline:ocp-cli-yq-latest. 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Tagging ci/verification-tests:latest into pipeline:ci-verification-tests-latest. 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Requesting 4.14 from https://api.integration.openshift.com/api/upgrades_info/graph?arch=amd64&channel=fast-4.14 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Importing release image target.              
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.15.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Resolved release target to registry.ci.openshift.org/ocp/release:4.15.0-0.nightly-2025-05-08-151402 
+␛[36mINFO␛[0m[2025-05-10T02:01:10Z] Resolved release latest to quay.io/openshift-release-dev/ocp-release@sha256:8ba5619d0cd45f27ab5f6ec4ff098620719871368b776190e77764a72b5d49b1 
+␛[36mINFO␛[0m[2025-05-10T02:01:39Z] Importing release 4.14.51 created at 2025-04-24 15:08:39 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-05-10T02:01:45Z] Importing release 4.15.0-0.nightly-2025-05-08-151402 created at 2025-05-08 15:15:51 +0000 UTC with 190 images to tag release:target ... 
+␛[36mINFO␛[0m[2025-05-10T02:03:14Z] Imported release 4.14.51 created at 2025-04-24 15:08:39 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-05-10T02:03:28Z] Imported release 4.15.0-0.nightly-2025-05-08-151402 created at 2025-05-08 15:15:51 +0000 UTC with 190 images to tag release:target 
+␛[36mINFO␛[0m[2025-05-10T02:03:28Z] Acquiring leases for test sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes: [aws-perfscale-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-05-10T02:03:28Z] Acquired 1 lease(s) for aws-perfscale-qe-quota-slice: [us-west-2--aws-perfscale-qe-quota-slice-4] 
+␛[36mINFO␛[0m[2025-05-10T02:03:28Z] Running multi-stage test sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes 
+␛[36mINFO␛[0m[2025-05-10T02:03:30Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-05-10T02:03:30Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-conf. 
+␛[36mINFO␛[0m[2025-05-10T02:03:41Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-conf succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-10T02:03:41Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-05-10T02:03:52Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-conf-telemetry succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-10T02:03:52Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-conf-aws. 
+␛[36mINFO␛[0m[2025-05-10T02:04:05Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-conf-aws succeeded after 13s. 
+␛[36mINFO␛[0m[2025-05-10T02:04:05Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-conf-aws-byo-ipv4-pool-public. 
+␛[36mINFO␛[0m[2025-05-10T02:04:16Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-conf-aws-byo-ipv4-pool-public succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-10T02:04:16Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-05-10T02:04:23Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-install-monitoringpvc succeeded after 7s. 
+␛[36mINFO␛[0m[2025-05-10T02:04:23Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-sdn-conf. 
+␛[36mINFO␛[0m[2025-05-10T02:04:36Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-sdn-conf succeeded after 13s. 
+␛[36mINFO␛[0m[2025-05-10T02:04:36Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-05-10T02:04:45Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-install-rbac succeeded after 8s. 
+␛[36mINFO␛[0m[2025-05-10T02:04:45Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-05-10T02:04:54Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-cluster-bot-rbac succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-10T02:04:54Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-05-10T02:05:05Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-install-hosted-loki succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-10T02:05:05Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-install-install. 
+␛[36mINFO␛[0m[2025-05-10T02:36:56Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-install-install succeeded after 31m51s. 
+␛[36mINFO␛[0m[2025-05-10T02:36:56Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-install-times-collection. 
+␛[36mINFO␛[0m[2025-05-10T02:37:04Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-install-times-collection succeeded after 8s. 
+␛[36mINFO␛[0m[2025-05-10T02:37:04Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-nodes-readiness. 
+␛[36mINFO␛[0m[2025-05-10T02:37:14Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-nodes-readiness succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-10T02:37:14Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-multiarch-validate-nodes. 
+␛[36mINFO␛[0m[2025-05-10T02:37:23Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-multiarch-validate-nodes succeeded after 8s. 
+␛[36mINFO␛[0m[2025-05-10T02:37:23Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-05-10T03:12:14Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-workers-infra-workload succeeded after 34m50s. 
+␛[36mINFO␛[0m[2025-05-10T03:12:14Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-move-pods-infra. 
+␛[36mINFO␛[0m[2025-05-10T03:17:20Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-move-pods-infra succeeded after 5m6s. 
+␛[36mINFO␛[0m[2025-05-10T03:17:20Z] Step phase pre succeeded after 1h13m49s.     
+␛[36mINFO␛[0m[2025-05-10T03:17:20Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-05-10T03:17:20Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-05-10T03:54:24Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-cluster-density-v2 succeeded after 37m4s. 
+␛[36mINFO␛[0m[2025-05-10T03:54:24Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-redhat-chaos-cerberus-one-run-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-05-10T03:55:07Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-redhat-chaos-cerberus-one-run-cluster-density-v2 succeeded after 42s. 
+␛[36mINFO␛[0m[2025-05-10T03:55:07Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-upgrade-max-unavailable. 
+␛[36mINFO␛[0m[2025-05-10T03:55:23Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-upgrade-max-unavailable succeeded after 16s. 
+␛[36mINFO␛[0m[2025-05-10T03:55:23Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-upgrade-setchannel. 
+␛[36mINFO␛[0m[2025-05-10T03:55:36Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-upgrade-setchannel succeeded after 12s. 
+␛[36mINFO␛[0m[2025-05-10T03:55:36Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-upgrade-check-not-recommended. 
+␛[36mINFO␛[0m[2025-05-10T04:00:47Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-upgrade-check-not-recommended succeeded after 5m11s. 
+␛[36mINFO␛[0m[2025-05-10T04:00:47Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-upgrade-prehealthcheck. 
+␛[36mINFO␛[0m[2025-05-10T04:09:21Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-upgrade-prehealthcheck succeeded after 8m34s. 
+␛[36mINFO␛[0m[2025-05-10T04:09:21Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-ota-preupgrade. 
+␛[36mINFO␛[0m[2025-05-10T04:09:49Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-ota-preupgrade succeeded after 27s. 
+␛[36mINFO␛[0m[2025-05-10T04:09:49Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-upgrade-toimage. 
+␛[36mINFO␛[0m[2025-05-10T05:14:32Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-upgrade-toimage succeeded after 1h4m42s. 
+␛[36mINFO␛[0m[2025-05-10T05:14:32Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-upgrade-rhel-worker. 
+␛[36mINFO␛[0m[2025-05-10T05:14:47Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-upgrade-rhel-worker succeeded after 15s. 
+␛[36mINFO␛[0m[2025-05-10T05:14:47Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-upgrade-healthcheck. 
+␛[36mINFO␛[0m[2025-05-10T05:25:17Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-upgrade-healthcheck succeeded after 10m29s. 
+␛[36mINFO␛[0m[2025-05-10T05:25:17Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-ota-postupgrade. 
+␛[36mINFO␛[0m[2025-05-10T05:25:27Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-cucushift-ota-postupgrade succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-10T05:25:27Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-connectivity-check. 
+␛[36mINFO␛[0m[2025-05-10T05:30:41Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-connectivity-check succeeded after 5m13s. 
+␛[36mINFO␛[0m[2025-05-10T05:30:41Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-sdn-ovn-migration. 
+␛[36mINFO␛[0m[2025-05-10T07:01:55Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-sdn-ovn-migration succeeded after 1h31m14s. 
+␛[36mINFO␛[0m[2025-05-10T07:01:55Z] Step phase test succeeded after 3h44m35s.    
+␛[36mINFO␛[0m[2025-05-10T07:01:55Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-05-10T07:01:55Z] Skipping optional step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-gather-aws-console 
+␛[36mINFO␛[0m[2025-05-10T07:01:55Z] Skipping optional step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-05-10T07:01:55Z] Skipping optional step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-gather-extra 
+␛[36mINFO␛[0m[2025-05-10T07:01:55Z] Skipping optional step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-05-10T07:01:55Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-kube-burner-index. 
+␛[36mINFO␛[0m[2025-05-10T07:03:11Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-openshift-qe-kube-burner-index succeeded after 1m15s. 
+␛[36mINFO␛[0m[2025-05-10T07:03:11Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-05-10T07:10:56Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-ipi-deprovision-deprovision succeeded after 7m45s. 
+␛[36mINFO␛[0m[2025-05-10T07:10:56Z] Running step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-aws-deprovision-users-and-policies. 
+␛[36mINFO␛[0m[2025-05-10T07:11:05Z] Step sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes-aws-deprovision-users-and-policies succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-10T07:11:05Z] Step phase post succeeded after 9m10s.       
+␛[36mINFO␛[0m[2025-05-10T07:11:05Z] Releasing leases for test sdn2ovn-migrate-with-loaded-upgrade-414to415-24nodes 
+␛[36mINFO␛[0m[2025-05-10T07:11:06Z] Ran for 5h9m56s                              
+␛[36mINFO␛[0m[2025-05-10T07:11:06Z] Reporting job state 'succeeded'              

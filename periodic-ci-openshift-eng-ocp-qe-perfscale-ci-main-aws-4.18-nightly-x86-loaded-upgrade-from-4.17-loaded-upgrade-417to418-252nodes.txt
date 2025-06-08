@@ -1,0 +1,74 @@
+␛[36mINFO␛[0m[2025-03-24T06:01:29Z] ci-operator version v20250320-dc25f3dfc      
+␛[36mINFO␛[0m[2025-03-24T06:01:29Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [aws-4.18-nightly-x86-loaded-upgrade-from-4.17] 
+␛[36mINFO␛[0m[2025-03-24T06:01:29Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-03-24T06:01:29Z] skipped directory "..2025_03_24_06_01_23.3777972271" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-03-24T06:01:29Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4-stable/latest?in=%3E4.17.0-0+%3C4.18.0-0 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Resolved release initial to quay.io/openshift-release-dev/ocp-release:4.17.22-x86_64 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-03-22-043746 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Using namespace https://console-openshift-console.apps.build07.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-hgrgcji2 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Running [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [release:initial], [release:latest], [images], loaded-upgrade-417to418-252nodes 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Importing release image initial.             
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4-stable/latest?in=%3E4.17.0-0+%3C4.18.0-0 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Resolved release initial to quay.io/openshift-release-dev/ocp-release:4.17.22-x86_64 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-03-24T06:01:30Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-03-22-043746 
+␛[36mINFO␛[0m[2025-03-24T06:01:58Z] Importing release 4.18.0-0.nightly-2025-03-22-043746 created at 2025-03-22 04:44:22 +0000 UTC with 188 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-03-24T06:02:04Z] Importing release 4.17.22 created at 2025-03-20 09:01:10 +0000 UTC with 189 images to tag release:initial ... 
+␛[36mINFO␛[0m[2025-03-24T06:04:26Z] Imported release 4.17.22 created at 2025-03-20 09:01:10 +0000 UTC with 189 images to tag release:initial 
+␛[36mINFO␛[0m[2025-03-24T06:04:31Z] Imported release 4.18.0-0.nightly-2025-03-22-043746 created at 2025-03-22 04:44:22 +0000 UTC with 188 images to tag release:latest 
+␛[36mINFO␛[0m[2025-03-24T06:04:31Z] Acquiring leases for test loaded-upgrade-417to418-252nodes: [aws-perfscale-quota-slice] 
+␛[36mINFO␛[0m[2025-03-24T06:04:31Z] Acquired 1 lease(s) for aws-perfscale-quota-slice: [us-west-2--aws-perfscale-quota-slice-4] 
+␛[36mINFO␛[0m[2025-03-24T06:04:31Z] Running multi-stage test loaded-upgrade-417to418-252nodes 
+␛[36mINFO␛[0m[2025-03-24T06:04:33Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-03-24T06:04:33Z] Running step loaded-upgrade-417to418-252nodes-ipi-conf. 
+␛[36mINFO␛[0m[2025-03-24T06:04:47Z] Step loaded-upgrade-417to418-252nodes-ipi-conf succeeded after 13s. 
+␛[36mINFO␛[0m[2025-03-24T06:04:47Z] Running step loaded-upgrade-417to418-252nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-03-24T06:04:56Z] Step loaded-upgrade-417to418-252nodes-ipi-conf-telemetry succeeded after 9s. 
+␛[36mINFO␛[0m[2025-03-24T06:04:56Z] Running step loaded-upgrade-417to418-252nodes-ipi-conf-aws. 
+␛[36mINFO␛[0m[2025-03-24T06:05:11Z] Step loaded-upgrade-417to418-252nodes-ipi-conf-aws succeeded after 14s. 
+␛[36mINFO␛[0m[2025-03-24T06:05:11Z] Running step loaded-upgrade-417to418-252nodes-ipi-conf-aws-byo-ipv4-pool-public. 
+␛[36mINFO␛[0m[2025-03-24T06:05:23Z] Step loaded-upgrade-417to418-252nodes-ipi-conf-aws-byo-ipv4-pool-public succeeded after 11s. 
+␛[36mINFO␛[0m[2025-03-24T06:05:23Z] Running step loaded-upgrade-417to418-252nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-03-24T06:05:32Z] Step loaded-upgrade-417to418-252nodes-ipi-install-monitoringpvc succeeded after 8s. 
+␛[36mINFO␛[0m[2025-03-24T06:05:32Z] Running step loaded-upgrade-417to418-252nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-03-24T06:05:40Z] Step loaded-upgrade-417to418-252nodes-ipi-install-rbac succeeded after 8s. 
+␛[36mINFO␛[0m[2025-03-24T06:05:40Z] Running step loaded-upgrade-417to418-252nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-03-24T06:05:49Z] Step loaded-upgrade-417to418-252nodes-ipi-install-hosted-loki succeeded after 8s. 
+␛[36mINFO␛[0m[2025-03-24T06:05:49Z] Running step loaded-upgrade-417to418-252nodes-ipi-install-install-stableinitial. 
+␛[36mINFO␛[0m[2025-03-24T06:49:10Z] Step loaded-upgrade-417to418-252nodes-ipi-install-install-stableinitial succeeded after 43m21s. 
+␛[36mINFO␛[0m[2025-03-24T06:49:10Z] Running step loaded-upgrade-417to418-252nodes-workers-scale. 
+␛[36mINFO␛[0m[2025-03-24T07:07:06Z] Step loaded-upgrade-417to418-252nodes-workers-scale succeeded after 17m55s. 
+␛[36mINFO␛[0m[2025-03-24T07:07:06Z] Running step loaded-upgrade-417to418-252nodes-openshift-qe-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-03-24T07:29:58Z] Step loaded-upgrade-417to418-252nodes-openshift-qe-workers-infra-workload succeeded after 22m51s. 
+␛[36mINFO␛[0m[2025-03-24T07:29:58Z] Running step loaded-upgrade-417to418-252nodes-openshift-qe-move-pods-infra. 
+␛[36mINFO␛[0m[2025-03-24T07:36:22Z] Step loaded-upgrade-417to418-252nodes-openshift-qe-move-pods-infra succeeded after 6m24s. 
+␛[36mINFO␛[0m[2025-03-24T07:36:22Z] Running step loaded-upgrade-417to418-252nodes-openshift-qe-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-03-24T09:16:58Z] Step loaded-upgrade-417to418-252nodes-openshift-qe-cluster-density-v2 succeeded after 1h40m35s. 
+␛[36mINFO␛[0m[2025-03-24T09:16:58Z] Step phase pre succeeded after 3h12m24s.     
+␛[36mINFO␛[0m[2025-03-24T09:16:58Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-03-24T09:16:58Z] Running step loaded-upgrade-417to418-252nodes-openshift-qe-upgrade. 
+␛[36mINFO␛[0m[2025-03-24T13:11:31Z] Step loaded-upgrade-417to418-252nodes-openshift-qe-upgrade succeeded after 3h54m32s. 
+␛[36mINFO␛[0m[2025-03-24T13:11:31Z] Step phase test succeeded after 3h54m32s.    
+␛[36mINFO␛[0m[2025-03-24T13:11:31Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-03-24T13:11:31Z] Skipping optional step loaded-upgrade-417to418-252nodes-gather-aws-console 
+␛[36mINFO␛[0m[2025-03-24T13:11:31Z] Skipping optional step loaded-upgrade-417to418-252nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-03-24T13:11:31Z] Skipping optional step loaded-upgrade-417to418-252nodes-gather-extra 
+␛[36mINFO␛[0m[2025-03-24T13:11:31Z] Skipping optional step loaded-upgrade-417to418-252nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-03-24T13:11:31Z] Running step loaded-upgrade-417to418-252nodes-openshift-qe-kube-burner-index. 
+␛[36mINFO␛[0m[2025-03-24T13:32:32Z] Step loaded-upgrade-417to418-252nodes-openshift-qe-kube-burner-index succeeded after 21m1s. 
+␛[36mINFO␛[0m[2025-03-24T13:32:32Z] Running step loaded-upgrade-417to418-252nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-03-24T13:45:36Z] Step loaded-upgrade-417to418-252nodes-ipi-deprovision-deprovision succeeded after 13m3s. 
+␛[36mINFO␛[0m[2025-03-24T13:45:36Z] Running step loaded-upgrade-417to418-252nodes-aws-deprovision-users-and-policies. 
+␛[36mINFO␛[0m[2025-03-24T13:45:48Z] Step loaded-upgrade-417to418-252nodes-aws-deprovision-users-and-policies succeeded after 11s. 
+␛[36mINFO␛[0m[2025-03-24T13:45:48Z] Step phase post succeeded after 34m17s.      
+␛[36mINFO␛[0m[2025-03-24T13:45:48Z] Releasing leases for test loaded-upgrade-417to418-252nodes 
+␛[36mINFO␛[0m[2025-03-24T13:45:48Z] Ran for 7h44m18s                             
+␛[36mINFO␛[0m[2025-03-24T13:45:48Z] Reporting job state 'succeeded'              

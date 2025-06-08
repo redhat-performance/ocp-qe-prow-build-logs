@@ -1,0 +1,92 @@
+␛[36mINFO␛[0m[2025-06-01T01:01:12Z] ci-operator version v20250530-1d097c143      
+␛[36mINFO␛[0m[2025-06-01T01:01:12Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [rosa_hcp-4.19-nightly-x86] 
+␛[36mINFO␛[0m[2025-06-01T01:01:12Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-06-01T01:01:12Z] skipped directory "..2025_06_01_01_01_06.4251057868" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-06-01T01:01:12Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-01T01:01:12Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-05-29-054721 
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-003qbqjy 
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Running [input:cli-ocm], [input:rosa-aws-cli], [input:ocp-4.18-upi-installer], [input:ocp-4.12-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [input:ci-rosa-aws-cli-latest], [release:latest], [images], data-path-9nodes 
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale-qe 
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Tagging ocp/4.18:upi-installer into pipeline:ocp-4.18-upi-installer. 
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Tagging ci/rosa-aws-cli:latest into pipeline:ci-rosa-aws-cli-latest. 
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Tagging ci/rosa-aws-cli:latest into pipeline:rosa-aws-cli. 
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Tagging ci/cli-ocm:latest into pipeline:cli-ocm. 
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-01T01:01:13Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-05-29-054721 
+␛[36mINFO␛[0m[2025-06-01T01:01:35Z] Importing release 4.19.0-0.nightly-2025-05-29-054721 created at 2025-05-29 05:49:09 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-06-01T01:03:10Z] Imported release 4.19.0-0.nightly-2025-05-29-054721 created at 2025-05-29 05:49:09 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-06-01T01:03:10Z] Acquiring leases for test data-path-9nodes: [aws-perfscale-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-06-01T01:03:10Z] Acquired 1 lease(s) for aws-perfscale-qe-quota-slice: [us-west-2--aws-perfscale-qe-quota-slice-6] 
+␛[36mINFO␛[0m[2025-06-01T01:03:10Z] Running multi-stage test data-path-9nodes    
+␛[36mINFO␛[0m[2025-06-01T01:03:11Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-06-01T01:03:11Z] Running step data-path-9nodes-aws-provision-vpc-shared. 
+␛[36mINFO␛[0m[2025-06-01T01:06:01Z] Step data-path-9nodes-aws-provision-vpc-shared succeeded after 2m50s. 
+␛[36mINFO␛[0m[2025-06-01T01:06:01Z] Running step data-path-9nodes-aws-provision-tags-for-byo-vpc-ocm-pre. 
+␛[36mINFO␛[0m[2025-06-01T01:06:12Z] Step data-path-9nodes-aws-provision-tags-for-byo-vpc-ocm-pre succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-01T01:06:12Z] Running step data-path-9nodes-rosa-cluster-prefix. 
+␛[36mINFO␛[0m[2025-06-01T01:06:21Z] Step data-path-9nodes-rosa-cluster-prefix succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-01T01:06:21Z] Running step data-path-9nodes-rosa-sts-account-roles-create. 
+␛[36mINFO␛[0m[2025-06-01T01:07:00Z] Step data-path-9nodes-rosa-sts-account-roles-create succeeded after 38s. 
+␛[36mINFO␛[0m[2025-06-01T01:07:00Z] Running step data-path-9nodes-rosa-sts-oidc-config-create. 
+␛[36mINFO␛[0m[2025-06-01T01:07:12Z] Step data-path-9nodes-rosa-sts-oidc-config-create succeeded after 12s. 
+␛[36mINFO␛[0m[2025-06-01T01:07:12Z] Running step data-path-9nodes-rosa-sts-operator-roles-create. 
+␛[36mINFO␛[0m[2025-06-01T01:07:57Z] Step data-path-9nodes-rosa-sts-operator-roles-create succeeded after 44s. 
+␛[36mINFO␛[0m[2025-06-01T01:07:57Z] Running step data-path-9nodes-rosa-cluster-provision. 
+␛[36mINFO␛[0m[2025-06-01T01:08:47Z] Step data-path-9nodes-rosa-cluster-provision succeeded after 50s. 
+␛[36mINFO␛[0m[2025-06-01T01:08:47Z] Running step data-path-9nodes-rosa-cluster-wait-ready-cluster. 
+␛[36mINFO␛[0m[2025-06-01T01:27:12Z] Step data-path-9nodes-rosa-cluster-wait-ready-cluster succeeded after 18m25s. 
+␛[36mINFO␛[0m[2025-06-01T01:27:12Z] Running step data-path-9nodes-rosa-cluster-notify-error. 
+␛[36mINFO␛[0m[2025-06-01T01:27:22Z] Step data-path-9nodes-rosa-cluster-notify-error succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-01T01:27:22Z] Running step data-path-9nodes-rosa-conf-idp-htpasswd. 
+␛[36mINFO␛[0m[2025-06-01T01:32:09Z] Step data-path-9nodes-rosa-conf-idp-htpasswd succeeded after 4m47s. 
+␛[36mINFO␛[0m[2025-06-01T01:32:09Z] Running step data-path-9nodes-rosa-cluster-wait-ready-operators. 
+␛[36mINFO␛[0m[2025-06-01T01:32:18Z] Step data-path-9nodes-rosa-cluster-wait-ready-operators succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-01T01:32:18Z] Running step data-path-9nodes-aws-provision-tags-for-byo-vpc. 
+␛[36mINFO␛[0m[2025-06-01T01:32:28Z] Step data-path-9nodes-aws-provision-tags-for-byo-vpc succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-01T01:32:28Z] Running step data-path-9nodes-rosa-conf-machine-pool. 
+␛[36mINFO␛[0m[2025-06-01T01:33:13Z] Step data-path-9nodes-rosa-conf-machine-pool succeeded after 44s. 
+␛[36mINFO␛[0m[2025-06-01T01:33:13Z] Running step data-path-9nodes-osd-ccs-conf-idp-htpasswd-multi-users. 
+␛[36mINFO␛[0m[2025-06-01T01:34:32Z] Step data-path-9nodes-osd-ccs-conf-idp-htpasswd-multi-users succeeded after 1m18s. 
+␛[36mINFO␛[0m[2025-06-01T01:34:32Z] Running step data-path-9nodes-rosa-cluster-wait-ready-nodes. 
+␛[36mINFO␛[0m[2025-06-01T01:43:03Z] Step data-path-9nodes-rosa-cluster-wait-ready-nodes succeeded after 8m30s. 
+␛[36mINFO␛[0m[2025-06-01T01:43:03Z] Step phase pre succeeded after 39m52s.       
+␛[36mINFO␛[0m[2025-06-01T01:43:03Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-06-01T01:43:03Z] Running step data-path-9nodes-openshift-qe-hypershift-infra. 
+␛[36mINFO␛[0m[2025-06-01T01:47:02Z] Step data-path-9nodes-openshift-qe-hypershift-infra succeeded after 3m59s. 
+␛[36mINFO␛[0m[2025-06-01T01:47:02Z] Running step data-path-9nodes-openshift-qe-perfscale-aws-data-path-sg. 
+␛[36mINFO␛[0m[2025-06-01T01:47:25Z] Step data-path-9nodes-openshift-qe-perfscale-aws-data-path-sg succeeded after 22s. 
+␛[36mINFO␛[0m[2025-06-01T01:47:25Z] Running step data-path-9nodes-openshift-qe-network-smoke. 
+␛[36mINFO␛[0m[2025-06-01T01:50:53Z] Step data-path-9nodes-openshift-qe-network-smoke succeeded after 3m28s. 
+␛[36mINFO␛[0m[2025-06-01T01:50:53Z] Running step data-path-9nodes-openshift-qe-network-perf. 
+␛[36mINFO␛[0m[2025-06-01T04:18:47Z] Step data-path-9nodes-openshift-qe-network-perf succeeded after 2h27m53s. 
+␛[36mINFO␛[0m[2025-06-01T04:18:47Z] Running step data-path-9nodes-redhat-chaos-cerberus-one-run. 
+␛[36mINFO␛[0m[2025-06-01T04:19:26Z] Step data-path-9nodes-redhat-chaos-cerberus-one-run succeeded after 38s. 
+␛[36mINFO␛[0m[2025-06-01T04:19:26Z] Running step data-path-9nodes-openshift-qe-ingress-perf. 
+␛[36mINFO␛[0m[2025-06-01T05:14:35Z] Step data-path-9nodes-openshift-qe-ingress-perf succeeded after 55m9s. 
+␛[36mINFO␛[0m[2025-06-01T05:14:35Z] Running step data-path-9nodes-redhat-chaos-cerberus-one-run-ingress-perf. 
+␛[36mINFO␛[0m[2025-06-01T05:14:58Z] Step data-path-9nodes-redhat-chaos-cerberus-one-run-ingress-perf succeeded after 22s. 
+␛[36mINFO␛[0m[2025-06-01T05:14:58Z] Step phase test succeeded after 3h31m54s.    
+␛[36mINFO␛[0m[2025-06-01T05:14:58Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-06-01T05:14:58Z] Skipping optional step data-path-9nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-06-01T05:14:58Z] Skipping optional step data-path-9nodes-gather-extra 
+␛[36mINFO␛[0m[2025-06-01T05:14:58Z] Skipping optional step data-path-9nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-06-01T05:14:58Z] Running step data-path-9nodes-rosa-cluster-deprovision. 
+␛[36mINFO␛[0m[2025-06-01T05:41:49Z] Step data-path-9nodes-rosa-cluster-deprovision succeeded after 26m51s. 
+␛[36mINFO␛[0m[2025-06-01T05:41:49Z] Running step data-path-9nodes-rosa-cluster-index. 
+␛[36mINFO␛[0m[2025-06-01T05:42:00Z] Step data-path-9nodes-rosa-cluster-index succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-01T05:42:00Z] Running step data-path-9nodes-rosa-sts-operator-roles-delete. 
+␛[36mINFO␛[0m[2025-06-01T05:42:13Z] Step data-path-9nodes-rosa-sts-operator-roles-delete succeeded after 13s. 
+␛[36mINFO␛[0m[2025-06-01T05:42:13Z] Running step data-path-9nodes-rosa-sts-oidc-config-delete. 
+␛[36mINFO␛[0m[2025-06-01T05:43:06Z] Step data-path-9nodes-rosa-sts-oidc-config-delete succeeded after 52s. 
+␛[36mINFO␛[0m[2025-06-01T05:43:06Z] Running step data-path-9nodes-rosa-sts-account-roles-delete. 
+␛[36mINFO␛[0m[2025-06-01T05:43:17Z] Step data-path-9nodes-rosa-sts-account-roles-delete succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-01T05:43:17Z] Running step data-path-9nodes-aws-deprovision-stacks. 
+␛[36mINFO␛[0m[2025-06-01T05:44:45Z] Step data-path-9nodes-aws-deprovision-stacks succeeded after 1m27s. 
+␛[36mINFO␛[0m[2025-06-01T05:44:45Z] Step phase post succeeded after 29m46s.      
+␛[36mINFO␛[0m[2025-06-01T05:44:45Z] Releasing leases for test data-path-9nodes   
+␛[36mINFO␛[0m[2025-06-01T05:44:45Z] Ran for 4h43m32s                             
+␛[36mINFO␛[0m[2025-06-01T05:44:45Z] Reporting job state 'succeeded'              

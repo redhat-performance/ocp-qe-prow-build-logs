@@ -1,0 +1,99 @@
+␛[36mINFO␛[0m[2025-06-08T04:01:22Z] ci-operator version v20250606-ead9efe03      
+␛[36mINFO␛[0m[2025-06-08T04:01:22Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [azure-4.18-nightly-x86] 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-06-08T04:01:23Z] skipped directory "..2025_06_08_04_01_17.2974453758" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-06-07-070650 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Requesting a release from https://multi.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly-multi/latest 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Resolved release multi-latest to quay.io/openshift-release-dev/ocp-release-nightly@sha256:81d4ad09313acc7933cc8895ed2c8dc331e24ad03c7851e2d2265e26e27f0e40 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-fsp237qj 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Running [input:upi-installer], [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.11-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [input:ocp-4.13-upi-installer], [release:latest], [release:multi-latest], [images], data-path-multi-9nodes 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Loading information from https://config.ci.openshift.org for cluster profile azure-qe 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Tagging ocp/4.13:upi-installer into pipeline:ocp-4.13-upi-installer. 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Tagging ocp/4.11:upi-installer into pipeline:ocp-4.11-upi-installer. 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-06-08T04:01:23Z] Tagging ocp/4.18:upi-installer into pipeline:upi-installer. 
+␛[36mINFO␛[0m[2025-06-08T04:01:24Z] Importing release image multi-latest.        
+␛[36mINFO␛[0m[2025-06-08T04:01:24Z] Requesting a release from https://multi.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly-multi/latest 
+␛[36mINFO␛[0m[2025-06-08T04:01:24Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-06-08T04:01:24Z] Resolved release multi-latest to quay.io/openshift-release-dev/ocp-release-nightly@sha256:81d4ad09313acc7933cc8895ed2c8dc331e24ad03c7851e2d2265e26e27f0e40 
+␛[36mINFO␛[0m[2025-06-08T04:01:24Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-08T04:01:24Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-06-07-070650 
+␛[36mINFO␛[0m[2025-06-08T04:01:38Z] Importing release 4.18.0-0.nightly-multi-2025-06-07-212107 created at 2025-06-07 21:21:59 +0000 UTC with 188 images to tag release:multi-latest ... 
+␛[36mINFO␛[0m[2025-06-08T04:01:42Z] Importing release 4.18.0-0.nightly-2025-06-07-070650 created at 2025-06-07 07:08:30 +0000 UTC with 188 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-06-08T04:03:17Z] Imported release 4.18.0-0.nightly-2025-06-07-070650 created at 2025-06-07 07:08:30 +0000 UTC with 188 images to tag release:latest 
+␛[36mINFO␛[0m[2025-06-08T04:05:49Z] Imported release 4.18.0-0.nightly-multi-2025-06-07-212107 created at 2025-06-07 21:21:59 +0000 UTC with 188 images to tag release:multi-latest 
+␛[36mINFO␛[0m[2025-06-08T04:05:49Z] Acquiring leases for test data-path-multi-9nodes: [azure-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-06-08T04:05:49Z] Acquired 1 lease(s) for azure-qe-quota-slice: [northcentralus--azure-qe-quota-slice-2] 
+␛[36mINFO␛[0m[2025-06-08T04:05:49Z] Running multi-stage test data-path-multi-9nodes 
+␛[36mINFO␛[0m[2025-06-08T04:05:50Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-06-08T04:05:51Z] Running step data-path-multi-9nodes-ipi-conf. 
+␛[36mINFO␛[0m[2025-06-08T04:06:01Z] Step data-path-multi-9nodes-ipi-conf succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-08T04:06:01Z] Running step data-path-multi-9nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-06-08T04:06:11Z] Step data-path-multi-9nodes-ipi-conf-telemetry succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-08T04:06:11Z] Running step data-path-multi-9nodes-ipi-conf-azure. 
+␛[36mINFO␛[0m[2025-06-08T04:06:21Z] Step data-path-multi-9nodes-ipi-conf-azure succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-08T04:06:21Z] Running step data-path-multi-9nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-06-08T04:06:29Z] Step data-path-multi-9nodes-ipi-install-monitoringpvc succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-08T04:06:29Z] Running step data-path-multi-9nodes-ipi-conf-azure-custom-region. 
+␛[36mINFO␛[0m[2025-06-08T04:07:13Z] Step data-path-multi-9nodes-ipi-conf-azure-custom-region succeeded after 44s. 
+␛[36mINFO␛[0m[2025-06-08T04:07:13Z] Running step data-path-multi-9nodes-ovn-conf. 
+␛[36mINFO␛[0m[2025-06-08T04:07:22Z] Step data-path-multi-9nodes-ovn-conf succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-08T04:07:22Z] Running step data-path-multi-9nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-06-08T04:07:32Z] Step data-path-multi-9nodes-ipi-install-rbac succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-08T04:07:32Z] Running step data-path-multi-9nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-06-08T04:07:40Z] Step data-path-multi-9nodes-openshift-cluster-bot-rbac succeeded after 7s. 
+␛[36mINFO␛[0m[2025-06-08T04:07:40Z] Running step data-path-multi-9nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-06-08T04:07:48Z] Step data-path-multi-9nodes-ipi-install-hosted-loki succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-08T04:07:48Z] Running step data-path-multi-9nodes-ipi-install-install. 
+␛[36mINFO␛[0m[2025-06-08T05:05:35Z] Step data-path-multi-9nodes-ipi-install-install succeeded after 57m47s. 
+␛[36mINFO␛[0m[2025-06-08T05:05:35Z] Running step data-path-multi-9nodes-ipi-install-times-collection. 
+␛[36mINFO␛[0m[2025-06-08T05:05:47Z] Step data-path-multi-9nodes-ipi-install-times-collection succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-08T05:05:47Z] Running step data-path-multi-9nodes-nodes-readiness. 
+␛[36mINFO␛[0m[2025-06-08T05:05:57Z] Step data-path-multi-9nodes-nodes-readiness succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-08T05:05:57Z] Running step data-path-multi-9nodes-multiarch-validate-nodes. 
+␛[36mINFO␛[0m[2025-06-08T05:06:04Z] Step data-path-multi-9nodes-multiarch-validate-nodes succeeded after 7s. 
+␛[36mINFO␛[0m[2025-06-08T05:06:04Z] Running step data-path-multi-9nodes-ipi-azure-rbac. 
+␛[36mINFO␛[0m[2025-06-08T05:06:12Z] Step data-path-multi-9nodes-ipi-azure-rbac succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-08T05:06:12Z] Running step data-path-multi-9nodes-openshift-qe-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-06-08T05:25:50Z] Step data-path-multi-9nodes-openshift-qe-workers-infra-workload succeeded after 19m38s. 
+␛[36mINFO␛[0m[2025-06-08T05:25:50Z] Running step data-path-multi-9nodes-openshift-qe-move-pods-infra. 
+␛[36mINFO␛[0m[2025-06-08T05:32:31Z] Step data-path-multi-9nodes-openshift-qe-move-pods-infra succeeded after 6m40s. 
+␛[36mINFO␛[0m[2025-06-08T05:32:31Z] Step phase pre succeeded after 1h26m40s.     
+␛[36mINFO␛[0m[2025-06-08T05:32:31Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-06-08T05:32:31Z] Running step data-path-multi-9nodes-ipi-install-heterogeneous. 
+␛[36mINFO␛[0m[2025-06-08T05:56:43Z] Step data-path-multi-9nodes-ipi-install-heterogeneous succeeded after 24m11s. 
+␛[36mINFO␛[0m[2025-06-08T05:56:43Z] Running step data-path-multi-9nodes-workers-scale. 
+␛[36mINFO␛[0m[2025-06-08T06:02:00Z] Step data-path-multi-9nodes-workers-scale succeeded after 5m17s. 
+␛[36mINFO␛[0m[2025-06-08T06:02:00Z] Running step data-path-multi-9nodes-openshift-qe-perfscale-azu-data-path-nsg. 
+␛[36mINFO␛[0m[2025-06-08T06:02:16Z] Step data-path-multi-9nodes-openshift-qe-perfscale-azu-data-path-nsg succeeded after 15s. 
+␛[36mINFO␛[0m[2025-06-08T06:02:16Z] Running step data-path-multi-9nodes-openshift-qe-network-smoke. 
+␛[36mINFO␛[0m[2025-06-08T06:05:16Z] Step data-path-multi-9nodes-openshift-qe-network-smoke succeeded after 3m0s. 
+␛[36mINFO␛[0m[2025-06-08T06:05:16Z] Running step data-path-multi-9nodes-openshift-qe-network-perf. 
+␛[36mINFO␛[0m[2025-06-08T08:10:51Z] Step data-path-multi-9nodes-openshift-qe-network-perf succeeded after 2h5m35s. 
+␛[36mINFO␛[0m[2025-06-08T08:10:51Z] Running step data-path-multi-9nodes-redhat-chaos-cerberus-one-run. 
+␛[36mINFO␛[0m[2025-06-08T08:11:20Z] Step data-path-multi-9nodes-redhat-chaos-cerberus-one-run succeeded after 28s. 
+␛[36mINFO␛[0m[2025-06-08T08:11:20Z] Running step data-path-multi-9nodes-openshift-qe-ingress-perf. 
+␛[36mINFO␛[0m[2025-06-08T09:06:15Z] Step data-path-multi-9nodes-openshift-qe-ingress-perf succeeded after 54m54s. 
+␛[36mINFO␛[0m[2025-06-08T09:06:15Z] Running step data-path-multi-9nodes-redhat-chaos-cerberus-one-run-ingress-perf. 
+␛[36mINFO␛[0m[2025-06-08T09:06:35Z] Step data-path-multi-9nodes-redhat-chaos-cerberus-one-run-ingress-perf succeeded after 20s. 
+␛[36mINFO␛[0m[2025-06-08T09:06:35Z] Step phase test succeeded after 3h34m3s.     
+␛[36mINFO␛[0m[2025-06-08T09:06:35Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-06-08T09:06:35Z] Running step data-path-multi-9nodes-gather-must-gather. 
+␛[36mINFO␛[0m[2025-06-08T09:09:12Z] Step data-path-multi-9nodes-gather-must-gather succeeded after 2m37s. 
+␛[36mINFO␛[0m[2025-06-08T09:09:12Z] Running step data-path-multi-9nodes-gather-extra. 
+␛[36mINFO␛[0m[2025-06-08T09:18:37Z] Step data-path-multi-9nodes-gather-extra succeeded after 9m24s. 
+␛[36mINFO␛[0m[2025-06-08T09:18:37Z] Running step data-path-multi-9nodes-gather-audit-logs. 
+␛[36mINFO␛[0m[2025-06-08T09:19:17Z] Step data-path-multi-9nodes-gather-audit-logs succeeded after 39s. 
+␛[36mINFO␛[0m[2025-06-08T09:19:17Z] Running step data-path-multi-9nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-06-08T09:26:42Z] Step data-path-multi-9nodes-ipi-deprovision-deprovision succeeded after 7m24s. 
+␛[36mINFO␛[0m[2025-06-08T09:26:42Z] Step phase post succeeded after 20m7s.       
+␛[36mINFO␛[0m[2025-06-08T09:26:42Z] Releasing leases for test data-path-multi-9nodes 
+␛[36mINFO␛[0m[2025-06-08T09:26:42Z] Ran for 5h25m19s                             
+␛[36mINFO␛[0m[2025-06-08T09:26:42Z] Reporting job state 'succeeded'              
+␛[36mINFO␛[0m[2025-06-08T09:26:42Z] Flushing 3 insights events                   

@@ -1,0 +1,75 @@
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] ci-operator version v20250401-b967c0450      
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [rosa-4.18-nightly-x86] 
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-04-01T11:01:20Z] skipped directory "..2025_04_01_11_01_14.3848764546" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-04-01-014150 
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] Using namespace https://console-openshift-console.apps.build07.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-4itjcty8 
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] Running [input:cli-ocm], [input:rosa-aws-cli], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [input:ci-rosa-aws-cli-latest], [release:latest], [images], data-path-9nodes 
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale-qe 
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] Tagging ci/rosa-aws-cli:latest into pipeline:rosa-aws-cli. 
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] Tagging ci/rosa-aws-cli:latest into pipeline:ci-rosa-aws-cli-latest. 
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] Tagging ci/cli-ocm:latest into pipeline:cli-ocm. 
+␛[36mINFO␛[0m[2025-04-01T11:01:20Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-04-01T11:01:21Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-04-01T11:01:21Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-04-01T11:01:21Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-04-01-014150 
+␛[36mINFO␛[0m[2025-04-01T11:01:54Z] Importing release 4.18.0-0.nightly-2025-04-01-014150 created at 2025-04-01 01:46:06 +0000 UTC with 188 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-04-01T11:05:17Z] Imported release 4.18.0-0.nightly-2025-04-01-014150 created at 2025-04-01 01:46:06 +0000 UTC with 188 images to tag release:latest 
+␛[36mINFO␛[0m[2025-04-01T11:05:17Z] Acquiring leases for test data-path-9nodes: [aws-perfscale-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-04-01T11:17:36Z] Acquired 1 lease(s) for aws-perfscale-qe-quota-slice: [us-west-2--aws-perfscale-qe-quota-slice-3] 
+␛[36mINFO␛[0m[2025-04-01T11:17:36Z] Running multi-stage test data-path-9nodes    
+␛[36mINFO␛[0m[2025-04-01T11:17:36Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-04-01T11:17:36Z] Running step data-path-9nodes-rosa-cluster-prefix. 
+␛[36mINFO␛[0m[2025-04-01T11:17:55Z] Step data-path-9nodes-rosa-cluster-prefix succeeded after 18s. 
+␛[36mINFO␛[0m[2025-04-01T11:17:55Z] Running step data-path-9nodes-rosa-sts-account-roles-create. 
+␛[36mINFO␛[0m[2025-04-01T11:18:37Z] Step data-path-9nodes-rosa-sts-account-roles-create succeeded after 42s. 
+␛[36mINFO␛[0m[2025-04-01T11:18:37Z] Running step data-path-9nodes-rosa-cluster-provision. 
+␛[36mINFO␛[0m[2025-04-01T11:19:49Z] Step data-path-9nodes-rosa-cluster-provision succeeded after 1m12s. 
+␛[36mINFO␛[0m[2025-04-01T11:19:49Z] Running step data-path-9nodes-rosa-cluster-wait-ready-cluster. 
+␛[36mINFO␛[0m[2025-04-01T12:09:34Z] Step data-path-9nodes-rosa-cluster-wait-ready-cluster succeeded after 49m44s. 
+␛[36mINFO␛[0m[2025-04-01T12:09:34Z] Running step data-path-9nodes-rosa-cluster-notify-error. 
+␛[36mINFO␛[0m[2025-04-01T12:09:46Z] Step data-path-9nodes-rosa-cluster-notify-error succeeded after 12s. 
+␛[36mINFO␛[0m[2025-04-01T12:09:46Z] Running step data-path-9nodes-rosa-conf-idp-htpasswd. 
+␛[36mINFO␛[0m[2025-04-01T12:17:43Z] Step data-path-9nodes-rosa-conf-idp-htpasswd succeeded after 7m56s. 
+␛[36mINFO␛[0m[2025-04-01T12:17:43Z] Running step data-path-9nodes-rosa-cluster-wait-ready-operators. 
+␛[36mINFO␛[0m[2025-04-01T12:56:15Z] Step data-path-9nodes-rosa-cluster-wait-ready-operators succeeded after 38m32s. 
+␛[36mINFO␛[0m[2025-04-01T12:56:15Z] Running step data-path-9nodes-osd-ccs-conf-idp-htpasswd-multi-users. 
+␛[36mINFO␛[0m[2025-04-01T12:56:59Z] Step data-path-9nodes-osd-ccs-conf-idp-htpasswd-multi-users succeeded after 43s. 
+␛[36mINFO␛[0m[2025-04-01T12:56:59Z] Running step data-path-9nodes-rosa-cluster-wait-ready-nodes. 
+␛[36mINFO␛[0m[2025-04-01T13:00:18Z] Step data-path-9nodes-rosa-cluster-wait-ready-nodes succeeded after 3m19s. 
+␛[36mINFO␛[0m[2025-04-01T13:00:18Z] Step phase pre succeeded after 1h42m41s.     
+␛[36mINFO␛[0m[2025-04-01T13:00:18Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-04-01T13:00:18Z] Running step data-path-9nodes-openshift-qe-workers-scale. 
+␛[36mINFO␛[0m[2025-04-01T13:01:33Z] Step data-path-9nodes-openshift-qe-workers-scale succeeded after 1m14s. 
+␛[36mINFO␛[0m[2025-04-01T13:01:33Z] Running step data-path-9nodes-openshift-qe-perfscale-aws-data-path-sg. 
+␛[36mINFO␛[0m[2025-04-01T13:02:01Z] Step data-path-9nodes-openshift-qe-perfscale-aws-data-path-sg succeeded after 28s. 
+␛[36mINFO␛[0m[2025-04-01T13:02:01Z] Running step data-path-9nodes-openshift-qe-network-smoke. 
+␛[36mINFO␛[0m[2025-04-01T13:05:40Z] Step data-path-9nodes-openshift-qe-network-smoke succeeded after 3m38s. 
+␛[36mINFO␛[0m[2025-04-01T13:05:40Z] Running step data-path-9nodes-openshift-qe-network-perf. 
+␛[36mINFO␛[0m[2025-04-01T15:13:17Z] Step data-path-9nodes-openshift-qe-network-perf succeeded after 2h7m36s. 
+␛[36mINFO␛[0m[2025-04-01T15:13:17Z] Running step data-path-9nodes-redhat-chaos-cerberus-one-run. 
+␛[36mINFO␛[0m[2025-04-01T15:13:51Z] Step data-path-9nodes-redhat-chaos-cerberus-one-run succeeded after 34s. 
+␛[36mINFO␛[0m[2025-04-01T15:13:51Z] Running step data-path-9nodes-openshift-qe-ingress-perf. 
+␛[36mINFO␛[0m[2025-04-01T16:08:52Z] Step data-path-9nodes-openshift-qe-ingress-perf succeeded after 55m0s. 
+␛[36mINFO␛[0m[2025-04-01T16:08:52Z] Running step data-path-9nodes-redhat-chaos-cerberus-one-run-ingress-perf. 
+␛[36mINFO␛[0m[2025-04-01T16:09:16Z] Step data-path-9nodes-redhat-chaos-cerberus-one-run-ingress-perf succeeded after 24s. 
+␛[36mINFO␛[0m[2025-04-01T16:09:16Z] Step phase test succeeded after 3h8m58s.     
+␛[36mINFO␛[0m[2025-04-01T16:09:16Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-04-01T16:09:16Z] Running step data-path-9nodes-gather-must-gather. 
+␛[36mINFO␛[0m[2025-04-01T16:11:30Z] Step data-path-9nodes-gather-must-gather succeeded after 2m13s. 
+␛[36mINFO␛[0m[2025-04-01T16:11:30Z] Running step data-path-9nodes-gather-extra.  
+␛[36mINFO␛[0m[2025-04-01T16:16:42Z] Step data-path-9nodes-gather-extra succeeded after 5m12s. 
+␛[36mINFO␛[0m[2025-04-01T16:16:42Z] Running step data-path-9nodes-gather-audit-logs. 
+␛[36mINFO␛[0m[2025-04-01T16:18:14Z] Step data-path-9nodes-gather-audit-logs succeeded after 1m31s. 
+␛[36mINFO␛[0m[2025-04-01T16:18:14Z] Running step data-path-9nodes-rosa-cluster-deprovision. 
+␛[36mINFO␛[0m[2025-04-01T16:28:01Z] Step data-path-9nodes-rosa-cluster-deprovision succeeded after 9m46s. 
+␛[36mINFO␛[0m[2025-04-01T16:28:01Z] Running step data-path-9nodes-rosa-cluster-index. 
+␛[36mINFO␛[0m[2025-04-01T16:28:09Z] Step data-path-9nodes-rosa-cluster-index succeeded after 8s. 
+␛[36mINFO␛[0m[2025-04-01T16:28:09Z] Running step data-path-9nodes-rosa-sts-account-roles-delete. 
+␛[36mINFO␛[0m[2025-04-01T16:28:23Z] Step data-path-9nodes-rosa-sts-account-roles-delete succeeded after 14s. 
+␛[36mINFO␛[0m[2025-04-01T16:28:23Z] Step phase post succeeded after 19m6s.       
+␛[36mINFO␛[0m[2025-04-01T16:28:23Z] Releasing leases for test data-path-9nodes   
+␛[36mINFO␛[0m[2025-04-01T16:28:23Z] Ran for 5h27m3s                              
+␛[36mINFO␛[0m[2025-04-01T16:28:23Z] Reporting job state 'succeeded'              

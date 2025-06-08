@@ -1,0 +1,26 @@
+␛[36mINFO␛[0m[2025-03-31T00:01:29Z] ci-operator version v20250328-3f9da8d39      
+␛[36mINFO␛[0m[2025-03-31T00:01:29Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [write_jobs_to_gsheet] 
+␛[36mINFO␛[0m[2025-03-31T00:01:29Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-03-31T00:01:29Z] skipped directory "..2025_03_31_00_01_20.1771842811" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-03-31T00:01:29Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.17.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-03-31T00:01:29Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.17.0-0.nightly-2025-03-30-095330 
+␛[36mINFO␛[0m[2025-03-31T00:01:29Z] Using namespace https://console-openshift-console.apps.build06.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-gjx41rp2 
+␛[36mINFO␛[0m[2025-03-31T00:01:29Z] Running [input:ci-ocp-qe-perfscale-ci-latest], [release:latest], get-orion-results-cdv2 
+␛[33mWARN␛[0m[2025-03-31T00:01:29Z] Warning: egress firewall does not exist: egressfirewalls.k8s.ovn.org "default" not found 
+␛[36mINFO␛[0m[2025-03-31T00:01:29Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-03-31T00:01:30Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-03-31T00:01:30Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.17.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-03-31T00:01:30Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.17.0-0.nightly-2025-03-30-095330 
+␛[36mINFO␛[0m[2025-03-31T00:01:56Z] Importing release 4.17.0-0.nightly-2025-03-30-095330 created at 2025-03-30 09:55:25 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-03-31T00:04:27Z] Imported release 4.17.0-0.nightly-2025-03-30-095330 created at 2025-03-30 09:55:25 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-03-31T00:04:27Z] Running multi-stage test get-orion-results-cdv2 
+␛[36mINFO␛[0m[2025-03-31T00:04:27Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-03-31T00:04:27Z] Step phase pre succeeded after 0s.           
+␛[36mINFO␛[0m[2025-03-31T00:04:27Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-03-31T00:04:27Z] Running step get-orion-results-cdv2-openshift-qe-orion. 
+␛[36mINFO␛[0m[2025-03-31T00:06:23Z] Step get-orion-results-cdv2-openshift-qe-orion succeeded after 1m55s. 
+␛[36mINFO␛[0m[2025-03-31T00:06:23Z] Step phase test succeeded after 1m55s.       
+␛[36mINFO␛[0m[2025-03-31T00:06:23Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-03-31T00:06:23Z] Step phase post succeeded after 0s.          
+␛[36mINFO␛[0m[2025-03-31T00:06:23Z] Ran for 4m54s                                
+␛[36mINFO␛[0m[2025-03-31T00:06:23Z] Reporting job state 'succeeded'

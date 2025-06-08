@@ -1,0 +1,110 @@
+␛[36mINFO␛[0m[2025-06-03T00:01:46Z] ci-operator version v20250602-74d3988d1      
+␛[36mINFO␛[0m[2025-06-03T00:01:46Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [aws-4.19-nightly-x86-cpou-loaded-upgrade-from-4.17] 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-06-03T00:01:47Z] skipped directory "..2025_06_03_00_01_40.2607241637" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Resolved release intermediate to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-05-30-154833 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Requesting 4.17 from https://api.integration.openshift.com/api/upgrades_info/graph?arch=amd64&channel=fast-4.17 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Resolved release latest to quay.io/openshift-release-dev/ocp-release@sha256:e2dfcb1ad7e68ab97a3f9eddfe5ab314415ad183dc6b81ff0550a40609e51267 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Resolved release target to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-05-29-054721 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-qb181gqp 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Running [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [input:ci-verification-tests-latest], [input:ocp-cli-yq-latest], [release:intermediate], [release:latest], [release:target], [images], loaded-upgrade-ipsec-417to419-24nodes 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale-qe 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Tagging ocp/cli-yq:latest into pipeline:ocp-cli-yq-latest. 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Tagging ci/verification-tests:latest into pipeline:ci-verification-tests-latest. 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-06-03T00:01:47Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-06-03T00:01:48Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-06-03T00:01:48Z] Requesting 4.17 from https://api.integration.openshift.com/api/upgrades_info/graph?arch=amd64&channel=fast-4.17 
+␛[36mINFO␛[0m[2025-06-03T00:01:48Z] Importing release image target.              
+␛[36mINFO␛[0m[2025-06-03T00:01:48Z] Resolved release latest to quay.io/openshift-release-dev/ocp-release@sha256:e2dfcb1ad7e68ab97a3f9eddfe5ab314415ad183dc6b81ff0550a40609e51267 
+␛[36mINFO␛[0m[2025-06-03T00:01:48Z] Importing release image intermediate.        
+␛[36mINFO␛[0m[2025-06-03T00:01:48Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-03T00:01:48Z] Resolved release target to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-05-29-054721 
+␛[36mINFO␛[0m[2025-06-03T00:01:48Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-03T00:01:48Z] Resolved release intermediate to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-05-30-154833 
+␛[36mINFO␛[0m[2025-06-03T00:02:09Z] Importing release 4.18.0-0.nightly-2025-05-30-154833 created at 2025-05-30 15:50:18 +0000 UTC with 188 images to tag release:intermediate ... 
+␛[36mINFO␛[0m[2025-06-03T00:02:11Z] Importing release 4.17.31 created at 2025-05-22 15:11:48 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-06-03T00:02:15Z] Importing release 4.19.0-0.nightly-2025-05-29-054721 created at 2025-05-29 05:49:09 +0000 UTC with 189 images to tag release:target ... 
+␛[36mINFO␛[0m[2025-06-03T00:03:44Z] Imported release 4.18.0-0.nightly-2025-05-30-154833 created at 2025-05-30 15:50:18 +0000 UTC with 188 images to tag release:intermediate 
+␛[36mINFO␛[0m[2025-06-03T00:03:46Z] Imported release 4.17.31 created at 2025-05-22 15:11:48 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-06-03T00:03:50Z] Imported release 4.19.0-0.nightly-2025-05-29-054721 created at 2025-05-29 05:49:09 +0000 UTC with 189 images to tag release:target 
+␛[36mINFO␛[0m[2025-06-03T00:03:50Z] Acquiring leases for test loaded-upgrade-ipsec-417to419-24nodes: [aws-perfscale-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-06-03T00:03:50Z] Acquired 1 lease(s) for aws-perfscale-qe-quota-slice: [us-west-2--aws-perfscale-qe-quota-slice-7] 
+␛[36mINFO␛[0m[2025-06-03T00:03:50Z] Running multi-stage test loaded-upgrade-ipsec-417to419-24nodes 
+␛[36mINFO␛[0m[2025-06-03T00:03:52Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-06-03T00:03:52Z] Running step loaded-upgrade-ipsec-417to419-24nodes-ipi-conf. 
+␛[36mINFO␛[0m[2025-06-03T00:04:04Z] Step loaded-upgrade-ipsec-417to419-24nodes-ipi-conf succeeded after 12s. 
+␛[36mINFO␛[0m[2025-06-03T00:04:04Z] Running step loaded-upgrade-ipsec-417to419-24nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-06-03T00:04:14Z] Step loaded-upgrade-ipsec-417to419-24nodes-ipi-conf-telemetry succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-03T00:04:14Z] Running step loaded-upgrade-ipsec-417to419-24nodes-ipi-conf-aws. 
+␛[36mINFO␛[0m[2025-06-03T00:04:27Z] Step loaded-upgrade-ipsec-417to419-24nodes-ipi-conf-aws succeeded after 13s. 
+␛[36mINFO␛[0m[2025-06-03T00:04:27Z] Running step loaded-upgrade-ipsec-417to419-24nodes-ipi-conf-aws-byo-ipv4-pool-public. 
+␛[36mINFO␛[0m[2025-06-03T00:04:37Z] Step loaded-upgrade-ipsec-417to419-24nodes-ipi-conf-aws-byo-ipv4-pool-public succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-03T00:04:37Z] Running step loaded-upgrade-ipsec-417to419-24nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-06-03T00:04:45Z] Step loaded-upgrade-ipsec-417to419-24nodes-ipi-install-monitoringpvc succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-03T00:04:45Z] Running step loaded-upgrade-ipsec-417to419-24nodes-ovn-conf. 
+␛[36mINFO␛[0m[2025-06-03T00:04:55Z] Step loaded-upgrade-ipsec-417to419-24nodes-ovn-conf succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-03T00:04:55Z] Running step loaded-upgrade-ipsec-417to419-24nodes-ovn-conf-ipsec-manifest. 
+␛[36mINFO␛[0m[2025-06-03T00:05:10Z] Step loaded-upgrade-ipsec-417to419-24nodes-ovn-conf-ipsec-manifest succeeded after 14s. 
+␛[36mINFO␛[0m[2025-06-03T00:05:10Z] Running step loaded-upgrade-ipsec-417to419-24nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-06-03T00:05:21Z] Step loaded-upgrade-ipsec-417to419-24nodes-ipi-install-rbac succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-03T00:05:21Z] Running step loaded-upgrade-ipsec-417to419-24nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-06-03T00:05:30Z] Step loaded-upgrade-ipsec-417to419-24nodes-openshift-cluster-bot-rbac succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-03T00:05:30Z] Running step loaded-upgrade-ipsec-417to419-24nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-06-03T00:05:38Z] Step loaded-upgrade-ipsec-417to419-24nodes-ipi-install-hosted-loki succeeded after 7s. 
+␛[36mINFO␛[0m[2025-06-03T00:05:38Z] Running step loaded-upgrade-ipsec-417to419-24nodes-ipi-install-install. 
+␛[36mINFO␛[0m[2025-06-03T00:50:31Z] Step loaded-upgrade-ipsec-417to419-24nodes-ipi-install-install succeeded after 44m53s. 
+␛[36mINFO␛[0m[2025-06-03T00:50:31Z] Running step loaded-upgrade-ipsec-417to419-24nodes-ipi-install-times-collection. 
+␛[36mINFO␛[0m[2025-06-03T00:50:43Z] Step loaded-upgrade-ipsec-417to419-24nodes-ipi-install-times-collection succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-03T00:50:43Z] Running step loaded-upgrade-ipsec-417to419-24nodes-nodes-readiness. 
+␛[36mINFO␛[0m[2025-06-03T00:50:52Z] Step loaded-upgrade-ipsec-417to419-24nodes-nodes-readiness succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-03T00:50:52Z] Running step loaded-upgrade-ipsec-417to419-24nodes-multiarch-validate-nodes. 
+␛[36mINFO␛[0m[2025-06-03T00:51:01Z] Step loaded-upgrade-ipsec-417to419-24nodes-multiarch-validate-nodes succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-03T00:51:01Z] Running step loaded-upgrade-ipsec-417to419-24nodes-openshift-qe-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-06-03T01:14:28Z] Step loaded-upgrade-ipsec-417to419-24nodes-openshift-qe-workers-infra-workload succeeded after 23m26s. 
+␛[36mINFO␛[0m[2025-06-03T01:14:28Z] Running step loaded-upgrade-ipsec-417to419-24nodes-openshift-qe-move-pods-infra. 
+␛[36mINFO␛[0m[2025-06-03T01:20:54Z] Step loaded-upgrade-ipsec-417to419-24nodes-openshift-qe-move-pods-infra succeeded after 6m26s. 
+␛[36mINFO␛[0m[2025-06-03T01:20:54Z] Step phase pre succeeded after 1h17m1s.      
+␛[36mINFO␛[0m[2025-06-03T01:20:54Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-06-03T01:20:54Z] Running step loaded-upgrade-ipsec-417to419-24nodes-set-upgrade-releases. 
+␛[36mINFO␛[0m[2025-06-03T01:21:06Z] Step loaded-upgrade-ipsec-417to419-24nodes-set-upgrade-releases succeeded after 12s. 
+␛[36mINFO␛[0m[2025-06-03T01:21:06Z] Running step loaded-upgrade-ipsec-417to419-24nodes-openshift-qe-workers-scale. 
+␛[36mINFO␛[0m[2025-06-03T01:28:14Z] Step loaded-upgrade-ipsec-417to419-24nodes-openshift-qe-workers-scale succeeded after 7m8s. 
+␛[36mINFO␛[0m[2025-06-03T01:28:14Z] Running step loaded-upgrade-ipsec-417to419-24nodes-openshift-qe-upgrade-max-unavailable. 
+␛[36mINFO␛[0m[2025-06-03T01:28:55Z] Step loaded-upgrade-ipsec-417to419-24nodes-openshift-qe-upgrade-max-unavailable succeeded after 40s. 
+␛[36mINFO␛[0m[2025-06-03T01:28:55Z] Running step loaded-upgrade-ipsec-417to419-24nodes-openshift-qe-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-06-03T01:41:14Z] Step loaded-upgrade-ipsec-417to419-24nodes-openshift-qe-cluster-density-v2 succeeded after 12m19s. 
+␛[36mINFO␛[0m[2025-06-03T01:41:14Z] Running step loaded-upgrade-ipsec-417to419-24nodes-redhat-chaos-cerberus-one-run-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-06-03T01:42:18Z] Step loaded-upgrade-ipsec-417to419-24nodes-redhat-chaos-cerberus-one-run-cluster-density-v2 succeeded after 1m4s. 
+␛[36mINFO␛[0m[2025-06-03T01:42:18Z] Running step loaded-upgrade-ipsec-417to419-24nodes-cucushift-upgrade-prehealthcheck. 
+␛[36mINFO␛[0m[2025-06-03T01:52:07Z] Step loaded-upgrade-ipsec-417to419-24nodes-cucushift-upgrade-prehealthcheck succeeded after 9m49s. 
+␛[36mINFO␛[0m[2025-06-03T01:52:07Z] Running step loaded-upgrade-ipsec-417to419-24nodes-cucushift-upgrade-cpou-pause-worker-mcp. 
+␛[36mINFO␛[0m[2025-06-03T01:52:21Z] Step loaded-upgrade-ipsec-417to419-24nodes-cucushift-upgrade-cpou-pause-worker-mcp succeeded after 14s. 
+␛[36mINFO␛[0m[2025-06-03T01:52:21Z] Running step loaded-upgrade-ipsec-417to419-24nodes-cucushift-chainupgrade-toimage. 
+␛[36mINFO␛[0m[2025-06-03T05:27:20Z] Step loaded-upgrade-ipsec-417to419-24nodes-cucushift-chainupgrade-toimage succeeded after 3h34m58s. 
+␛[36mINFO␛[0m[2025-06-03T05:27:20Z] Running step loaded-upgrade-ipsec-417to419-24nodes-cucushift-upgrade-cpou-unpause-worker-mcp. 
+␛[36mINFO␛[0m[2025-06-03T07:07:41Z] Step loaded-upgrade-ipsec-417to419-24nodes-cucushift-upgrade-cpou-unpause-worker-mcp succeeded after 1h40m20s. 
+␛[36mINFO␛[0m[2025-06-03T07:07:41Z] Running step loaded-upgrade-ipsec-417to419-24nodes-cucushift-upgrade-rhel-worker. 
+␛[36mINFO␛[0m[2025-06-03T07:07:56Z] Step loaded-upgrade-ipsec-417to419-24nodes-cucushift-upgrade-rhel-worker succeeded after 15s. 
+␛[36mINFO␛[0m[2025-06-03T07:07:56Z] Running step loaded-upgrade-ipsec-417to419-24nodes-cucushift-upgrade-healthcheck. 
+␛[36mINFO␛[0m[2025-06-03T07:16:23Z] Step loaded-upgrade-ipsec-417to419-24nodes-cucushift-upgrade-healthcheck succeeded after 8m27s. 
+␛[36mINFO␛[0m[2025-06-03T07:16:23Z] Step phase test succeeded after 5h55m29s.    
+␛[36mINFO␛[0m[2025-06-03T07:16:23Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-06-03T07:16:23Z] Skipping optional step loaded-upgrade-ipsec-417to419-24nodes-gather-aws-console 
+␛[36mINFO␛[0m[2025-06-03T07:16:23Z] Skipping optional step loaded-upgrade-ipsec-417to419-24nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-06-03T07:16:23Z] Skipping optional step loaded-upgrade-ipsec-417to419-24nodes-gather-extra 
+␛[36mINFO␛[0m[2025-06-03T07:16:23Z] Skipping optional step loaded-upgrade-ipsec-417to419-24nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-06-03T07:16:23Z] Running step loaded-upgrade-ipsec-417to419-24nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-06-03T07:23:39Z] Step loaded-upgrade-ipsec-417to419-24nodes-ipi-deprovision-deprovision succeeded after 7m16s. 
+␛[36mINFO␛[0m[2025-06-03T07:23:39Z] Running step loaded-upgrade-ipsec-417to419-24nodes-aws-deprovision-users-and-policies. 
+␛[36mINFO␛[0m[2025-06-03T07:23:54Z] Step loaded-upgrade-ipsec-417to419-24nodes-aws-deprovision-users-and-policies succeeded after 15s. 
+␛[36mINFO␛[0m[2025-06-03T07:23:54Z] Step phase post succeeded after 7m31s.       
+␛[36mINFO␛[0m[2025-06-03T07:23:54Z] Releasing leases for test loaded-upgrade-ipsec-417to419-24nodes 
+␛[36mINFO␛[0m[2025-06-03T07:23:55Z] Ran for 7h22m7s                              
+␛[36mINFO␛[0m[2025-06-03T07:23:55Z] Reporting job state 'succeeded'              

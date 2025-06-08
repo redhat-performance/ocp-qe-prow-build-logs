@@ -1,0 +1,88 @@
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] ci-operator version v20250502-5ac54da4d      
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [rosa_hcp-4.18-candidate-x86-loaded-upgrade-from-4.17] 
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-05-03T06:01:13Z] skipped directory "..2025_05_03_06_01_06.1077520097" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Requesting 4.18 from https://api.integration.openshift.com/api/upgrades_info/graph?arch=amd64&channel=candidate-4.18 
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Resolved release latest to quay.io/openshift-release-dev/ocp-release@sha256:31e8978d1f7a24c3e70dcc12c93dd5e73311b78e528f73beb020ddbe3270e07d 
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-ml0gsgqy 
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Running [input:cli-ocm], [input:rosa-aws-cli], [input:ocp-4.18-upi-installer], [input:ocp-4.12-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [release:latest], [images], loaded-upgrade418-24nodes 
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale-qe 
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Tagging ci/rosa-aws-cli:latest into pipeline:rosa-aws-cli. 
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Tagging ci/cli-ocm:latest into pipeline:cli-ocm. 
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-05-03T06:01:13Z] Tagging ocp/4.18:upi-installer into pipeline:ocp-4.18-upi-installer. 
+␛[36mINFO␛[0m[2025-05-03T06:01:14Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-05-03T06:01:14Z] Requesting 4.18 from https://api.integration.openshift.com/api/upgrades_info/graph?arch=amd64&channel=candidate-4.18 
+␛[36mINFO␛[0m[2025-05-03T06:01:14Z] Resolved release latest to quay.io/openshift-release-dev/ocp-release@sha256:31e8978d1f7a24c3e70dcc12c93dd5e73311b78e528f73beb020ddbe3270e07d 
+␛[36mINFO␛[0m[2025-05-03T06:01:40Z] Importing release 4.18.12 created at 2025-05-01 17:06:51 +0000 UTC with 188 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-05-03T06:03:26Z] Imported release 4.18.12 created at 2025-05-01 17:06:51 +0000 UTC with 188 images to tag release:latest 
+␛[36mINFO␛[0m[2025-05-03T06:03:26Z] Acquiring leases for test loaded-upgrade418-24nodes: [aws-perfscale-qe-quota-slice] 
+␛[36mINFO␛[0m[2025-05-03T06:05:14Z] Acquired 1 lease(s) for aws-perfscale-qe-quota-slice: [us-west-2--aws-perfscale-qe-quota-slice-9] 
+␛[36mINFO␛[0m[2025-05-03T06:05:14Z] Running multi-stage test loaded-upgrade418-24nodes 
+␛[36mINFO␛[0m[2025-05-03T06:05:15Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-05-03T06:05:15Z] Running step loaded-upgrade418-24nodes-aws-provision-vpc-shared. 
+␛[36mINFO␛[0m[2025-05-03T06:08:06Z] Step loaded-upgrade418-24nodes-aws-provision-vpc-shared succeeded after 2m51s. 
+␛[36mINFO␛[0m[2025-05-03T06:08:06Z] Running step loaded-upgrade418-24nodes-aws-provision-tags-for-byo-vpc-ocm-pre. 
+␛[36mINFO␛[0m[2025-05-03T06:08:17Z] Step loaded-upgrade418-24nodes-aws-provision-tags-for-byo-vpc-ocm-pre succeeded after 11s. 
+␛[36mINFO␛[0m[2025-05-03T06:08:17Z] Running step loaded-upgrade418-24nodes-rosa-cluster-prefix. 
+␛[36mINFO␛[0m[2025-05-03T06:08:28Z] Step loaded-upgrade418-24nodes-rosa-cluster-prefix succeeded after 11s. 
+␛[36mINFO␛[0m[2025-05-03T06:08:28Z] Running step loaded-upgrade418-24nodes-rosa-sts-account-roles-create. 
+␛[36mINFO␛[0m[2025-05-03T06:09:17Z] Step loaded-upgrade418-24nodes-rosa-sts-account-roles-create succeeded after 49s. 
+␛[36mINFO␛[0m[2025-05-03T06:09:17Z] Running step loaded-upgrade418-24nodes-rosa-sts-oidc-config-create. 
+␛[36mINFO␛[0m[2025-05-03T06:09:32Z] Step loaded-upgrade418-24nodes-rosa-sts-oidc-config-create succeeded after 14s. 
+␛[36mINFO␛[0m[2025-05-03T06:09:32Z] Running step loaded-upgrade418-24nodes-rosa-sts-operator-roles-create. 
+␛[36mINFO␛[0m[2025-05-03T06:10:10Z] Step loaded-upgrade418-24nodes-rosa-sts-operator-roles-create succeeded after 38s. 
+␛[36mINFO␛[0m[2025-05-03T06:10:10Z] Running step loaded-upgrade418-24nodes-rosa-cluster-provision. 
+␛[36mINFO␛[0m[2025-05-03T06:10:48Z] Step loaded-upgrade418-24nodes-rosa-cluster-provision succeeded after 37s. 
+␛[36mINFO␛[0m[2025-05-03T06:10:48Z] Running step loaded-upgrade418-24nodes-rosa-cluster-wait-ready-cluster. 
+␛[36mINFO␛[0m[2025-05-03T06:27:00Z] Step loaded-upgrade418-24nodes-rosa-cluster-wait-ready-cluster succeeded after 16m12s. 
+␛[36mINFO␛[0m[2025-05-03T06:27:00Z] Running step loaded-upgrade418-24nodes-rosa-cluster-notify-error. 
+␛[36mINFO␛[0m[2025-05-03T06:27:11Z] Step loaded-upgrade418-24nodes-rosa-cluster-notify-error succeeded after 11s. 
+␛[36mINFO␛[0m[2025-05-03T06:27:11Z] Running step loaded-upgrade418-24nodes-rosa-conf-idp-htpasswd. 
+␛[36mINFO␛[0m[2025-05-03T06:29:00Z] Step loaded-upgrade418-24nodes-rosa-conf-idp-htpasswd succeeded after 1m48s. 
+␛[36mINFO␛[0m[2025-05-03T06:29:00Z] Running step loaded-upgrade418-24nodes-rosa-cluster-wait-ready-operators. 
+␛[36mINFO␛[0m[2025-05-03T06:40:48Z] Step loaded-upgrade418-24nodes-rosa-cluster-wait-ready-operators succeeded after 11m47s. 
+␛[36mINFO␛[0m[2025-05-03T06:40:48Z] Running step loaded-upgrade418-24nodes-aws-provision-tags-for-byo-vpc. 
+␛[36mINFO␛[0m[2025-05-03T06:41:00Z] Step loaded-upgrade418-24nodes-aws-provision-tags-for-byo-vpc succeeded after 12s. 
+␛[36mINFO␛[0m[2025-05-03T06:41:00Z] Running step loaded-upgrade418-24nodes-osd-ccs-conf-idp-htpasswd-multi-users. 
+␛[36mINFO␛[0m[2025-05-03T06:42:16Z] Step loaded-upgrade418-24nodes-osd-ccs-conf-idp-htpasswd-multi-users succeeded after 1m15s. 
+␛[36mINFO␛[0m[2025-05-03T06:42:16Z] Running step loaded-upgrade418-24nodes-rosa-cluster-wait-ready-nodes. 
+␛[36mINFO␛[0m[2025-05-03T06:50:40Z] Step loaded-upgrade418-24nodes-rosa-cluster-wait-ready-nodes succeeded after 8m24s. 
+␛[36mINFO␛[0m[2025-05-03T06:50:40Z] Step phase pre succeeded after 45m25s.       
+␛[36mINFO␛[0m[2025-05-03T06:50:40Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-05-03T06:50:40Z] Running step loaded-upgrade418-24nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-05-03T06:50:50Z] Step loaded-upgrade418-24nodes-ipi-install-rbac succeeded after 10s. 
+␛[36mINFO␛[0m[2025-05-03T06:50:50Z] Running step loaded-upgrade418-24nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-05-03T06:51:00Z] Step loaded-upgrade418-24nodes-openshift-cluster-bot-rbac succeeded after 9s. 
+␛[36mINFO␛[0m[2025-05-03T06:51:00Z] Running step loaded-upgrade418-24nodes-openshift-qe-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-05-03T07:19:29Z] Step loaded-upgrade418-24nodes-openshift-qe-cluster-density-v2 succeeded after 28m29s. 
+␛[36mINFO␛[0m[2025-05-03T07:19:29Z] Running step loaded-upgrade418-24nodes-redhat-chaos-cerberus-one-run-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-05-03T07:20:01Z] Step loaded-upgrade418-24nodes-redhat-chaos-cerberus-one-run-cluster-density-v2 succeeded after 31s. 
+␛[36mINFO␛[0m[2025-05-03T07:20:01Z] Running step loaded-upgrade418-24nodes-rosa-cluster-upgrade-cluster. 
+␛[36mINFO␛[0m[2025-05-03T09:21:36Z] Step loaded-upgrade418-24nodes-rosa-cluster-upgrade-cluster succeeded after 2h1m35s. 
+␛[36mINFO␛[0m[2025-05-03T09:21:36Z] Step phase test succeeded after 2h30m56s.    
+␛[36mINFO␛[0m[2025-05-03T09:21:36Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-05-03T09:21:36Z] Running step loaded-upgrade418-24nodes-gather-must-gather. 
+␛[36mINFO␛[0m[2025-05-03T09:24:48Z] Step loaded-upgrade418-24nodes-gather-must-gather succeeded after 3m11s. 
+␛[36mINFO␛[0m[2025-05-03T09:24:48Z] Running step loaded-upgrade418-24nodes-gather-extra. 
+␛[36mINFO␛[0m[2025-05-03T09:35:21Z] Step loaded-upgrade418-24nodes-gather-extra succeeded after 10m33s. 
+␛[36mINFO␛[0m[2025-05-03T09:35:21Z] Running step loaded-upgrade418-24nodes-gather-audit-logs. 
+␛[36mINFO␛[0m[2025-05-03T09:35:43Z] Step loaded-upgrade418-24nodes-gather-audit-logs succeeded after 22s. 
+␛[36mINFO␛[0m[2025-05-03T09:35:43Z] Running step loaded-upgrade418-24nodes-rosa-cluster-deprovision. 
+␛[36mINFO␛[0m[2025-05-03T10:03:50Z] Step loaded-upgrade418-24nodes-rosa-cluster-deprovision succeeded after 28m6s. 
+␛[36mINFO␛[0m[2025-05-03T10:03:50Z] Running step loaded-upgrade418-24nodes-rosa-cluster-index. 
+␛[36mINFO␛[0m[2025-05-03T10:04:05Z] Step loaded-upgrade418-24nodes-rosa-cluster-index succeeded after 14s. 
+␛[36mINFO␛[0m[2025-05-03T10:04:05Z] Running step loaded-upgrade418-24nodes-rosa-sts-operator-roles-delete. 
+␛[36mINFO␛[0m[2025-05-03T10:04:21Z] Step loaded-upgrade418-24nodes-rosa-sts-operator-roles-delete succeeded after 16s. 
+␛[36mINFO␛[0m[2025-05-03T10:04:21Z] Running step loaded-upgrade418-24nodes-rosa-sts-oidc-config-delete. 
+␛[36mINFO␛[0m[2025-05-03T10:04:34Z] Step loaded-upgrade418-24nodes-rosa-sts-oidc-config-delete succeeded after 13s. 
+␛[36mINFO␛[0m[2025-05-03T10:04:34Z] Running step loaded-upgrade418-24nodes-rosa-sts-account-roles-delete. 
+␛[36mINFO␛[0m[2025-05-03T10:04:47Z] Step loaded-upgrade418-24nodes-rosa-sts-account-roles-delete succeeded after 12s. 
+␛[36mINFO␛[0m[2025-05-03T10:04:47Z] Running step loaded-upgrade418-24nodes-aws-deprovision-stacks. 
+␛[36mINFO␛[0m[2025-05-03T10:06:31Z] Step loaded-upgrade418-24nodes-aws-deprovision-stacks succeeded after 1m44s. 
+␛[36mINFO␛[0m[2025-05-03T10:06:31Z] Step phase post succeeded after 44m54s.      
+␛[36mINFO␛[0m[2025-05-03T10:06:31Z] Releasing leases for test loaded-upgrade418-24nodes 
+␛[36mINFO␛[0m[2025-05-03T10:06:31Z] Ran for 4h5m17s                              
+␛[36mINFO␛[0m[2025-05-03T10:06:31Z] Reporting job state 'succeeded'              

@@ -1,0 +1,25 @@
+␛[36mINFO␛[0m[2025-06-01T00:02:57Z] ci-operator version v20250530-1d097c143      
+␛[36mINFO␛[0m[2025-06-01T00:02:57Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [write_jobs_to_gsheet] 
+␛[36mINFO␛[0m[2025-06-01T00:02:57Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-06-01T00:02:57Z] skipped directory "..2025_06_01_00_02_51.485035160" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-06-01T00:02:57Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.17.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-01T00:02:57Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.17.0-0.nightly-2025-05-29-234149 
+␛[36mINFO␛[0m[2025-06-01T00:02:57Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-wyb9pkiz 
+␛[36mINFO␛[0m[2025-06-01T00:02:57Z] Running [input:ci-ocp-qe-perfscale-ci-latest], [release:latest], write-jobs-to-google-sheet-sprintly 
+␛[36mINFO␛[0m[2025-06-01T00:02:57Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-06-01T00:02:57Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-06-01T00:02:57Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.17.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-01T00:02:57Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.17.0-0.nightly-2025-05-29-234149 
+␛[36mINFO␛[0m[2025-06-01T00:03:20Z] Importing release 4.17.0-0.nightly-2025-05-29-234149 created at 2025-05-29 23:43:42 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-06-01T00:04:55Z] Imported release 4.17.0-0.nightly-2025-05-29-234149 created at 2025-05-29 23:43:42 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-06-01T00:04:55Z] Running multi-stage test write-jobs-to-google-sheet-sprintly 
+␛[36mINFO␛[0m[2025-06-01T00:04:55Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-06-01T00:04:55Z] Step phase pre succeeded after 0s.           
+␛[36mINFO␛[0m[2025-06-01T00:04:55Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-06-01T00:04:55Z] Running step write-jobs-to-google-sheet-sprintly-openshift-qe-write-jobs-to-gsheet. 
+␛[36mINFO␛[0m[2025-06-01T00:06:15Z] Step write-jobs-to-google-sheet-sprintly-openshift-qe-write-jobs-to-gsheet succeeded after 1m19s. 
+␛[36mINFO␛[0m[2025-06-01T00:06:15Z] Step phase test succeeded after 1m19s.       
+␛[36mINFO␛[0m[2025-06-01T00:06:15Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-06-01T00:06:15Z] Step phase post succeeded after 0s.          
+␛[36mINFO␛[0m[2025-06-01T00:06:15Z] Ran for 3m18s                                
+␛[36mINFO␛[0m[2025-06-01T00:06:15Z] Reporting job state 'succeeded'              

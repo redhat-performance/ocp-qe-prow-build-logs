@@ -1,0 +1,88 @@
+␛[36mINFO␛[0m[2025-06-08T03:00:55Z] ci-operator version v20250606-ead9efe03      
+␛[36mINFO␛[0m[2025-06-08T03:00:55Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [aws-4.19-nightly-x86] 
+␛[36mINFO␛[0m[2025-06-08T03:00:56Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-06-08T03:00:56Z] skipped directory "..2025_06_08_03_00_49.673760275" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-06-08T03:00:56Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-08T03:00:56Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-06-07-182714 
+␛[36mINFO␛[0m[2025-06-08T03:00:56Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-thntvfih 
+␛[36mINFO␛[0m[2025-06-08T03:00:56Z] Running [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [input:ci-rosa-aws-cli-latest], [release:latest], [images], data-path-9nodes 
+␛[36mINFO␛[0m[2025-06-08T03:00:56Z] Loading information from https://config.ci.openshift.org for cluster profile aws-perfscale 
+␛[36mINFO␛[0m[2025-06-08T03:00:57Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-06-08T03:00:57Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-06-08T03:00:57Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-06-08T03:00:57Z] Tagging ci/rosa-aws-cli:latest into pipeline:ci-rosa-aws-cli-latest. 
+␛[36mINFO␛[0m[2025-06-08T03:00:57Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-06-08T03:00:57Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-06-08T03:00:57Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-06-08T03:00:57Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-06-08T03:00:57Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-08T03:00:57Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-06-07-182714 
+␛[36mINFO␛[0m[2025-06-08T03:01:17Z] Importing release 4.19.0-0.nightly-2025-06-07-182714 created at 2025-06-07 18:29:13 +0000 UTC with 189 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-06-08T03:02:53Z] Imported release 4.19.0-0.nightly-2025-06-07-182714 created at 2025-06-07 18:29:13 +0000 UTC with 189 images to tag release:latest 
+␛[36mINFO␛[0m[2025-06-08T03:02:53Z] Acquiring leases for test data-path-9nodes: [aws-perfscale-quota-slice] 
+␛[36mINFO␛[0m[2025-06-08T03:02:53Z] Acquired 1 lease(s) for aws-perfscale-quota-slice: [us-west-2--aws-perfscale-quota-slice-5] 
+␛[36mINFO␛[0m[2025-06-08T03:02:53Z] Running multi-stage test data-path-9nodes    
+␛[36mINFO␛[0m[2025-06-08T03:02:54Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-06-08T03:02:54Z] Running step data-path-9nodes-ipi-conf.      
+␛[36mINFO␛[0m[2025-06-08T03:03:05Z] Step data-path-9nodes-ipi-conf succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-08T03:03:05Z] Running step data-path-9nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-06-08T03:03:14Z] Step data-path-9nodes-ipi-conf-telemetry succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-08T03:03:14Z] Running step data-path-9nodes-ipi-conf-aws.  
+␛[36mINFO␛[0m[2025-06-08T03:03:26Z] Step data-path-9nodes-ipi-conf-aws succeeded after 12s. 
+␛[36mINFO␛[0m[2025-06-08T03:03:26Z] Running step data-path-9nodes-ipi-conf-aws-byo-ipv4-pool-public. 
+␛[36mINFO␛[0m[2025-06-08T03:03:34Z] Step data-path-9nodes-ipi-conf-aws-byo-ipv4-pool-public succeeded after 7s. 
+␛[36mINFO␛[0m[2025-06-08T03:03:34Z] Running step data-path-9nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-06-08T03:03:45Z] Step data-path-9nodes-ipi-install-monitoringpvc succeeded after 10s. 
+␛[36mINFO␛[0m[2025-06-08T03:03:45Z] Running step data-path-9nodes-ipi-conf-aws-user-min-permissions. 
+␛[36mINFO␛[0m[2025-06-08T03:04:01Z] Step data-path-9nodes-ipi-conf-aws-user-min-permissions succeeded after 15s. 
+␛[36mINFO␛[0m[2025-06-08T03:04:01Z] Running step data-path-9nodes-aws-provision-iam-user. 
+␛[36mINFO␛[0m[2025-06-08T03:04:14Z] Step data-path-9nodes-aws-provision-iam-user succeeded after 13s. 
+␛[36mINFO␛[0m[2025-06-08T03:04:14Z] Running step data-path-9nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-06-08T03:04:24Z] Step data-path-9nodes-ipi-install-rbac succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-08T03:04:24Z] Running step data-path-9nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-06-08T03:04:32Z] Step data-path-9nodes-openshift-cluster-bot-rbac succeeded after 7s. 
+␛[36mINFO␛[0m[2025-06-08T03:04:32Z] Running step data-path-9nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-06-08T03:04:39Z] Step data-path-9nodes-ipi-install-hosted-loki succeeded after 7s. 
+␛[36mINFO␛[0m[2025-06-08T03:04:39Z] Running step data-path-9nodes-ipi-install-install. 
+␛[36mINFO␛[0m[2025-06-08T03:48:08Z] Step data-path-9nodes-ipi-install-install succeeded after 43m29s. 
+␛[36mINFO␛[0m[2025-06-08T03:48:08Z] Running step data-path-9nodes-ipi-install-times-collection. 
+␛[36mINFO␛[0m[2025-06-08T03:48:22Z] Step data-path-9nodes-ipi-install-times-collection succeeded after 13s. 
+␛[36mINFO␛[0m[2025-06-08T03:48:22Z] Running step data-path-9nodes-nodes-readiness. 
+␛[36mINFO␛[0m[2025-06-08T03:48:31Z] Step data-path-9nodes-nodes-readiness succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-08T03:48:31Z] Running step data-path-9nodes-multiarch-validate-nodes. 
+␛[36mINFO␛[0m[2025-06-08T03:48:40Z] Step data-path-9nodes-multiarch-validate-nodes succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-08T03:48:40Z] Running step data-path-9nodes-openshift-qe-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-06-08T04:02:24Z] Step data-path-9nodes-openshift-qe-workers-infra-workload succeeded after 13m44s. 
+␛[36mINFO␛[0m[2025-06-08T04:02:24Z] Running step data-path-9nodes-openshift-qe-move-pods-infra. 
+␛[36mINFO␛[0m[2025-06-08T04:07:59Z] Step data-path-9nodes-openshift-qe-move-pods-infra succeeded after 5m34s. 
+␛[36mINFO␛[0m[2025-06-08T04:07:59Z] Step phase pre succeeded after 1h5m4s.       
+␛[36mINFO␛[0m[2025-06-08T04:07:59Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-06-08T04:07:59Z] Running step data-path-9nodes-openshift-qe-workers-scale. 
+␛[36mINFO␛[0m[2025-06-08T04:12:49Z] Step data-path-9nodes-openshift-qe-workers-scale succeeded after 4m50s. 
+␛[36mINFO␛[0m[2025-06-08T04:12:49Z] Running step data-path-9nodes-openshift-qe-perfscale-aws-data-path-sg. 
+␛[36mINFO␛[0m[2025-06-08T04:13:15Z] Step data-path-9nodes-openshift-qe-perfscale-aws-data-path-sg succeeded after 26s. 
+␛[36mINFO␛[0m[2025-06-08T04:13:15Z] Running step data-path-9nodes-openshift-qe-network-smoke. 
+␛[36mINFO␛[0m[2025-06-08T04:16:26Z] Step data-path-9nodes-openshift-qe-network-smoke succeeded after 3m10s. 
+␛[36mINFO␛[0m[2025-06-08T04:16:26Z] Running step data-path-9nodes-openshift-qe-network-perf. 
+␛[36mINFO␛[0m[2025-06-08T06:22:53Z] Step data-path-9nodes-openshift-qe-network-perf succeeded after 2h6m27s. 
+␛[36mINFO␛[0m[2025-06-08T06:22:53Z] Running step data-path-9nodes-redhat-chaos-cerberus-one-run. 
+␛[36mINFO␛[0m[2025-06-08T06:23:17Z] Step data-path-9nodes-redhat-chaos-cerberus-one-run succeeded after 23s. 
+␛[36mINFO␛[0m[2025-06-08T06:23:17Z] Running step data-path-9nodes-openshift-qe-ingress-perf. 
+␛[36mINFO␛[0m[2025-06-08T07:18:28Z] Step data-path-9nodes-openshift-qe-ingress-perf succeeded after 55m10s. 
+␛[36mINFO␛[0m[2025-06-08T07:18:28Z] Running step data-path-9nodes-redhat-chaos-cerberus-one-run-ingress-perf. 
+␛[36mINFO␛[0m[2025-06-08T07:18:48Z] Step data-path-9nodes-redhat-chaos-cerberus-one-run-ingress-perf succeeded after 20s. 
+␛[36mINFO␛[0m[2025-06-08T07:18:48Z] Step phase test succeeded after 3h10m49s.    
+␛[36mINFO␛[0m[2025-06-08T07:18:48Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-06-08T07:18:48Z] Skipping optional step data-path-9nodes-gather-aws-console 
+␛[36mINFO␛[0m[2025-06-08T07:18:48Z] Skipping optional step data-path-9nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-06-08T07:18:48Z] Skipping optional step data-path-9nodes-gather-extra 
+␛[36mINFO␛[0m[2025-06-08T07:18:48Z] Skipping optional step data-path-9nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-06-08T07:18:48Z] Running step data-path-9nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-06-08T07:24:20Z] Step data-path-9nodes-ipi-deprovision-deprovision succeeded after 5m31s. 
+␛[36mINFO␛[0m[2025-06-08T07:24:20Z] Running step data-path-9nodes-aws-deprovision-users-and-policies. 
+␛[36mINFO␛[0m[2025-06-08T07:24:29Z] Step data-path-9nodes-aws-deprovision-users-and-policies succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-08T07:24:29Z] Step phase post succeeded after 5m41s.       
+␛[36mINFO␛[0m[2025-06-08T07:24:29Z] Releasing leases for test data-path-9nodes   
+␛[36mINFO␛[0m[2025-06-08T07:24:29Z] Ran for 4h23m33s                             
+␛[36mINFO␛[0m[2025-06-08T07:24:29Z] Reporting job state 'succeeded'              
+␛[36mINFO␛[0m[2025-06-08T07:24:29Z] Flushing 3 insights events                   

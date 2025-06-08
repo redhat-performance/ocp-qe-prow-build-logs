@@ -1,0 +1,115 @@
+␛[36mINFO␛[0m[2025-06-04T10:04:11Z] ci-operator version v20250603-749443cfe      
+␛[36mINFO␛[0m[2025-06-04T10:04:11Z] Loading configuration from https://config.ci.openshift.org for openshift-eng/ocp-qe-perfscale-ci@main [azure-4.18-nightly-x86] 
+␛[36mINFO␛[0m[2025-06-04T10:04:11Z] Resolved SHA missing for main in https://github.com/openshift-eng/ocp-qe-perfscale-ci (will prevent caching) 
+␛[33mWARN␛[0m[2025-06-04T10:04:11Z] skipped directory "..2025_06_04_10_04_06.3796885465" when creating secret from directory "/secrets/ci-pull-credentials" 
+␛[36mINFO␛[0m[2025-06-04T10:04:11Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-06-04-014654 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Requesting a release from https://multi.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly-multi/latest 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Resolved release multi-latest to quay.io/openshift-release-dev/ocp-release-nightly@sha256:4efc3ee0e567a0eeab29680433c6f0d2b0538134314bed6bd056799cf4d13667 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-d2qcit1x 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Running [input:upi-installer], [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.11-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-cerberus-cerberus-prow], [release:latest], [release:multi-latest], [images], control-plane-multi-120nodes 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Loading information from https://config.ci.openshift.org for cluster profile azure-perfscale 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Tagging ocp/4.11:upi-installer into pipeline:ocp-4.11-upi-installer. 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Tagging ocp/4.18:upi-installer into pipeline:upi-installer. 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Tagging chaos/cerberus:cerberus-prow into pipeline:chaos-cerberus-cerberus-prow. 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Importing release image multi-latest.        
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Requesting a release from https://multi.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly-multi/latest 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Resolved release multi-latest to quay.io/openshift-release-dev/ocp-release-nightly@sha256:4efc3ee0e567a0eeab29680433c6f0d2b0538134314bed6bd056799cf4d13667 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Importing release image latest.              
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+␛[36mINFO␛[0m[2025-06-04T10:04:12Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-06-04-014654 
+␛[36mINFO␛[0m[2025-06-04T10:04:29Z] Importing release 4.18.0-0.nightly-multi-2025-06-03-210632 created at 2025-06-03 21:07:40 +0000 UTC with 188 images to tag release:multi-latest ... 
+␛[36mINFO␛[0m[2025-06-04T10:04:34Z] Importing release 4.18.0-0.nightly-2025-06-04-014654 created at 2025-06-04 01:48:36 +0000 UTC with 188 images to tag release:latest ... 
+␛[36mINFO␛[0m[2025-06-04T10:06:28Z] Imported release 4.18.0-0.nightly-2025-06-04-014654 created at 2025-06-04 01:48:36 +0000 UTC with 188 images to tag release:latest 
+␛[36mINFO␛[0m[2025-06-04T10:09:43Z] Imported release 4.18.0-0.nightly-multi-2025-06-03-210632 created at 2025-06-03 21:07:40 +0000 UTC with 188 images to tag release:multi-latest 
+␛[36mINFO␛[0m[2025-06-04T10:09:43Z] Acquiring leases for test control-plane-multi-120nodes: [azure-perfscale-quota-slice] 
+␛[36mINFO␛[0m[2025-06-04T10:09:43Z] Acquired 1 lease(s) for azure-perfscale-quota-slice: [northcentralus--azure-perfscale-quota-slice-0] 
+␛[36mINFO␛[0m[2025-06-04T10:09:43Z] Running multi-stage test control-plane-multi-120nodes 
+␛[36mINFO␛[0m[2025-06-04T10:09:46Z] Running multi-stage phase pre                
+␛[36mINFO␛[0m[2025-06-04T10:09:46Z] Running step control-plane-multi-120nodes-ipi-conf. 
+␛[36mINFO␛[0m[2025-06-04T10:09:57Z] Step control-plane-multi-120nodes-ipi-conf succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-04T10:09:57Z] Running step control-plane-multi-120nodes-ipi-conf-telemetry. 
+␛[36mINFO␛[0m[2025-06-04T10:10:07Z] Step control-plane-multi-120nodes-ipi-conf-telemetry succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-04T10:10:07Z] Running step control-plane-multi-120nodes-ipi-conf-azure. 
+␛[36mINFO␛[0m[2025-06-04T10:10:54Z] Step control-plane-multi-120nodes-ipi-conf-azure succeeded after 47s. 
+␛[36mINFO␛[0m[2025-06-04T10:10:54Z] Running step control-plane-multi-120nodes-ipi-install-monitoringpvc. 
+␛[36mINFO␛[0m[2025-06-04T10:11:02Z] Step control-plane-multi-120nodes-ipi-install-monitoringpvc succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-04T10:11:02Z] Running step control-plane-multi-120nodes-ipi-conf-azure-custom-region. 
+␛[36mINFO␛[0m[2025-06-04T10:11:52Z] Step control-plane-multi-120nodes-ipi-conf-azure-custom-region succeeded after 49s. 
+␛[36mINFO␛[0m[2025-06-04T10:11:52Z] Running step control-plane-multi-120nodes-ovn-conf. 
+␛[36mINFO␛[0m[2025-06-04T10:12:00Z] Step control-plane-multi-120nodes-ovn-conf succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-04T10:12:00Z] Running step control-plane-multi-120nodes-ipi-install-rbac. 
+␛[36mINFO␛[0m[2025-06-04T10:12:11Z] Step control-plane-multi-120nodes-ipi-install-rbac succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-04T10:12:11Z] Running step control-plane-multi-120nodes-openshift-cluster-bot-rbac. 
+␛[36mINFO␛[0m[2025-06-04T10:12:20Z] Step control-plane-multi-120nodes-openshift-cluster-bot-rbac succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-04T10:12:20Z] Running step control-plane-multi-120nodes-ipi-install-hosted-loki. 
+␛[36mINFO␛[0m[2025-06-04T10:12:29Z] Step control-plane-multi-120nodes-ipi-install-hosted-loki succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-04T10:12:29Z] Running step control-plane-multi-120nodes-ipi-install-install. 
+␛[36mINFO␛[0m[2025-06-04T11:09:59Z] Step control-plane-multi-120nodes-ipi-install-install succeeded after 57m30s. 
+␛[36mINFO␛[0m[2025-06-04T11:09:59Z] Running step control-plane-multi-120nodes-ipi-install-times-collection. 
+␛[36mINFO␛[0m[2025-06-04T11:10:10Z] Step control-plane-multi-120nodes-ipi-install-times-collection succeeded after 11s. 
+␛[36mINFO␛[0m[2025-06-04T11:10:10Z] Running step control-plane-multi-120nodes-nodes-readiness. 
+␛[36mINFO␛[0m[2025-06-04T11:10:19Z] Step control-plane-multi-120nodes-nodes-readiness succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-04T11:10:19Z] Running step control-plane-multi-120nodes-multiarch-validate-nodes. 
+␛[36mINFO␛[0m[2025-06-04T11:10:27Z] Step control-plane-multi-120nodes-multiarch-validate-nodes succeeded after 8s. 
+␛[36mINFO␛[0m[2025-06-04T11:10:27Z] Running step control-plane-multi-120nodes-ipi-azure-rbac. 
+␛[36mINFO␛[0m[2025-06-04T11:10:37Z] Step control-plane-multi-120nodes-ipi-azure-rbac succeeded after 9s. 
+␛[36mINFO␛[0m[2025-06-04T11:10:37Z] Running step control-plane-multi-120nodes-openshift-qe-workers-infra-workload. 
+␛[36mINFO␛[0m[2025-06-04T11:32:23Z] Step control-plane-multi-120nodes-openshift-qe-workers-infra-workload succeeded after 21m46s. 
+␛[36mINFO␛[0m[2025-06-04T11:32:23Z] Running step control-plane-multi-120nodes-openshift-qe-move-pods-infra. 
+␛[36mINFO␛[0m[2025-06-04T11:39:32Z] Step control-plane-multi-120nodes-openshift-qe-move-pods-infra succeeded after 7m8s. 
+␛[36mINFO␛[0m[2025-06-04T11:39:32Z] Step phase pre succeeded after 1h29m45s.     
+␛[36mINFO␛[0m[2025-06-04T11:39:32Z] Running multi-stage phase test               
+␛[36mINFO␛[0m[2025-06-04T11:39:32Z] Running step control-plane-multi-120nodes-openshift-qe-installer-azure-update-allocated-outbound-ports. 
+␛[36mINFO␛[0m[2025-06-04T11:39:55Z] Step control-plane-multi-120nodes-openshift-qe-installer-azure-update-allocated-outbound-ports succeeded after 23s. 
+␛[36mINFO␛[0m[2025-06-04T11:39:55Z] Running step control-plane-multi-120nodes-ipi-install-heterogeneous. 
+␛[36mINFO␛[0m[2025-06-04T12:04:41Z] Step control-plane-multi-120nodes-ipi-install-heterogeneous succeeded after 24m45s. 
+␛[36mINFO␛[0m[2025-06-04T12:04:41Z] Running step control-plane-multi-120nodes-workers-scale. 
+␛[36mINFO␛[0m[2025-06-04T12:17:03Z] Step control-plane-multi-120nodes-workers-scale succeeded after 12m22s. 
+␛[36mINFO␛[0m[2025-06-04T12:17:03Z] Running step control-plane-multi-120nodes-openshift-qe-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-06-04T13:58:35Z] Step control-plane-multi-120nodes-openshift-qe-cluster-density-v2 succeeded after 1h41m31s. 
+␛[36mINFO␛[0m[2025-06-04T13:58:35Z] Running step control-plane-multi-120nodes-redhat-chaos-cerberus-one-run-cluster-density-v2. 
+␛[36mINFO␛[0m[2025-06-04T13:59:12Z] Step control-plane-multi-120nodes-redhat-chaos-cerberus-one-run-cluster-density-v2 succeeded after 37s. 
+␛[36mINFO␛[0m[2025-06-04T13:59:12Z] Running step control-plane-multi-120nodes-openshift-qe-node-density. 
+␛[36mINFO␛[0m[2025-06-04T14:44:57Z] Step control-plane-multi-120nodes-openshift-qe-node-density succeeded after 45m44s. 
+␛[36mINFO␛[0m[2025-06-04T14:44:57Z] Running step control-plane-multi-120nodes-redhat-chaos-cerberus-one-run-node-density. 
+␛[36mINFO␛[0m[2025-06-04T14:45:33Z] Step control-plane-multi-120nodes-redhat-chaos-cerberus-one-run-node-density succeeded after 35s. 
+␛[36mINFO␛[0m[2025-06-04T14:45:33Z] Running step control-plane-multi-120nodes-openshift-qe-node-density-cni. 
+␛[33mWARN␛[0m[2025-06-04T14:47:56Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:48:26Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:50:11Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:50:26Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:50:56Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:51:26Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:51:56Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:52:26Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:52:56Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:53:26Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:53:56Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:54:26Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:54:56Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:55:26Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:56:40Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=[status 500 Internal Server Error, status code 500 updating northcentralus--azure-XXXXXXXXX-quota-slice-0, status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0]
+␛[33mWARN␛[0m[2025-06-04T14:56:56Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[33mWARN␛[0m[2025-06-04T14:57:26Z] Failed to update lease "northcentralus--azure-XXXXXXXXX-quota-slice-0"  ␛[33merror␛[0m=status 502 Bad Gateway, status code 502 updating northcentralus--azure-XXXXXXXXX-quota-slice-0
+␛[36mINFO␛[0m[2025-06-04T15:46:45Z] Step control-plane-multi-120nodes-openshift-qe-node-density-cni succeeded after 1h1m12s. 
+␛[36mINFO␛[0m[2025-06-04T15:46:45Z] Running step control-plane-multi-120nodes-redhat-chaos-cerberus-one-run-node-density-cni. 
+␛[36mINFO␛[0m[2025-06-04T15:47:25Z] Step control-plane-multi-120nodes-redhat-chaos-cerberus-one-run-node-density-cni succeeded after 39s. 
+␛[36mINFO␛[0m[2025-06-04T15:47:25Z] Running step control-plane-multi-120nodes-openshift-qe-crd-scale. 
+␛[36mINFO␛[0m[2025-06-04T15:50:44Z] Step control-plane-multi-120nodes-openshift-qe-crd-scale succeeded after 3m19s. 
+␛[36mINFO␛[0m[2025-06-04T15:50:44Z] Step phase test succeeded after 4h11m12s.    
+␛[36mINFO␛[0m[2025-06-04T15:50:44Z] Running multi-stage phase post               
+␛[36mINFO␛[0m[2025-06-04T15:50:44Z] Skipping optional step control-plane-multi-120nodes-gather-must-gather 
+␛[36mINFO␛[0m[2025-06-04T15:50:44Z] Skipping optional step control-plane-multi-120nodes-gather-extra 
+␛[36mINFO␛[0m[2025-06-04T15:50:44Z] Skipping optional step control-plane-multi-120nodes-gather-audit-logs 
+␛[36mINFO␛[0m[2025-06-04T15:50:44Z] Running step control-plane-multi-120nodes-ipi-deprovision-deprovision. 
+␛[36mINFO␛[0m[2025-06-04T16:00:47Z] Step control-plane-multi-120nodes-ipi-deprovision-deprovision succeeded after 10m3s. 
+␛[36mINFO␛[0m[2025-06-04T16:00:47Z] Step phase post succeeded after 10m3s.       
+␛[36mINFO␛[0m[2025-06-04T16:00:47Z] Releasing leases for test control-plane-multi-120nodes 
+␛[36mINFO␛[0m[2025-06-04T16:00:47Z] Ran for 5h56m35s                             
+␛[36mINFO␛[0m[2025-06-04T16:00:47Z] Reporting job state 'succeeded'              

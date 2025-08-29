@@ -1,0 +1,161 @@
+[36mINFO[0m[2025-07-28T04:02:14Z] ci-operator version v20250725-5a662946b      
+[36mINFO[0m[2025-07-28T04:02:14Z] Loading configuration from https://config.ci.openshift.org for redhat-chaos/prow-scripts@main [4.19-nightly] 
+[36mINFO[0m[2025-07-28T04:02:15Z] Resolved SHA missing for main in https://github.com/redhat-chaos/prow-scripts (will prevent caching) 
+[33mWARN[0m[2025-07-28T04:02:15Z] skipped directory "..2025_07_28_04_02_08.432224029" when creating secret from directory "/secrets/ci-pull-credentials" 
+[36mINFO[0m[2025-07-28T04:02:15Z] Loading information from https://config.ci.openshift.org for integrated stream ocp/4.19 
+[36mINFO[0m[2025-07-28T04:02:15Z] Building release initial from a snapshot of ocp/4.19 
+[36mINFO[0m[2025-07-28T04:02:15Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+[36mINFO[0m[2025-07-28T04:02:15Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-07-25-005602 
+[36mINFO[0m[2025-07-28T04:02:15Z] Requesting a release from https://multi.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly-multi/latest 
+[36mINFO[0m[2025-07-28T04:02:15Z] Resolved release multi-latest to quay.io/openshift-release-dev/ocp-release-nightly@sha256:ea5a63ce74ec6e09190ef6de5f8179a99daae8da530160981ea40ea4f2699b77 
+[36mINFO[0m[2025-07-28T04:02:16Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-w9d3wk8i 
+[36mINFO[0m[2025-07-28T04:02:16Z] Setting arch for src                          [36march[0m=amd64 [36mreasons[0m=cerberus-main-prow-419, prow-scripts-419, perfscale-observer
+[36mINFO[0m[2025-07-28T04:02:16Z] Running [input:root], [input:cerberus.prow], [input:cli], [input:krkn.prow], [input:ocp-qe-perfscale-ci], [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-prow-scripts-latest], [release-inputs:initial], [release:latest], src, cerberus-main-prow-419, prow-scripts-419, perfscale-observer, [output:stable:cerberus-main-prow-419], [output:stable:prow-scripts-419], [output:stable:perfscale-observer], [images], krkn-hub-tests-13nodes 
+[36mINFO[0m[2025-07-28T04:02:16Z] Loading information from https://config.ci.openshift.org for cluster profile aws-chaos 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging chaos/cerberus:cerberus-prow into pipeline:cerberus.prow. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging chaos/prow-scripts:latest into pipeline:chaos-prow-scripts-latest. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging chaos/krkn:latest into pipeline:krkn.prow. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging openshift/release:golang-1.18 into pipeline:root. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ocp-qe-perfscale-ci. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ocp/4.19:cli into pipeline:cli.      
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Waiting to import tags on imagestream (after taking snapshot) ci-op-w9d3wk8i/stable-initial ... 
+[36mINFO[0m[2025-07-28T04:02:16Z] Importing release image latest.              
+[36mINFO[0m[2025-07-28T04:02:16Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+[36mINFO[0m[2025-07-28T04:02:16Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-07-25-005602 
+[36mINFO[0m[2025-07-28T04:02:21Z] Building src                                 
+[36mINFO[0m[2025-07-28T04:02:21Z] Created build "src-amd64"                    
+[36mINFO[0m[2025-07-28T04:02:37Z] Importing release 4.19.0-0.nightly-2025-07-25-005602 created at 2025-07-25 00:59:12 +0000 UTC with 189 images to tag release:latest ... 
+[36mINFO[0m[2025-07-28T04:04:12Z] Imported release 4.19.0-0.nightly-2025-07-25-005602 created at 2025-07-25 00:59:12 +0000 UTC with 189 images to tag release:latest 
+[36mINFO[0m[2025-07-28T04:05:32Z] Imported tags on imagestream (after taking snapshot) ci-op-w9d3wk8i/stable-initial 
+[31mERRO[0m[2025-07-28T04:10:41Z] Failed to fetch live metrics for node ip-10-28-68-61.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-61.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T04:10:51Z] Failed to fetch live metrics for node ip-10-28-68-61.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-61.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T04:11:01Z] Failed to fetch live metrics for node ip-10-28-68-61.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-61.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[36mINFO[0m[2025-07-28T04:15:16Z] Build src-amd64 succeeded after 4m35s        
+[36mINFO[0m[2025-07-28T04:15:16Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-28T04:15:17Z] Image ci-op-w9d3wk8i/pipeline:src created     [36mdigest[0m=sha256:fcdacc876a6c30c9803681a5b999412c6ae6433959050e86e9f391aa02bd8124 [36mfor-build[0m=src
+[36mINFO[0m[2025-07-28T04:15:17Z] Building prow-scripts-419                    
+[36mINFO[0m[2025-07-28T04:15:17Z] Building cerberus-main-prow-419              
+[36mINFO[0m[2025-07-28T04:15:17Z] Building perfscale-observer                  
+[36mINFO[0m[2025-07-28T04:15:17Z] Created build "cerberus-main-prow-419-amd64" 
+[36mINFO[0m[2025-07-28T04:15:17Z] Created build "prow-scripts-419-amd64"       
+[36mINFO[0m[2025-07-28T04:15:18Z] Created build "perfscale-observer-amd64"     
+[31mERRO[0m[2025-07-28T04:17:02Z] Failed to fetch live metrics for node ip-10-28-68-25.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-25.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T04:17:12Z] Failed to fetch live metrics for node ip-10-28-68-25.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-25.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T04:17:22Z] Failed to fetch live metrics for node ip-10-28-68-25.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-25.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[36mINFO[0m[2025-07-28T04:23:35Z] Build cerberus-main-prow-419-amd64 succeeded after 6m33s 
+[36mINFO[0m[2025-07-28T04:23:35Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-28T04:23:37Z] Image ci-op-w9d3wk8i/pipeline:cerberus-main-prow-419 created  [36mdigest[0m=sha256:d0dcace5c6c433402a0a7494f47dc1c038dce975cad015ef191511b48a578891 [36mfor-build[0m=cerberus-main-prow-419
+[36mINFO[0m[2025-07-28T04:23:37Z] Tagging cerberus-main-prow-419 into stable   
+[36mINFO[0m[2025-07-28T04:30:00Z] Build perfscale-observer-amd64 succeeded after 14m42s 
+[36mINFO[0m[2025-07-28T04:30:00Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-28T04:30:01Z] Image ci-op-w9d3wk8i/pipeline:perfscale-observer created  [36mdigest[0m=sha256:a087144dbe92d9a88bdd5c2a4800f3731df93a70921aa08267ef711a0fe9fcf1 [36mfor-build[0m=perfscale-observer
+[36mINFO[0m[2025-07-28T04:30:01Z] Tagging perfscale-observer into stable       
+[36mINFO[0m[2025-07-28T04:32:14Z] Build prow-scripts-419-amd64 succeeded after 16m53s 
+[36mINFO[0m[2025-07-28T04:32:15Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-28T04:32:16Z] Image ci-op-w9d3wk8i/pipeline:prow-scripts-419 created  [36mdigest[0m=sha256:dd9b87ba4d554cd4bc66deed21a92bcf396c6d0d11f85b655dd61dfc217695ff [36mfor-build[0m=prow-scripts-419
+[36mINFO[0m[2025-07-28T04:32:16Z] Tagging prow-scripts-419 into stable         
+[36mINFO[0m[2025-07-28T04:32:16Z] Acquiring leases for test krkn-hub-tests-13nodes: [aws-chaos-quota-slice] 
+[36mINFO[0m[2025-07-28T05:54:59Z] Acquired 1 lease(s) for aws-chaos-quota-slice: [us-west-2--aws-chaos-quota-slice-8] 
+[36mINFO[0m[2025-07-28T05:54:59Z] Running multi-stage test krkn-hub-tests-13nodes 
+[36mINFO[0m[2025-07-28T05:55:01Z] Running multi-stage phase pre                
+[36mINFO[0m[2025-07-28T05:55:01Z] Running step krkn-hub-tests-13nodes-redhat-chaos-cerberus. 
+[36mINFO[0m[2025-07-28T05:55:01Z] Running step krkn-hub-tests-13nodes-openshift-qe-cluster-density-v2-observer. 
+[36mINFO[0m[2025-07-28T05:55:01Z] Running step krkn-hub-tests-13nodes-ipi-conf. 
+[36mINFO[0m[2025-07-28T05:55:20Z] Step krkn-hub-tests-13nodes-ipi-conf succeeded after 18s. 
+[36mINFO[0m[2025-07-28T05:55:20Z] Running step krkn-hub-tests-13nodes-ipi-conf-telemetry. 
+[36mINFO[0m[2025-07-28T05:55:37Z] Step krkn-hub-tests-13nodes-ipi-conf-telemetry succeeded after 17s. 
+[36mINFO[0m[2025-07-28T05:55:37Z] Running step krkn-hub-tests-13nodes-ipi-conf-aws. 
+[36mINFO[0m[2025-07-28T05:56:14Z] Step krkn-hub-tests-13nodes-ipi-conf-aws succeeded after 36s. 
+[36mINFO[0m[2025-07-28T05:56:14Z] Running step krkn-hub-tests-13nodes-ipi-conf-aws-byo-ipv4-pool-public. 
+[31mERRO[0m[2025-07-28T05:56:19Z] Failed to fetch live metrics for node ip-10-28-68-105.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-105.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T05:56:29Z] Failed to fetch live metrics for node ip-10-28-68-105.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-105.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T05:56:39Z] Failed to fetch live metrics for node ip-10-28-68-105.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-105.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[36mINFO[0m[2025-07-28T05:57:21Z] Step krkn-hub-tests-13nodes-ipi-conf-aws-byo-ipv4-pool-public succeeded after 1m7s. 
+[36mINFO[0m[2025-07-28T05:57:21Z] Running step krkn-hub-tests-13nodes-ipi-install-monitoringpvc. 
+[36mINFO[0m[2025-07-28T05:57:54Z] Step krkn-hub-tests-13nodes-ipi-install-monitoringpvc succeeded after 33s. 
+[36mINFO[0m[2025-07-28T05:57:54Z] Running step krkn-hub-tests-13nodes-ipi-conf-aws-user-min-permissions. 
+[36mINFO[0m[2025-07-28T05:58:45Z] Step krkn-hub-tests-13nodes-ipi-conf-aws-user-min-permissions succeeded after 51s. 
+[36mINFO[0m[2025-07-28T05:58:45Z] Running step krkn-hub-tests-13nodes-aws-provision-iam-user. 
+[36mINFO[0m[2025-07-28T05:59:49Z] Step krkn-hub-tests-13nodes-aws-provision-iam-user succeeded after 1m4s. 
+[36mINFO[0m[2025-07-28T05:59:49Z] Running step krkn-hub-tests-13nodes-ipi-install-rbac. 
+[36mINFO[0m[2025-07-28T06:00:03Z] Step krkn-hub-tests-13nodes-ipi-install-rbac succeeded after 14s. 
+[36mINFO[0m[2025-07-28T06:00:03Z] Running step krkn-hub-tests-13nodes-openshift-cluster-bot-rbac. 
+[36mINFO[0m[2025-07-28T06:00:13Z] Step krkn-hub-tests-13nodes-openshift-cluster-bot-rbac succeeded after 10s. 
+[36mINFO[0m[2025-07-28T06:00:13Z] Running step krkn-hub-tests-13nodes-ipi-install-hosted-loki. 
+[36mINFO[0m[2025-07-28T06:00:24Z] Step krkn-hub-tests-13nodes-ipi-install-hosted-loki succeeded after 10s. 
+[36mINFO[0m[2025-07-28T06:00:24Z] Running step krkn-hub-tests-13nodes-ipi-install-install. 
+[31mERRO[0m[2025-07-28T06:02:26Z] Failed to fetch live metrics for node ip-10-28-68-143.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=the server is currently unable to handle the request (get nodes.metrics.k8s.io ip-10-28-68-143.us-east-2.compute.internal) [31mplugin[0m=nodes
+[36mINFO[0m[2025-07-28T06:45:35Z] Step krkn-hub-tests-13nodes-ipi-install-install succeeded after 45m10s. 
+[36mINFO[0m[2025-07-28T06:45:35Z] Running step krkn-hub-tests-13nodes-ipi-install-times-collection. 
+[36mINFO[0m[2025-07-28T06:45:45Z] Step krkn-hub-tests-13nodes-ipi-install-times-collection succeeded after 10s. 
+[36mINFO[0m[2025-07-28T06:45:45Z] Running step krkn-hub-tests-13nodes-nodes-readiness. 
+[36mINFO[0m[2025-07-28T06:45:53Z] Step krkn-hub-tests-13nodes-nodes-readiness succeeded after 7s. 
+[36mINFO[0m[2025-07-28T06:45:53Z] Running step krkn-hub-tests-13nodes-multiarch-validate-nodes. 
+[36mINFO[0m[2025-07-28T06:46:00Z] Step krkn-hub-tests-13nodes-multiarch-validate-nodes succeeded after 7s. 
+[36mINFO[0m[2025-07-28T06:46:00Z] Running step krkn-hub-tests-13nodes-openshift-qe-workers-infra-workload. 
+[36mINFO[0m[2025-07-28T06:58:09Z] Step krkn-hub-tests-13nodes-openshift-qe-workers-infra-workload succeeded after 12m8s. 
+[36mINFO[0m[2025-07-28T06:58:09Z] Running step krkn-hub-tests-13nodes-openshift-qe-move-pods-infra. 
+[36mINFO[0m[2025-07-28T07:04:11Z] Step krkn-hub-tests-13nodes-openshift-qe-move-pods-infra succeeded after 6m1s. 
+[36mINFO[0m[2025-07-28T07:04:11Z] Running step krkn-hub-tests-13nodes-redhat-chaos-observer-start. 
+[36mINFO[0m[2025-07-28T07:04:27Z] Step krkn-hub-tests-13nodes-redhat-chaos-observer-start succeeded after 16s. 
+[36mINFO[0m[2025-07-28T07:04:27Z] Step phase pre succeeded after 1h9m26s.      
+[36mINFO[0m[2025-07-28T07:04:27Z] Running multi-stage phase test               
+[36mINFO[0m[2025-07-28T07:04:27Z] Running step krkn-hub-tests-13nodes-redhat-chaos-start-krkn. 
+[36mINFO[0m[2025-07-28T07:04:35Z] Step krkn-hub-tests-13nodes-redhat-chaos-start-krkn succeeded after 8s. 
+[36mINFO[0m[2025-07-28T07:04:35Z] Running step krkn-hub-tests-13nodes-redhat-chaos-pod-scenarios-etcd-disruption. 
+[36mINFO[0m[2025-07-28T07:16:18Z] Step krkn-hub-tests-13nodes-redhat-chaos-pod-scenarios-etcd-disruption succeeded after 11m43s. 
+[36mINFO[0m[2025-07-28T07:16:18Z] Running step krkn-hub-tests-13nodes-redhat-chaos-container-scenarios-etcd-hangup. 
+[36mINFO[0m[2025-07-28T07:26:40Z] Step krkn-hub-tests-13nodes-redhat-chaos-container-scenarios-etcd-hangup succeeded after 10m21s. 
+[36mINFO[0m[2025-07-28T07:26:40Z] Running step krkn-hub-tests-13nodes-redhat-chaos-time-scenarios. 
+[36mINFO[0m[2025-07-28T07:42:59Z] Step krkn-hub-tests-13nodes-redhat-chaos-time-scenarios succeeded after 16m19s. 
+[36mINFO[0m[2025-07-28T07:42:59Z] Running step krkn-hub-tests-13nodes-redhat-chaos-application-outages-console. 
+[31mERRO[0m[2025-07-28T08:06:46Z] Failed to fetch live metrics for node ip-10-28-68-143.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=the server was unable to return a response in the time allotted, but may still be processing the request (get nodes.metrics.k8s.io ip-10-28-68-143.us-east-2.compute.internal) [31mplugin[0m=nodes
+[36mINFO[0m[2025-07-28T08:09:30Z] Step krkn-hub-tests-13nodes-redhat-chaos-application-outages-console succeeded after 26m30s. 
+[36mINFO[0m[2025-07-28T08:09:30Z] Running step krkn-hub-tests-13nodes-redhat-chaos-pod-scenarios-ovn-disruption. 
+[36mINFO[0m[2025-07-28T08:27:43Z] Step krkn-hub-tests-13nodes-redhat-chaos-pod-scenarios-ovn-disruption succeeded after 18m12s. 
+[36mINFO[0m[2025-07-28T08:27:43Z] Running step krkn-hub-tests-13nodes-redhat-chaos-pod-scenarios-ovn-cp-disruption. 
+[36mINFO[0m[2025-07-28T08:58:57Z] Step krkn-hub-tests-13nodes-redhat-chaos-pod-scenarios-ovn-cp-disruption succeeded after 31m14s. 
+[36mINFO[0m[2025-07-28T08:58:57Z] Running step krkn-hub-tests-13nodes-redhat-chaos-pvc-scenarios-prometheus-pod. 
+[36mINFO[0m[2025-07-28T09:19:34Z] Step krkn-hub-tests-13nodes-redhat-chaos-pvc-scenarios-prometheus-pod succeeded after 20m37s. 
+[36mINFO[0m[2025-07-28T09:19:34Z] Running step krkn-hub-tests-13nodes-redhat-chaos-pod-scenarios-prometheus-disruption. 
+[36mINFO[0m[2025-07-28T09:36:38Z] Step krkn-hub-tests-13nodes-redhat-chaos-pod-scenarios-prometheus-disruption succeeded after 17m4s. 
+[36mINFO[0m[2025-07-28T09:36:38Z] Running step krkn-hub-tests-13nodes-redhat-chaos-syn-flood-prometheus-disruption. 
+[36mINFO[0m[2025-07-28T09:55:33Z] Step krkn-hub-tests-13nodes-redhat-chaos-syn-flood-prometheus-disruption succeeded after 18m54s. 
+[36mINFO[0m[2025-07-28T09:55:33Z] Step phase test succeeded after 2h51m5s.     
+[36mINFO[0m[2025-07-28T09:55:33Z] Running multi-stage phase post               
+[36mINFO[0m[2025-07-28T09:55:33Z] Signalling observer pod "krkn-hub-tests-13nodes-redhat-chaos-cerberus" to terminate... 
+[36mINFO[0m[2025-07-28T09:55:33Z] Signalling observer pod "krkn-hub-tests-13nodes-openshift-qe-cluster-density-v2-observer" to terminate... 
+[36mINFO[0m[2025-07-28T09:55:33Z] Running step krkn-hub-tests-13nodes-redhat-chaos-observer-stop. 
+[36mINFO[0m[2025-07-28T09:55:48Z] Step krkn-hub-tests-13nodes-redhat-chaos-cerberus succeeded after 4h0m47s. 
+[36mINFO[0m[2025-07-28T09:56:18Z] Step krkn-hub-tests-13nodes-redhat-chaos-observer-stop succeeded after 45s. 
+[36mINFO[0m[2025-07-28T09:56:18Z] Running step krkn-hub-tests-13nodes-gather-aws-console. 
+[36mINFO[0m[2025-07-28T09:56:26Z] Step krkn-hub-tests-13nodes-openshift-qe-cluster-density-v2-observer succeeded after 4h1m25s. 
+[36mINFO[0m[2025-07-28T09:57:00Z] Step krkn-hub-tests-13nodes-gather-aws-console succeeded after 42s. 
+[36mINFO[0m[2025-07-28T09:57:00Z] Running step krkn-hub-tests-13nodes-gather-must-gather. 
+[36mINFO[0m[2025-07-28T10:00:49Z] Step krkn-hub-tests-13nodes-gather-must-gather succeeded after 3m48s. 
+[36mINFO[0m[2025-07-28T10:00:49Z] Running step krkn-hub-tests-13nodes-gather-extra. 
+[31mERRO[0m[2025-07-28T10:00:54Z] Failed to fetch live metrics for node ip-10-28-68-83.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-83.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T10:01:04Z] Failed to fetch live metrics for node ip-10-28-68-83.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-83.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T10:01:14Z] Failed to fetch live metrics for node ip-10-28-68-83.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-83.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T10:01:24Z] Failed to fetch live metrics for node ip-10-28-68-83.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-83.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T10:01:34Z] Failed to fetch live metrics for node ip-10-28-68-83.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-83.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T10:15:04Z] Failed to fetch live metrics for node ip-10-28-68-83.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=the server is currently unable to handle the request (get nodes.metrics.k8s.io ip-10-28-68-83.us-east-2.compute.internal) [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T10:15:14Z] Failed to fetch live metrics for node ip-10-28-68-83.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=the server is currently unable to handle the request (get nodes.metrics.k8s.io ip-10-28-68-83.us-east-2.compute.internal) [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T10:15:24Z] Failed to fetch live metrics for node ip-10-28-68-83.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=the server is currently unable to handle the request (get nodes.metrics.k8s.io ip-10-28-68-83.us-east-2.compute.internal) [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T10:17:04Z] Failed to fetch live metrics for node ip-10-28-68-83.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-83.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[36mINFO[0m[2025-07-28T10:23:46Z] Step krkn-hub-tests-13nodes-gather-extra succeeded after 22m57s. 
+[36mINFO[0m[2025-07-28T10:23:46Z] Running step krkn-hub-tests-13nodes-gather-audit-logs. 
+[36mINFO[0m[2025-07-28T10:24:39Z] Step krkn-hub-tests-13nodes-gather-audit-logs succeeded after 52s. 
+[36mINFO[0m[2025-07-28T10:24:39Z] Running step krkn-hub-tests-13nodes-ipi-deprovision-deprovision. 
+[36mINFO[0m[2025-07-28T10:30:55Z] Step krkn-hub-tests-13nodes-ipi-deprovision-deprovision succeeded after 6m16s. 
+[36mINFO[0m[2025-07-28T10:30:55Z] Running step krkn-hub-tests-13nodes-aws-deprovision-users-and-policies. 
+[36mINFO[0m[2025-07-28T10:31:27Z] Step krkn-hub-tests-13nodes-aws-deprovision-users-and-policies succeeded after 31s. 
+[36mINFO[0m[2025-07-28T10:31:27Z] Step phase post succeeded after 35m54s.      
+[36mINFO[0m[2025-07-28T10:31:27Z] Releasing leases for test krkn-hub-tests-13nodes 
+[36mINFO[0m[2025-07-28T10:31:27Z] Ran for 6h29m12s                             
+[36mINFO[0m[2025-07-28T10:31:27Z] Reporting job state 'succeeded'              

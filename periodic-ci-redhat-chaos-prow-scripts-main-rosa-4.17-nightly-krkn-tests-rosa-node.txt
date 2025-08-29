@@ -1,0 +1,87 @@
+[36mINFO[0m[2025-03-19T04:01:56Z] ci-operator version v20250318-9fffd47d5      
+[36mINFO[0m[2025-03-19T04:01:56Z] Loading configuration from https://config.ci.openshift.org for redhat-chaos/prow-scripts@main [rosa-4.17-nightly] 
+[36mINFO[0m[2025-03-19T04:01:56Z] Resolved SHA missing for main in https://github.com/redhat-chaos/prow-scripts (will prevent caching) 
+[33mWARN[0m[2025-03-19T04:01:56Z] skipped directory "..2025_03_19_04_01_49.1843101225" when creating secret from directory "/secrets/ci-pull-credentials" 
+[36mINFO[0m[2025-03-19T04:01:56Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.17.0-0.nightly/latest 
+[36mINFO[0m[2025-03-19T04:01:56Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.17.0-0.nightly-2025-03-18-042532 
+[36mINFO[0m[2025-03-19T04:01:56Z] Using namespace https://console-openshift-console.apps.build06.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-il6cc8yg 
+[36mINFO[0m[2025-03-19T04:01:56Z] Setting arch for src                          [36march[0m=amd64 [36mreasons[0m=cerberus-main-prow-rosa-417
+[36mINFO[0m[2025-03-19T04:01:56Z] Running [input:root], [input:cerberus.prow], [input:cli-ocm], [input:rosa-aws-cli], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-prow-scripts-latest], [release:latest], src, cerberus-main-prow-rosa-417, [output:stable:cerberus-main-prow-rosa-417], [images], krkn-tests-rosa-node 
+[36mINFO[0m[2025-03-19T04:01:56Z] Loading information from https://config.ci.openshift.org for cluster profile aws-qe 
+[36mINFO[0m[2025-03-19T04:01:56Z] Tagging chaos/cerberus:cerberus-prow into pipeline:cerberus.prow. 
+[36mINFO[0m[2025-03-19T04:01:56Z] Tagging ci/ci-tools-build-root:latest into pipeline:root. 
+[36mINFO[0m[2025-03-19T04:01:56Z] Tagging ci/rosa-aws-cli:latest into pipeline:rosa-aws-cli. 
+[36mINFO[0m[2025-03-19T04:01:56Z] Tagging ci/cli-ocm:latest into pipeline:cli-ocm. 
+[36mINFO[0m[2025-03-19T04:01:56Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+[36mINFO[0m[2025-03-19T04:01:56Z] Tagging chaos/prow-scripts:latest into pipeline:chaos-prow-scripts-latest. 
+[36mINFO[0m[2025-03-19T04:01:57Z] Importing release image latest.              
+[36mINFO[0m[2025-03-19T04:01:57Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.17.0-0.nightly/latest 
+[36mINFO[0m[2025-03-19T04:01:57Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.17.0-0.nightly-2025-03-18-042532 
+[36mINFO[0m[2025-03-19T04:01:59Z] Building src                                 
+[36mINFO[0m[2025-03-19T04:01:59Z] Created build "src-amd64"                    
+[36mINFO[0m[2025-03-19T04:02:21Z] Importing release 4.17.0-0.nightly-2025-03-18-042532 created at 2025-03-18 04:28:14 +0000 UTC with 189 images to tag release:latest ... 
+[36mINFO[0m[2025-03-19T04:05:12Z] Imported release 4.17.0-0.nightly-2025-03-18-042532 created at 2025-03-18 04:28:14 +0000 UTC with 189 images to tag release:latest 
+[36mINFO[0m[2025-03-19T04:10:13Z] Build src-amd64 succeeded after 8m14s        
+[36mINFO[0m[2025-03-19T04:10:13Z] Retrieving digests of member images          
+[36mINFO[0m[2025-03-19T04:10:14Z] Image ci-op-il6cc8yg/pipeline:src created     [36mdigest[0m=sha256:6a22e56f7df434f344ae2782eebbb78db69f92e739fd7fc0160298d795f1d083 [36mfor-build[0m=src
+[36mINFO[0m[2025-03-19T04:10:14Z] Building cerberus-main-prow-rosa-417         
+[36mINFO[0m[2025-03-19T04:10:14Z] Created build "cerberus-main-prow-rosa-417-amd64" 
+[36mINFO[0m[2025-03-19T04:11:44Z] Build cerberus-main-prow-rosa-417-amd64 succeeded after 1m29s 
+[36mINFO[0m[2025-03-19T04:11:44Z] Retrieving digests of member images          
+[36mINFO[0m[2025-03-19T04:11:45Z] Image ci-op-il6cc8yg/pipeline:cerberus-main-prow-rosa-417 created  [36mdigest[0m=sha256:8006dba35b79f8fba1b129b8d43b7b4df0129a8b3d4b6a188a061b99a849a90f [36mfor-build[0m=cerberus-main-prow-rosa-417
+[36mINFO[0m[2025-03-19T04:11:45Z] Tagging cerberus-main-prow-rosa-417 into stable 
+[36mINFO[0m[2025-03-19T04:11:45Z] Acquiring leases for test krkn-tests-rosa-node: [aws-qe-quota-slice] 
+[36mINFO[0m[2025-03-19T04:11:45Z] Acquired 1 lease(s) for aws-qe-quota-slice: [us-east-1--aws-qe-quota-slice-24] 
+[36mINFO[0m[2025-03-19T04:11:45Z] Running multi-stage test krkn-tests-rosa-node 
+[36mINFO[0m[2025-03-19T04:11:47Z] Running multi-stage phase pre                
+[36mINFO[0m[2025-03-19T04:11:47Z] Running step krkn-tests-rosa-node-redhat-chaos-cerberus. 
+[36mINFO[0m[2025-03-19T04:11:47Z] Running step krkn-tests-rosa-node-rosa-cluster-prefix. 
+[36mINFO[0m[2025-03-19T04:12:07Z] Step krkn-tests-rosa-node-rosa-cluster-prefix succeeded after 20s. 
+[36mINFO[0m[2025-03-19T04:12:07Z] Running step krkn-tests-rosa-node-rosa-sts-account-roles-create. 
+[36mINFO[0m[2025-03-19T04:12:42Z] Step krkn-tests-rosa-node-rosa-sts-account-roles-create succeeded after 34s. 
+[36mINFO[0m[2025-03-19T04:12:42Z] Running step krkn-tests-rosa-node-rosa-cluster-provision. 
+[36mINFO[0m[2025-03-19T04:13:29Z] Step krkn-tests-rosa-node-rosa-cluster-provision succeeded after 47s. 
+[36mINFO[0m[2025-03-19T04:13:29Z] Running step krkn-tests-rosa-node-rosa-cluster-wait-ready-cluster. 
+[36mINFO[0m[2025-03-19T04:53:50Z] Step krkn-tests-rosa-node-rosa-cluster-wait-ready-cluster succeeded after 40m20s. 
+[36mINFO[0m[2025-03-19T04:53:50Z] Running step krkn-tests-rosa-node-rosa-cluster-notify-error. 
+[36mINFO[0m[2025-03-19T04:54:03Z] Step krkn-tests-rosa-node-rosa-cluster-notify-error succeeded after 13s. 
+[36mINFO[0m[2025-03-19T04:54:03Z] Running step krkn-tests-rosa-node-rosa-conf-idp-htpasswd. 
+[36mINFO[0m[2025-03-19T05:01:50Z] Step krkn-tests-rosa-node-rosa-conf-idp-htpasswd succeeded after 7m46s. 
+[36mINFO[0m[2025-03-19T05:01:50Z] Running step krkn-tests-rosa-node-rosa-cluster-wait-ready-operators. 
+[36mINFO[0m[2025-03-19T05:41:00Z] Step krkn-tests-rosa-node-rosa-cluster-wait-ready-operators succeeded after 39m9s. 
+[36mINFO[0m[2025-03-19T05:41:00Z] Running step krkn-tests-rosa-node-osd-ccs-conf-idp-htpasswd-multi-users. 
+[36mINFO[0m[2025-03-19T05:41:48Z] Step krkn-tests-rosa-node-osd-ccs-conf-idp-htpasswd-multi-users succeeded after 48s. 
+[36mINFO[0m[2025-03-19T05:41:48Z] Running step krkn-tests-rosa-node-rosa-cluster-wait-ready-nodes. 
+[36mINFO[0m[2025-03-19T05:45:12Z] Step krkn-tests-rosa-node-rosa-cluster-wait-ready-nodes succeeded after 3m24s. 
+[36mINFO[0m[2025-03-19T05:45:12Z] Step phase pre succeeded after 1h33m25s.     
+[36mINFO[0m[2025-03-19T05:45:12Z] Running multi-stage phase test               
+[36mINFO[0m[2025-03-19T05:45:12Z] Running step krkn-tests-rosa-node-openshift-qe-cluster-density-v2. 
+[36mINFO[0m[2025-03-19T05:49:34Z] Step krkn-tests-rosa-node-openshift-qe-cluster-density-v2 succeeded after 4m21s. 
+[36mINFO[0m[2025-03-19T05:49:34Z] Running step krkn-tests-rosa-node-redhat-chaos-network-chaos. 
+[36mINFO[0m[2025-03-19T06:09:30Z] Step krkn-tests-rosa-node-redhat-chaos-network-chaos succeeded after 19m56s. 
+[36mINFO[0m[2025-03-19T06:09:30Z] Running step krkn-tests-rosa-node-redhat-chaos-pod-network-chaos. 
+[36mINFO[0m[2025-03-19T06:17:47Z] Step krkn-tests-rosa-node-redhat-chaos-pod-network-chaos succeeded after 8m16s. 
+[36mINFO[0m[2025-03-19T06:17:47Z] Running step krkn-tests-rosa-node-redhat-chaos-service-disruption-etcd. 
+[36mINFO[0m[2025-03-19T06:29:14Z] Step krkn-tests-rosa-node-redhat-chaos-service-disruption-etcd succeeded after 11m27s. 
+[36mINFO[0m[2025-03-19T06:29:14Z] Running step krkn-tests-rosa-node-redhat-chaos-node-disruptions-master-outage. 
+[36mINFO[0m[2025-03-19T06:48:17Z] Step krkn-tests-rosa-node-redhat-chaos-node-disruptions-master-outage succeeded after 19m3s. 
+[36mINFO[0m[2025-03-19T06:48:17Z] Step phase test succeeded after 1h3m5s.      
+[36mINFO[0m[2025-03-19T06:48:17Z] Running multi-stage phase post               
+[36mINFO[0m[2025-03-19T06:48:17Z] Signalling observer pod "krkn-tests-rosa-node-redhat-chaos-cerberus" to terminate... 
+[36mINFO[0m[2025-03-19T06:48:17Z] Running step krkn-tests-rosa-node-gather-must-gather. 
+[36mINFO[0m[2025-03-19T06:48:24Z] Step krkn-tests-rosa-node-redhat-chaos-cerberus succeeded after 2h36m37s. 
+[36mINFO[0m[2025-03-19T06:50:21Z] Step krkn-tests-rosa-node-gather-must-gather succeeded after 2m3s. 
+[36mINFO[0m[2025-03-19T06:50:21Z] Running step krkn-tests-rosa-node-gather-extra. 
+[36mINFO[0m[2025-03-19T06:53:47Z] Step krkn-tests-rosa-node-gather-extra succeeded after 3m26s. 
+[36mINFO[0m[2025-03-19T06:53:47Z] Running step krkn-tests-rosa-node-gather-audit-logs. 
+[36mINFO[0m[2025-03-19T06:55:01Z] Step krkn-tests-rosa-node-gather-audit-logs succeeded after 1m14s. 
+[36mINFO[0m[2025-03-19T06:55:01Z] Running step krkn-tests-rosa-node-rosa-cluster-deprovision. 
+[36mINFO[0m[2025-03-19T07:07:23Z] Step krkn-tests-rosa-node-rosa-cluster-deprovision succeeded after 12m21s. 
+[36mINFO[0m[2025-03-19T07:07:23Z] Running step krkn-tests-rosa-node-rosa-cluster-index. 
+[36mINFO[0m[2025-03-19T07:07:34Z] Step krkn-tests-rosa-node-rosa-cluster-index succeeded after 11s. 
+[36mINFO[0m[2025-03-19T07:07:34Z] Running step krkn-tests-rosa-node-rosa-sts-account-roles-delete. 
+[36mINFO[0m[2025-03-19T07:07:51Z] Step krkn-tests-rosa-node-rosa-sts-account-roles-delete succeeded after 16s. 
+[36mINFO[0m[2025-03-19T07:07:51Z] Step phase post succeeded after 19m33s.      
+[36mINFO[0m[2025-03-19T07:07:51Z] Releasing leases for test krkn-tests-rosa-node 
+[36mINFO[0m[2025-03-19T07:07:51Z] Ran for 3h5m54s                              
+[36mINFO[0m[2025-03-19T07:07:51Z] Reporting job state 'succeeded'              

@@ -1,0 +1,142 @@
+[36mINFO[0m[2025-07-22T05:30:04Z] ci-operator version v20250719-2bf60cc55      
+[36mINFO[0m[2025-07-22T05:30:04Z] Loading configuration from https://config.ci.openshift.org for redhat-chaos/prow-scripts@main [4.19-nightly] 
+[36mINFO[0m[2025-07-22T05:30:05Z] Resolved SHA missing for main in https://github.com/redhat-chaos/prow-scripts (will prevent caching) 
+[33mWARN[0m[2025-07-22T05:30:05Z] skipped directory "..2025_07_22_05_29_57.2911911387" when creating secret from directory "/secrets/ci-pull-credentials" 
+[36mINFO[0m[2025-07-22T05:30:05Z] Loading information from https://config.ci.openshift.org for integrated stream ocp/4.19 
+[36mINFO[0m[2025-07-22T05:30:05Z] Building release initial from a snapshot of ocp/4.19 
+[36mINFO[0m[2025-07-22T05:30:05Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+[36mINFO[0m[2025-07-22T05:30:05Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-07-19-011940 
+[36mINFO[0m[2025-07-22T05:30:05Z] Requesting a release from https://multi.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly-multi/latest 
+[36mINFO[0m[2025-07-22T05:30:05Z] Resolved release multi-latest to quay.io/openshift-release-dev/ocp-release-nightly@sha256:a838c9b887b7fe9ecbb9d5240ae0a9b2aa1603203ef51b7ce0bb92fe9301f2d8 
+[36mINFO[0m[2025-07-22T05:30:06Z] Using namespace https://console-openshift-console.apps.build10.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-4h1y8hq0 
+[36mINFO[0m[2025-07-22T05:30:06Z] Setting arch for src                          [36march[0m=amd64 [36mreasons[0m=perfscale-observer, cerberus-main-prow-419, prow-scripts-419
+[36mINFO[0m[2025-07-22T05:30:06Z] Running [input:root], [input:krkn.prow], [input:ocp-qe-perfscale-ci], [input:cerberus.prow], [input:cli], [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-prow-scripts-latest], [input:ocp-cli-yq-latest], [input:ocp-4.11-upi-installer], [release-inputs:initial], [release:latest], src, prow-scripts-419, perfscale-observer, cerberus-main-prow-419, [output:stable:cerberus-main-prow-419], [output:stable:prow-scripts-419], [output:stable:perfscale-observer], [images], krkn-hub-tests-azure 
+[36mINFO[0m[2025-07-22T05:30:06Z] Loading information from https://config.ci.openshift.org for cluster profile azure-qe 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging chaos/prow-scripts:latest into pipeline:chaos-prow-scripts-latest. 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging ocp/cli-yq:latest into pipeline:ocp-cli-yq-latest. 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging ocp/4.11:upi-installer into pipeline:ocp-4.11-upi-installer. 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging chaos/krkn:latest into pipeline:krkn.prow. 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging openshift/release:golang-1.18 into pipeline:root. 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging chaos/cerberus:cerberus-prow into pipeline:cerberus.prow. 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ocp-qe-perfscale-ci. 
+[36mINFO[0m[2025-07-22T05:30:06Z] Tagging ocp/4.19:cli into pipeline:cli.      
+[36mINFO[0m[2025-07-22T05:30:06Z] Waiting to import tags on imagestream (after taking snapshot) ci-op-4h1y8hq0/stable-initial ... 
+[36mINFO[0m[2025-07-22T05:30:06Z] Importing release image latest.              
+[36mINFO[0m[2025-07-22T05:30:06Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+[36mINFO[0m[2025-07-22T05:30:06Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-07-19-011940 
+[36mINFO[0m[2025-07-22T05:30:17Z] Building src                                 
+[36mINFO[0m[2025-07-22T05:30:17Z] Created build "src-amd64"                    
+[36mINFO[0m[2025-07-22T05:30:29Z] Importing release 4.19.0-0.nightly-2025-07-19-011940 created at 2025-07-19 01:22:06 +0000 UTC with 189 images to tag release:latest ... 
+[36mINFO[0m[2025-07-22T05:32:04Z] Imported release 4.19.0-0.nightly-2025-07-19-011940 created at 2025-07-19 01:22:06 +0000 UTC with 189 images to tag release:latest 
+[36mINFO[0m[2025-07-22T05:33:23Z] Imported tags on imagestream (after taking snapshot) ci-op-4h1y8hq0/stable-initial 
+[36mINFO[0m[2025-07-22T05:40:46Z] Build src-amd64 succeeded after 10m12s       
+[36mINFO[0m[2025-07-22T05:40:46Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-22T05:40:47Z] Image ci-op-4h1y8hq0/pipeline:src created     [36mdigest[0m=sha256:f4d98ae22b7415f8332796de7705dbc354981deff8fbc310673652366eb83600 [36mfor-build[0m=src
+[36mINFO[0m[2025-07-22T05:40:47Z] Building perfscale-observer                  
+[36mINFO[0m[2025-07-22T05:40:47Z] Building cerberus-main-prow-419              
+[36mINFO[0m[2025-07-22T05:40:47Z] Building prow-scripts-419                    
+[36mINFO[0m[2025-07-22T05:40:47Z] Created build "prow-scripts-419-amd64"       
+[36mINFO[0m[2025-07-22T05:40:47Z] Created build "perfscale-observer-amd64"     
+[36mINFO[0m[2025-07-22T05:40:47Z] Created build "cerberus-main-prow-419-amd64" 
+[36mINFO[0m[2025-07-22T05:57:19Z] Build cerberus-main-prow-419-amd64 succeeded after 13m0s 
+[36mINFO[0m[2025-07-22T05:57:19Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-22T05:57:20Z] Image ci-op-4h1y8hq0/pipeline:cerberus-main-prow-419 created  [36mdigest[0m=sha256:3ba63f673985ddb474051f25db52e53917a75603ef923d3ec109a833c9f0119b [36mfor-build[0m=cerberus-main-prow-419
+[36mINFO[0m[2025-07-22T05:57:20Z] Tagging cerberus-main-prow-419 into stable   
+[36mINFO[0m[2025-07-22T05:59:55Z] Build prow-scripts-419-amd64 succeeded after 15m36s 
+[36mINFO[0m[2025-07-22T05:59:55Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-22T05:59:56Z] Image ci-op-4h1y8hq0/pipeline:prow-scripts-419 created  [36mdigest[0m=sha256:3f5f8a52be60281f07b75da0173cf0a77df12668d155e89124647078a80df145 [36mfor-build[0m=prow-scripts-419
+[36mINFO[0m[2025-07-22T05:59:56Z] Tagging prow-scripts-419 into stable         
+[36mINFO[0m[2025-07-22T06:01:54Z] Build perfscale-observer-amd64 succeeded after 19m54s 
+[36mINFO[0m[2025-07-22T06:01:54Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-22T06:01:55Z] Image ci-op-4h1y8hq0/pipeline:perfscale-observer created  [36mdigest[0m=sha256:fa251cbed4c0d0028a9a8f846107bce6045a599e659b3e185c7a589b0009a344 [36mfor-build[0m=perfscale-observer
+[36mINFO[0m[2025-07-22T06:01:55Z] Tagging perfscale-observer into stable       
+[36mINFO[0m[2025-07-22T06:01:55Z] Acquiring leases for test krkn-hub-tests-azure: [azure-qe-quota-slice] 
+[36mINFO[0m[2025-07-22T06:01:55Z] Acquired 1 lease(s) for azure-qe-quota-slice: [centralus--azure-qe-quota-slice-7] 
+[36mINFO[0m[2025-07-22T06:01:55Z] Running multi-stage test krkn-hub-tests-azure 
+[36mINFO[0m[2025-07-22T06:01:57Z] Running multi-stage phase pre                
+[36mINFO[0m[2025-07-22T06:01:57Z] Running step krkn-hub-tests-azure-redhat-chaos-cerberus. 
+[36mINFO[0m[2025-07-22T06:01:57Z] Running step krkn-hub-tests-azure-openshift-qe-cluster-density-v2-observer. 
+[36mINFO[0m[2025-07-22T06:01:57Z] Running step krkn-hub-tests-azure-ipi-conf.  
+[36mINFO[0m[2025-07-22T06:02:06Z] Step krkn-hub-tests-azure-ipi-conf succeeded after 9s. 
+[36mINFO[0m[2025-07-22T06:02:06Z] Running step krkn-hub-tests-azure-ipi-conf-telemetry. 
+[36mINFO[0m[2025-07-22T06:02:14Z] Step krkn-hub-tests-azure-ipi-conf-telemetry succeeded after 7s. 
+[36mINFO[0m[2025-07-22T06:02:14Z] Running step krkn-hub-tests-azure-ipi-conf-azure. 
+[36mINFO[0m[2025-07-22T06:02:25Z] Step krkn-hub-tests-azure-ipi-conf-azure succeeded after 11s. 
+[36mINFO[0m[2025-07-22T06:02:25Z] Running step krkn-hub-tests-azure-ipi-install-monitoringpvc. 
+[36mINFO[0m[2025-07-22T06:02:34Z] Step krkn-hub-tests-azure-ipi-install-monitoringpvc succeeded after 9s. 
+[36mINFO[0m[2025-07-22T06:02:34Z] Running step krkn-hub-tests-azure-ipi-conf-azure-custom-region. 
+[36mINFO[0m[2025-07-22T06:03:16Z] Step krkn-hub-tests-azure-ipi-conf-azure-custom-region succeeded after 41s. 
+[36mINFO[0m[2025-07-22T06:03:16Z] Running step krkn-hub-tests-azure-ovn-conf.  
+[36mINFO[0m[2025-07-22T06:03:26Z] Step krkn-hub-tests-azure-ovn-conf succeeded after 9s. 
+[36mINFO[0m[2025-07-22T06:03:26Z] Running step krkn-hub-tests-azure-ovn-conf-ipsec-manifest. 
+[36mINFO[0m[2025-07-22T06:03:34Z] Step krkn-hub-tests-azure-ovn-conf-ipsec-manifest succeeded after 8s. 
+[36mINFO[0m[2025-07-22T06:03:34Z] Running step krkn-hub-tests-azure-ipi-install-rbac. 
+[36mINFO[0m[2025-07-22T06:03:43Z] Step krkn-hub-tests-azure-ipi-install-rbac succeeded after 8s. 
+[36mINFO[0m[2025-07-22T06:03:43Z] Running step krkn-hub-tests-azure-openshift-cluster-bot-rbac. 
+[36mINFO[0m[2025-07-22T06:03:50Z] Step krkn-hub-tests-azure-openshift-cluster-bot-rbac succeeded after 7s. 
+[36mINFO[0m[2025-07-22T06:03:50Z] Running step krkn-hub-tests-azure-ipi-install-hosted-loki. 
+[36mINFO[0m[2025-07-22T06:03:59Z] Step krkn-hub-tests-azure-ipi-install-hosted-loki succeeded after 9s. 
+[36mINFO[0m[2025-07-22T06:03:59Z] Running step krkn-hub-tests-azure-ipi-install-install. 
+[36mINFO[0m[2025-07-22T07:10:25Z] Step krkn-hub-tests-azure-ipi-install-install succeeded after 1h6m26s. 
+[36mINFO[0m[2025-07-22T07:10:25Z] Running step krkn-hub-tests-azure-ipi-install-times-collection. 
+[36mINFO[0m[2025-07-22T07:10:36Z] Step krkn-hub-tests-azure-ipi-install-times-collection succeeded after 10s. 
+[36mINFO[0m[2025-07-22T07:10:36Z] Running step krkn-hub-tests-azure-nodes-readiness. 
+[36mINFO[0m[2025-07-22T07:10:58Z] Step krkn-hub-tests-azure-nodes-readiness succeeded after 22s. 
+[36mINFO[0m[2025-07-22T07:10:58Z] Running step krkn-hub-tests-azure-multiarch-validate-nodes. 
+[36mINFO[0m[2025-07-22T07:11:05Z] Step krkn-hub-tests-azure-multiarch-validate-nodes succeeded after 7s. 
+[36mINFO[0m[2025-07-22T07:11:05Z] Running step krkn-hub-tests-azure-ipi-azure-rbac. 
+[36mINFO[0m[2025-07-22T07:11:14Z] Step krkn-hub-tests-azure-ipi-azure-rbac succeeded after 9s. 
+[36mINFO[0m[2025-07-22T07:11:14Z] Running step krkn-hub-tests-azure-openshift-qe-workers-infra-workload. 
+[36mINFO[0m[2025-07-22T07:36:26Z] Step krkn-hub-tests-azure-openshift-qe-workers-infra-workload succeeded after 25m11s. 
+[36mINFO[0m[2025-07-22T07:36:26Z] Running step krkn-hub-tests-azure-openshift-qe-move-pods-infra. 
+[36mINFO[0m[2025-07-22T07:43:24Z] Step krkn-hub-tests-azure-openshift-qe-move-pods-infra succeeded after 6m58s. 
+[36mINFO[0m[2025-07-22T07:43:24Z] Running step krkn-hub-tests-azure-redhat-chaos-observer-start. 
+[36mINFO[0m[2025-07-22T07:44:06Z] Step krkn-hub-tests-azure-redhat-chaos-observer-start succeeded after 42s. 
+[36mINFO[0m[2025-07-22T07:44:06Z] Step phase pre succeeded after 1h42m9s.      
+[36mINFO[0m[2025-07-22T07:44:06Z] Running multi-stage phase test               
+[36mINFO[0m[2025-07-22T07:44:06Z] Running step krkn-hub-tests-azure-redhat-chaos-start-krkn. 
+[36mINFO[0m[2025-07-22T07:44:36Z] Step krkn-hub-tests-azure-redhat-chaos-start-krkn succeeded after 29s. 
+[36mINFO[0m[2025-07-22T07:44:36Z] Running step krkn-hub-tests-azure-redhat-chaos-pod-scenarios-etcd-disruption. 
+[36mINFO[0m[2025-07-22T07:50:32Z] Step krkn-hub-tests-azure-redhat-chaos-pod-scenarios-etcd-disruption succeeded after 5m55s. 
+[36mINFO[0m[2025-07-22T07:50:32Z] Running step krkn-hub-tests-azure-redhat-chaos-container-scenarios-etcd-hangup. 
+[36mINFO[0m[2025-07-22T07:57:43Z] Step krkn-hub-tests-azure-redhat-chaos-container-scenarios-etcd-hangup succeeded after 7m11s. 
+[36mINFO[0m[2025-07-22T07:57:43Z] Running step krkn-hub-tests-azure-redhat-chaos-time-scenarios. 
+[36mINFO[0m[2025-07-22T08:00:29Z] Step krkn-hub-tests-azure-redhat-chaos-time-scenarios succeeded after 2m46s. 
+[36mINFO[0m[2025-07-22T08:00:29Z] Running step krkn-hub-tests-azure-redhat-chaos-application-outages-console. 
+[36mINFO[0m[2025-07-22T08:21:19Z] Step krkn-hub-tests-azure-redhat-chaos-application-outages-console succeeded after 20m49s. 
+[36mINFO[0m[2025-07-22T08:21:19Z] Running step krkn-hub-tests-azure-redhat-chaos-pod-scenarios-ovn-disruption. 
+[36mINFO[0m[2025-07-22T08:31:56Z] Step krkn-hub-tests-azure-redhat-chaos-pod-scenarios-ovn-disruption succeeded after 10m37s. 
+[36mINFO[0m[2025-07-22T08:31:56Z] Running step krkn-hub-tests-azure-redhat-chaos-pod-scenarios-ovn-cp-disruption. 
+[36mINFO[0m[2025-07-22T08:42:37Z] Step krkn-hub-tests-azure-redhat-chaos-pod-scenarios-ovn-cp-disruption succeeded after 10m40s. 
+[36mINFO[0m[2025-07-22T08:42:37Z] Running step krkn-hub-tests-azure-redhat-chaos-pvc-scenarios-prometheus-pod. 
+[36mINFO[0m[2025-07-22T08:47:24Z] Step krkn-hub-tests-azure-redhat-chaos-pvc-scenarios-prometheus-pod succeeded after 4m47s. 
+[36mINFO[0m[2025-07-22T08:47:24Z] Running step krkn-hub-tests-azure-redhat-chaos-pod-scenarios-prometheus-disruption. 
+[36mINFO[0m[2025-07-22T08:54:31Z] Step krkn-hub-tests-azure-redhat-chaos-pod-scenarios-prometheus-disruption succeeded after 7m6s. 
+[36mINFO[0m[2025-07-22T08:54:31Z] Running step krkn-hub-tests-azure-redhat-chaos-syn-flood-prometheus-disruption. 
+[36mINFO[0m[2025-07-22T09:03:00Z] Step krkn-hub-tests-azure-redhat-chaos-syn-flood-prometheus-disruption succeeded after 8m29s. 
+[36mINFO[0m[2025-07-22T09:03:00Z] Step phase test succeeded after 1h18m53s.    
+[36mINFO[0m[2025-07-22T09:03:00Z] Running multi-stage phase post               
+[36mINFO[0m[2025-07-22T09:03:00Z] Signalling observer pod "krkn-hub-tests-azure-redhat-chaos-cerberus" to terminate... 
+[36mINFO[0m[2025-07-22T09:03:00Z] Signalling observer pod "krkn-hub-tests-azure-openshift-qe-cluster-density-v2-observer" to terminate... 
+[36mINFO[0m[2025-07-22T09:03:00Z] Running step krkn-hub-tests-azure-redhat-chaos-observer-stop. 
+[36mINFO[0m[2025-07-22T09:03:02Z] Step krkn-hub-tests-azure-openshift-qe-cluster-density-v2-observer succeeded after 3h1m5s. 
+[36mINFO[0m[2025-07-22T09:03:37Z] Step krkn-hub-tests-azure-redhat-chaos-observer-stop succeeded after 37s. 
+[36mINFO[0m[2025-07-22T09:03:37Z] Running step krkn-hub-tests-azure-gather-must-gather. 
+[36mINFO[0m[2025-07-22T09:06:22Z] Logs for container test in pod krkn-hub-tests-azure-redhat-chaos-cerberus: 
+[36mINFO[0m[2025-07-22T09:06:22Z] Step krkn-hub-tests-azure-redhat-chaos-cerberus succeeded after 3h4m25s. 
+[36mINFO[0m[2025-07-22T09:06:32Z] Step krkn-hub-tests-azure-gather-must-gather succeeded after 2m54s. 
+[36mINFO[0m[2025-07-22T09:06:32Z] Running step krkn-hub-tests-azure-gather-extra. 
+[36mINFO[0m[2025-07-22T09:14:36Z] Step krkn-hub-tests-azure-gather-extra succeeded after 8m4s. 
+[36mINFO[0m[2025-07-22T09:14:36Z] Running step krkn-hub-tests-azure-gather-audit-logs. 
+[36mINFO[0m[2025-07-22T09:15:08Z] Step krkn-hub-tests-azure-gather-audit-logs succeeded after 31s. 
+[36mINFO[0m[2025-07-22T09:15:08Z] Running step krkn-hub-tests-azure-ipi-deprovision-deprovision. 
+[36mINFO[0m[2025-07-22T09:22:40Z] Step krkn-hub-tests-azure-ipi-deprovision-deprovision succeeded after 7m31s. 
+[36mINFO[0m[2025-07-22T09:22:40Z] Step phase post succeeded after 19m39s.      
+[36mINFO[0m[2025-07-22T09:22:40Z] Releasing leases for test krkn-hub-tests-azure 
+[36mINFO[0m[2025-07-22T09:22:40Z] Ran for 3h52m35s                             
+[36mINFO[0m[2025-07-22T09:22:40Z] Reporting job state 'succeeded'              

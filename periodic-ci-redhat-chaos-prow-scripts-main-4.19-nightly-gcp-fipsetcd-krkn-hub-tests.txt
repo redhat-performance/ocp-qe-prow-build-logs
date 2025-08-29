@@ -1,0 +1,138 @@
+[36mINFO[0m[2025-07-28T04:02:14Z] ci-operator version v20250725-5a662946b      
+[36mINFO[0m[2025-07-28T04:02:14Z] Loading configuration from https://config.ci.openshift.org for redhat-chaos/prow-scripts@main [4.19-nightly] 
+[36mINFO[0m[2025-07-28T04:02:15Z] Resolved SHA missing for main in https://github.com/redhat-chaos/prow-scripts (will prevent caching) 
+[33mWARN[0m[2025-07-28T04:02:15Z] skipped directory "..2025_07_28_04_02_05.157600897" when creating secret from directory "/secrets/ci-pull-credentials" 
+[36mINFO[0m[2025-07-28T04:02:15Z] Loading information from https://config.ci.openshift.org for integrated stream ocp/4.19 
+[36mINFO[0m[2025-07-28T04:02:15Z] Building release initial from a snapshot of ocp/4.19 
+[36mINFO[0m[2025-07-28T04:02:15Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+[36mINFO[0m[2025-07-28T04:02:15Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-07-25-005602 
+[36mINFO[0m[2025-07-28T04:02:15Z] Requesting a release from https://multi.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly-multi/latest 
+[36mINFO[0m[2025-07-28T04:02:15Z] Resolved release multi-latest to quay.io/openshift-release-dev/ocp-release-nightly@sha256:ea5a63ce74ec6e09190ef6de5f8179a99daae8da530160981ea40ea4f2699b77 
+[36mINFO[0m[2025-07-28T04:02:16Z] Using namespace https://console.build04.ci.openshift.org/k8s/cluster/projects/ci-op-zdzx5m38 
+[36mINFO[0m[2025-07-28T04:02:16Z] Setting arch for src                          [36march[0m=amd64 [36mreasons[0m=perfscale-observer, cerberus-main-prow-419, prow-scripts-419
+[36mINFO[0m[2025-07-28T04:02:16Z] Running [input:root], [input:krkn.prow], [input:ocp-qe-perfscale-ci], [input:cerberus.prow], [input:cli], [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-prow-scripts-latest], [input:ocp-cli-jq-latest], [release-inputs:initial], [release:latest], src, prow-scripts-419, perfscale-observer, cerberus-main-prow-419, [output:stable:cerberus-main-prow-419], [output:stable:prow-scripts-419], [output:stable:perfscale-observer], [images], gcp-fipsetcd-krkn-hub-tests 
+[36mINFO[0m[2025-07-28T04:02:16Z] Loading information from https://config.ci.openshift.org for cluster profile gcp-chaos 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ocp/4.19:cli into pipeline:cli.      
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging chaos/prow-scripts:latest into pipeline:chaos-prow-scripts-latest. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ocp/cli-jq:latest into pipeline:ocp-cli-jq-latest. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging chaos/cerberus:cerberus-prow into pipeline:cerberus.prow. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging chaos/krkn:latest into pipeline:krkn.prow. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging openshift/release:golang-1.18 into pipeline:root. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ocp-qe-perfscale-ci. 
+[36mINFO[0m[2025-07-28T04:02:16Z] Waiting to import tags on imagestream (after taking snapshot) ci-op-zdzx5m38/stable-initial ... 
+[36mINFO[0m[2025-07-28T04:02:16Z] Importing release image latest.              
+[36mINFO[0m[2025-07-28T04:02:16Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.19.0-0.nightly/latest 
+[36mINFO[0m[2025-07-28T04:02:16Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.19.0-0.nightly-2025-07-25-005602 
+[36mINFO[0m[2025-07-28T04:02:22Z] Building src                                 
+[36mINFO[0m[2025-07-28T04:02:22Z] Created build "src-amd64"                    
+[36mINFO[0m[2025-07-28T04:02:47Z] Importing release 4.19.0-0.nightly-2025-07-25-005602 created at 2025-07-25 00:59:12 +0000 UTC with 189 images to tag release:latest ... 
+[36mINFO[0m[2025-07-28T04:04:22Z] Imported release 4.19.0-0.nightly-2025-07-25-005602 created at 2025-07-25 00:59:12 +0000 UTC with 189 images to tag release:latest 
+[36mINFO[0m[2025-07-28T04:05:28Z] Imported tags on imagestream (after taking snapshot) ci-op-zdzx5m38/stable-initial 
+[36mINFO[0m[2025-07-28T04:05:46Z] Build src-amd64 succeeded after 3m24s        
+[36mINFO[0m[2025-07-28T04:05:47Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-28T04:05:48Z] Image ci-op-zdzx5m38/pipeline:src created     [36mdigest[0m=sha256:f3273399b9916acac9acb2b4e5fa75bbedfeb8ffd7bf27073784504e21b43f68 [36mfor-build[0m=src
+[36mINFO[0m[2025-07-28T04:05:48Z] Building prow-scripts-419                    
+[36mINFO[0m[2025-07-28T04:05:48Z] Building cerberus-main-prow-419              
+[36mINFO[0m[2025-07-28T04:05:48Z] Building perfscale-observer                  
+[36mINFO[0m[2025-07-28T04:05:48Z] Created build "cerberus-main-prow-419-amd64" 
+[36mINFO[0m[2025-07-28T04:05:48Z] Created build "prow-scripts-419-amd64"       
+[36mINFO[0m[2025-07-28T04:05:48Z] Created build "perfscale-observer-amd64"     
+[36mINFO[0m[2025-07-28T04:09:47Z] Build perfscale-observer-amd64 succeeded after 3m59s 
+[36mINFO[0m[2025-07-28T04:09:47Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-28T04:09:48Z] Image ci-op-zdzx5m38/pipeline:perfscale-observer created  [36mdigest[0m=sha256:1409f83f5d1e0eb121b85c7efd4e0086a1bbe70f2aaf3b683f071f6f4db6fbb3 [36mfor-build[0m=perfscale-observer
+[36mINFO[0m[2025-07-28T04:09:48Z] Tagging perfscale-observer into stable       
+[36mINFO[0m[2025-07-28T04:11:03Z] Build prow-scripts-419-amd64 succeeded after 5m15s 
+[36mINFO[0m[2025-07-28T04:11:03Z] Build cerberus-main-prow-419-amd64 succeeded after 5m15s 
+[36mINFO[0m[2025-07-28T04:11:03Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-28T04:11:03Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-28T04:11:04Z] Image ci-op-zdzx5m38/pipeline:cerberus-main-prow-419 created  [36mdigest[0m=sha256:5a6e18d776ef3b7d268b214793fe442ee7f471c135e413fc09b08729d659ff56 [36mfor-build[0m=cerberus-main-prow-419
+[36mINFO[0m[2025-07-28T04:11:04Z] Tagging cerberus-main-prow-419 into stable   
+[36mINFO[0m[2025-07-28T04:11:04Z] Image ci-op-zdzx5m38/pipeline:prow-scripts-419 created  [36mdigest[0m=sha256:a9dd6454a39b2c5e893e1188b4f5679189c6d953bb475d435afb460ddadc78e9 [36mfor-build[0m=prow-scripts-419
+[36mINFO[0m[2025-07-28T04:11:04Z] Tagging prow-scripts-419 into stable         
+[36mINFO[0m[2025-07-28T04:11:05Z] Acquiring leases for test gcp-fipsetcd-krkn-hub-tests: [gcp-chaos-quota-slice] 
+[36mINFO[0m[2025-07-28T04:11:05Z] Acquired 1 lease(s) for gcp-chaos-quota-slice: [us-central1--gcp-chaos-quota-slice-3] 
+[36mINFO[0m[2025-07-28T04:11:05Z] Running multi-stage test gcp-fipsetcd-krkn-hub-tests 
+[36mINFO[0m[2025-07-28T04:11:06Z] Running multi-stage phase pre                
+[36mINFO[0m[2025-07-28T04:11:06Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-cerberus. 
+[36mINFO[0m[2025-07-28T04:11:06Z] Running step gcp-fipsetcd-krkn-hub-tests-openshift-qe-cluster-density-v2-observer. 
+[36mINFO[0m[2025-07-28T04:11:06Z] Running step gcp-fipsetcd-krkn-hub-tests-ipi-conf. 
+[36mINFO[0m[2025-07-28T04:11:27Z] Step gcp-fipsetcd-krkn-hub-tests-ipi-conf succeeded after 21s. 
+[36mINFO[0m[2025-07-28T04:11:27Z] Running step gcp-fipsetcd-krkn-hub-tests-ipi-conf-telemetry. 
+[36mINFO[0m[2025-07-28T04:12:12Z] Step gcp-fipsetcd-krkn-hub-tests-ipi-conf-telemetry succeeded after 44s. 
+[36mINFO[0m[2025-07-28T04:12:12Z] Running step gcp-fipsetcd-krkn-hub-tests-ipi-conf-gcp. 
+[36mINFO[0m[2025-07-28T04:13:00Z] Step gcp-fipsetcd-krkn-hub-tests-ipi-conf-gcp succeeded after 47s. 
+[36mINFO[0m[2025-07-28T04:13:00Z] Running step gcp-fipsetcd-krkn-hub-tests-ipi-install-monitoringpvc. 
+[36mINFO[0m[2025-07-28T04:13:09Z] Step gcp-fipsetcd-krkn-hub-tests-ipi-install-monitoringpvc succeeded after 8s. 
+[36mINFO[0m[2025-07-28T04:13:09Z] Running step gcp-fipsetcd-krkn-hub-tests-ovn-conf. 
+[36mINFO[0m[2025-07-28T04:13:16Z] Step gcp-fipsetcd-krkn-hub-tests-ovn-conf succeeded after 7s. 
+[36mINFO[0m[2025-07-28T04:13:16Z] Running step gcp-fipsetcd-krkn-hub-tests-ipi-install-rbac. 
+[36mINFO[0m[2025-07-28T04:13:25Z] Step gcp-fipsetcd-krkn-hub-tests-ipi-install-rbac succeeded after 8s. 
+[36mINFO[0m[2025-07-28T04:13:25Z] Running step gcp-fipsetcd-krkn-hub-tests-openshift-cluster-bot-rbac. 
+[36mINFO[0m[2025-07-28T04:13:33Z] Step gcp-fipsetcd-krkn-hub-tests-openshift-cluster-bot-rbac succeeded after 8s. 
+[36mINFO[0m[2025-07-28T04:13:33Z] Running step gcp-fipsetcd-krkn-hub-tests-ipi-install-hosted-loki. 
+[36mINFO[0m[2025-07-28T04:13:46Z] Step gcp-fipsetcd-krkn-hub-tests-ipi-install-hosted-loki succeeded after 13s. 
+[36mINFO[0m[2025-07-28T04:13:46Z] Running step gcp-fipsetcd-krkn-hub-tests-ipi-install-install. 
+[36mINFO[0m[2025-07-28T05:02:03Z] Step gcp-fipsetcd-krkn-hub-tests-ipi-install-install succeeded after 48m17s. 
+[36mINFO[0m[2025-07-28T05:02:03Z] Running step gcp-fipsetcd-krkn-hub-tests-ipi-install-times-collection. 
+[36mINFO[0m[2025-07-28T05:02:12Z] Step gcp-fipsetcd-krkn-hub-tests-ipi-install-times-collection succeeded after 8s. 
+[36mINFO[0m[2025-07-28T05:02:12Z] Running step gcp-fipsetcd-krkn-hub-tests-nodes-readiness. 
+[36mINFO[0m[2025-07-28T05:02:22Z] Step gcp-fipsetcd-krkn-hub-tests-nodes-readiness succeeded after 10s. 
+[36mINFO[0m[2025-07-28T05:02:22Z] Running step gcp-fipsetcd-krkn-hub-tests-multiarch-validate-nodes. 
+[36mINFO[0m[2025-07-28T05:02:31Z] Step gcp-fipsetcd-krkn-hub-tests-multiarch-validate-nodes succeeded after 8s. 
+[36mINFO[0m[2025-07-28T05:02:31Z] Running step gcp-fipsetcd-krkn-hub-tests-fips-check-node-scan. 
+[36mINFO[0m[2025-07-28T05:03:56Z] Step gcp-fipsetcd-krkn-hub-tests-fips-check-node-scan succeeded after 1m25s. 
+[36mINFO[0m[2025-07-28T05:03:56Z] Running step gcp-fipsetcd-krkn-hub-tests-etcd-encryption. 
+[36mINFO[0m[2025-07-28T05:27:51Z] Step gcp-fipsetcd-krkn-hub-tests-etcd-encryption succeeded after 23m54s. 
+[36mINFO[0m[2025-07-28T05:27:51Z] Running step gcp-fipsetcd-krkn-hub-tests-openshift-qe-workers-infra-workload. 
+[36mINFO[0m[2025-07-28T05:45:33Z] Step gcp-fipsetcd-krkn-hub-tests-openshift-qe-workers-infra-workload succeeded after 17m42s. 
+[36mINFO[0m[2025-07-28T05:45:33Z] Running step gcp-fipsetcd-krkn-hub-tests-openshift-qe-move-pods-infra. 
+[36mINFO[0m[2025-07-28T05:52:28Z] Step gcp-fipsetcd-krkn-hub-tests-openshift-qe-move-pods-infra succeeded after 6m54s. 
+[36mINFO[0m[2025-07-28T05:52:28Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-observer-start. 
+[36mINFO[0m[2025-07-28T05:54:33Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-observer-start succeeded after 2m5s. 
+[36mINFO[0m[2025-07-28T05:54:33Z] Step phase pre succeeded after 1h43m26s.     
+[36mINFO[0m[2025-07-28T05:54:33Z] Running multi-stage phase test               
+[36mINFO[0m[2025-07-28T05:54:33Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-start-krkn. 
+[36mINFO[0m[2025-07-28T05:55:22Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-start-krkn succeeded after 48s. 
+[36mINFO[0m[2025-07-28T05:55:22Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-pod-scenarios-etcd-disruption. 
+[36mINFO[0m[2025-07-28T06:01:54Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-pod-scenarios-etcd-disruption succeeded after 6m32s. 
+[36mINFO[0m[2025-07-28T06:01:54Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-container-scenarios-etcd-hangup. 
+[36mINFO[0m[2025-07-28T06:08:49Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-container-scenarios-etcd-hangup succeeded after 6m55s. 
+[36mINFO[0m[2025-07-28T06:08:49Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-time-scenarios. 
+[36mINFO[0m[2025-07-28T06:12:17Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-time-scenarios succeeded after 3m27s. 
+[36mINFO[0m[2025-07-28T06:12:17Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-application-outages-console. 
+[36mINFO[0m[2025-07-28T06:33:40Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-application-outages-console succeeded after 21m23s. 
+[36mINFO[0m[2025-07-28T06:33:40Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-pod-scenarios-ovn-disruption. 
+[36mINFO[0m[2025-07-28T06:44:19Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-pod-scenarios-ovn-disruption succeeded after 10m38s. 
+[36mINFO[0m[2025-07-28T06:44:19Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-pod-scenarios-ovn-cp-disruption. 
+[36mINFO[0m[2025-07-28T06:54:22Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-pod-scenarios-ovn-cp-disruption succeeded after 10m3s. 
+[36mINFO[0m[2025-07-28T06:54:22Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-pvc-scenarios-prometheus-pod. 
+[36mINFO[0m[2025-07-28T06:59:49Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-pvc-scenarios-prometheus-pod succeeded after 5m27s. 
+[36mINFO[0m[2025-07-28T06:59:49Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-pod-scenarios-prometheus-disruption. 
+[36mINFO[0m[2025-07-28T07:07:21Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-pod-scenarios-prometheus-disruption succeeded after 7m31s. 
+[36mINFO[0m[2025-07-28T07:07:21Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-syn-flood-prometheus-disruption. 
+[36mINFO[0m[2025-07-28T07:16:09Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-syn-flood-prometheus-disruption succeeded after 8m47s. 
+[36mINFO[0m[2025-07-28T07:16:09Z] Step phase test succeeded after 1h21m35s.    
+[36mINFO[0m[2025-07-28T07:16:09Z] Running multi-stage phase post               
+[36mINFO[0m[2025-07-28T07:16:09Z] Signalling observer pod "gcp-fipsetcd-krkn-hub-tests-redhat-chaos-cerberus" to terminate... 
+[36mINFO[0m[2025-07-28T07:16:09Z] Signalling observer pod "gcp-fipsetcd-krkn-hub-tests-openshift-qe-cluster-density-v2-observer" to terminate... 
+[36mINFO[0m[2025-07-28T07:16:09Z] Running step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-observer-stop. 
+[36mINFO[0m[2025-07-28T07:16:17Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-cerberus succeeded after 3h5m11s. 
+[36mINFO[0m[2025-07-28T07:16:20Z] Step gcp-fipsetcd-krkn-hub-tests-openshift-qe-cluster-density-v2-observer succeeded after 3h5m13s. 
+[36mINFO[0m[2025-07-28T07:16:21Z] Step gcp-fipsetcd-krkn-hub-tests-redhat-chaos-observer-stop succeeded after 12s. 
+[36mINFO[0m[2025-07-28T07:16:21Z] Running step gcp-fipsetcd-krkn-hub-tests-gather-must-gather. 
+[36mINFO[0m[2025-07-28T07:19:47Z] Step gcp-fipsetcd-krkn-hub-tests-gather-must-gather succeeded after 3m26s. 
+[36mINFO[0m[2025-07-28T07:19:47Z] Running step gcp-fipsetcd-krkn-hub-tests-gather-extra. 
+[36mINFO[0m[2025-07-28T07:27:34Z] Step gcp-fipsetcd-krkn-hub-tests-gather-extra succeeded after 7m47s. 
+[36mINFO[0m[2025-07-28T07:27:34Z] Running step gcp-fipsetcd-krkn-hub-tests-gather-audit-logs. 
+[36mINFO[0m[2025-07-28T07:28:26Z] Step gcp-fipsetcd-krkn-hub-tests-gather-audit-logs succeeded after 51s. 
+[36mINFO[0m[2025-07-28T07:28:26Z] Running step gcp-fipsetcd-krkn-hub-tests-ipi-deprovision-deprovision. 
+[36mINFO[0m[2025-07-28T07:36:40Z] Step gcp-fipsetcd-krkn-hub-tests-ipi-deprovision-deprovision succeeded after 8m13s. 
+[36mINFO[0m[2025-07-28T07:36:40Z] Step phase post succeeded after 20m31s.      
+[36mINFO[0m[2025-07-28T07:36:40Z] Releasing leases for test gcp-fipsetcd-krkn-hub-tests 
+[36mINFO[0m[2025-07-28T07:36:40Z] Ran for 3h34m25s                             
+[36mINFO[0m[2025-07-28T07:36:40Z] Reporting job state 'succeeded'              

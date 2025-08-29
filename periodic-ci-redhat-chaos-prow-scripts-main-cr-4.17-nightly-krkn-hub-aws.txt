@@ -1,0 +1,125 @@
+[36mINFO[0m[2025-07-28T03:01:40Z] ci-operator version v20250725-5a662946b      
+[36mINFO[0m[2025-07-28T03:01:40Z] Loading configuration from https://config.ci.openshift.org for redhat-chaos/prow-scripts@main [cr-4.17-nightly] 
+[36mINFO[0m[2025-07-28T03:01:41Z] Resolved SHA missing for main in https://github.com/redhat-chaos/prow-scripts (will prevent caching) 
+[33mWARN[0m[2025-07-28T03:01:41Z] skipped directory "..2025_07_28_03_01_34.3888271047" when creating secret from directory "/secrets/ci-pull-credentials" 
+[36mINFO[0m[2025-07-28T03:01:41Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.17.0-0.nightly/latest 
+[36mINFO[0m[2025-07-28T03:01:41Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.17.0-0.nightly-2025-07-26-033649 
+[36mINFO[0m[2025-07-28T03:01:41Z] Using namespace https://console-openshift-console.apps.build09.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-lfi3zcby 
+[36mINFO[0m[2025-07-28T03:01:41Z] Setting arch for src                          [36march[0m=amd64 [36mreasons[0m=cerberus-main-prow-417, perfscale-observer
+[36mINFO[0m[2025-07-28T03:01:41Z] Running [input:root], [input:cerberus.prow], [input:cli], [input:ocp-qe-perfscale-ci], [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-prow-scripts-latest], [release:latest], src, cerberus-main-prow-417, perfscale-observer, [output:stable:cerberus-main-prow-417], [output:stable:perfscale-observer], [images], krkn-hub-aws 
+[36mINFO[0m[2025-07-28T03:01:41Z] Loading information from https://config.ci.openshift.org for cluster profile aws-chaos 
+[36mINFO[0m[2025-07-28T03:01:41Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ocp-qe-perfscale-ci. 
+[36mINFO[0m[2025-07-28T03:01:41Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+[36mINFO[0m[2025-07-28T03:01:41Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+[36mINFO[0m[2025-07-28T03:01:41Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+[36mINFO[0m[2025-07-28T03:01:41Z] Tagging chaos/prow-scripts:latest into pipeline:chaos-prow-scripts-latest. 
+[36mINFO[0m[2025-07-28T03:01:41Z] Tagging chaos/cerberus:cerberus-prow into pipeline:cerberus.prow. 
+[36mINFO[0m[2025-07-28T03:01:41Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+[36mINFO[0m[2025-07-28T03:01:41Z] Tagging openshift/release:golang-1.18 into pipeline:root. 
+[36mINFO[0m[2025-07-28T03:01:41Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+[36mINFO[0m[2025-07-28T03:01:41Z] Tagging ocp/4.17:cli into pipeline:cli.      
+[36mINFO[0m[2025-07-28T03:01:41Z] Importing release image latest.              
+[36mINFO[0m[2025-07-28T03:01:41Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.17.0-0.nightly/latest 
+[36mINFO[0m[2025-07-28T03:01:41Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.17.0-0.nightly-2025-07-26-033649 
+[36mINFO[0m[2025-07-28T03:01:48Z] Building src                                 
+[36mINFO[0m[2025-07-28T03:01:48Z] Created build "src-amd64"                    
+[31mERRO[0m[2025-07-28T03:01:53Z] Failed to fetch live metrics for node ip-10-28-68-177.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-177.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[36mINFO[0m[2025-07-28T03:02:03Z] Importing release 4.17.0-0.nightly-2025-07-26-033649 created at 2025-07-26 03:38:32 +0000 UTC with 189 images to tag release:latest ... 
+[36mINFO[0m[2025-07-28T03:03:25Z] Build src-amd64 succeeded after 1m37s        
+[36mINFO[0m[2025-07-28T03:03:25Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-28T03:03:26Z] Image ci-op-lfi3zcby/pipeline:src created     [36mdigest[0m=sha256:b5de93e5fb91845e7f7bf357b9990368ec6df5fe808e47eaf666dcb5e8ef6266 [36mfor-build[0m=src
+[36mINFO[0m[2025-07-28T03:03:26Z] Building perfscale-observer                  
+[36mINFO[0m[2025-07-28T03:03:26Z] Building cerberus-main-prow-417              
+[36mINFO[0m[2025-07-28T03:03:27Z] Created build "perfscale-observer-amd64"     
+[36mINFO[0m[2025-07-28T03:03:27Z] Created build "cerberus-main-prow-417-amd64" 
+[36mINFO[0m[2025-07-28T03:03:38Z] Imported release 4.17.0-0.nightly-2025-07-26-033649 created at 2025-07-26 03:38:32 +0000 UTC with 189 images to tag release:latest 
+[36mINFO[0m[2025-07-28T03:11:22Z] Build cerberus-main-prow-417-amd64 succeeded after 7m55s 
+[36mINFO[0m[2025-07-28T03:11:23Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-28T03:11:24Z] Image ci-op-lfi3zcby/pipeline:cerberus-main-prow-417 created  [36mdigest[0m=sha256:a3801ff59100cc336279010b88370ba67fe3a0b8349a900ef923a859573cd860 [36mfor-build[0m=cerberus-main-prow-417
+[36mINFO[0m[2025-07-28T03:11:24Z] Tagging cerberus-main-prow-417 into stable   
+[36mINFO[0m[2025-07-28T03:13:15Z] Build perfscale-observer-amd64 succeeded after 9m48s 
+[36mINFO[0m[2025-07-28T03:13:15Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-28T03:13:16Z] Image ci-op-lfi3zcby/pipeline:perfscale-observer created  [36mdigest[0m=sha256:13cf5c3dc19cff68de2becd163feeba2ce8125bcda97207b1ffd36965cbfbd6f [36mfor-build[0m=perfscale-observer
+[36mINFO[0m[2025-07-28T03:13:16Z] Tagging perfscale-observer into stable       
+[36mINFO[0m[2025-07-28T03:13:16Z] Acquiring leases for test krkn-hub-aws: [aws-chaos-quota-slice] 
+[36mINFO[0m[2025-07-28T03:13:16Z] Acquired 1 lease(s) for aws-chaos-quota-slice: [us-west-2--aws-chaos-quota-slice-3] 
+[36mINFO[0m[2025-07-28T03:13:16Z] Running multi-stage test krkn-hub-aws        
+[36mINFO[0m[2025-07-28T03:13:18Z] Running multi-stage phase pre                
+[36mINFO[0m[2025-07-28T03:13:18Z] Running step krkn-hub-aws-redhat-chaos-cerberus. 
+[36mINFO[0m[2025-07-28T03:13:18Z] Running step krkn-hub-aws-openshift-qe-cluster-density-v2-observer. 
+[36mINFO[0m[2025-07-28T03:13:18Z] Running step krkn-hub-aws-ipi-conf.          
+[36mINFO[0m[2025-07-28T03:13:28Z] Step krkn-hub-aws-ipi-conf succeeded after 10s. 
+[36mINFO[0m[2025-07-28T03:13:28Z] Running step krkn-hub-aws-ipi-conf-telemetry. 
+[36mINFO[0m[2025-07-28T03:13:46Z] Step krkn-hub-aws-ipi-conf-telemetry succeeded after 18s. 
+[36mINFO[0m[2025-07-28T03:13:46Z] Running step krkn-hub-aws-ipi-conf-aws.      
+[36mINFO[0m[2025-07-28T03:13:59Z] Step krkn-hub-aws-ipi-conf-aws succeeded after 13s. 
+[36mINFO[0m[2025-07-28T03:13:59Z] Running step krkn-hub-aws-ipi-conf-aws-byo-ipv4-pool-public. 
+[36mINFO[0m[2025-07-28T03:14:09Z] Step krkn-hub-aws-ipi-conf-aws-byo-ipv4-pool-public succeeded after 10s. 
+[36mINFO[0m[2025-07-28T03:14:09Z] Running step krkn-hub-aws-ipi-install-monitoringpvc. 
+[36mINFO[0m[2025-07-28T03:14:17Z] Step krkn-hub-aws-ipi-install-monitoringpvc succeeded after 8s. 
+[36mINFO[0m[2025-07-28T03:14:17Z] Running step krkn-hub-aws-ipi-conf-aws-user-min-permissions. 
+[36mINFO[0m[2025-07-28T03:14:29Z] Step krkn-hub-aws-ipi-conf-aws-user-min-permissions succeeded after 11s. 
+[36mINFO[0m[2025-07-28T03:14:29Z] Running step krkn-hub-aws-aws-provision-iam-user. 
+[36mINFO[0m[2025-07-28T03:14:36Z] Step krkn-hub-aws-aws-provision-iam-user succeeded after 7s. 
+[36mINFO[0m[2025-07-28T03:14:36Z] Running step krkn-hub-aws-ipi-install-rbac.  
+[36mINFO[0m[2025-07-28T03:14:45Z] Step krkn-hub-aws-ipi-install-rbac succeeded after 9s. 
+[36mINFO[0m[2025-07-28T03:14:45Z] Running step krkn-hub-aws-openshift-cluster-bot-rbac. 
+[36mINFO[0m[2025-07-28T03:14:52Z] Step krkn-hub-aws-openshift-cluster-bot-rbac succeeded after 7s. 
+[36mINFO[0m[2025-07-28T03:14:52Z] Running step krkn-hub-aws-ipi-install-hosted-loki. 
+[36mINFO[0m[2025-07-28T03:14:59Z] Step krkn-hub-aws-ipi-install-hosted-loki succeeded after 7s. 
+[36mINFO[0m[2025-07-28T03:14:59Z] Running step krkn-hub-aws-ipi-install-install. 
+[31mERRO[0m[2025-07-28T03:58:23Z] Failed to fetch live metrics for node ip-10-28-68-72.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=the server is currently unable to handle the request (get nodes.metrics.k8s.io ip-10-28-68-72.us-east-2.compute.internal) [31mplugin[0m=nodes
+[36mINFO[0m[2025-07-28T03:58:25Z] Step krkn-hub-aws-ipi-install-install succeeded after 43m25s. 
+[36mINFO[0m[2025-07-28T03:58:25Z] Running step krkn-hub-aws-ipi-install-times-collection. 
+[36mINFO[0m[2025-07-28T03:58:35Z] Step krkn-hub-aws-ipi-install-times-collection succeeded after 10s. 
+[36mINFO[0m[2025-07-28T03:58:35Z] Running step krkn-hub-aws-nodes-readiness.   
+[31mERRO[0m[2025-07-28T03:58:43Z] Failed to fetch live metrics for node ip-10-28-68-72.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=the server is currently unable to handle the request (get nodes.metrics.k8s.io ip-10-28-68-72.us-east-2.compute.internal) [31mplugin[0m=nodes
+[36mINFO[0m[2025-07-28T03:58:43Z] Step krkn-hub-aws-nodes-readiness succeeded after 8s. 
+[36mINFO[0m[2025-07-28T03:58:43Z] Running step krkn-hub-aws-multiarch-validate-nodes. 
+[36mINFO[0m[2025-07-28T03:58:50Z] Step krkn-hub-aws-multiarch-validate-nodes succeeded after 7s. 
+[36mINFO[0m[2025-07-28T03:58:50Z] Running step krkn-hub-aws-openshift-qe-workers-infra-workload. 
+[31mERRO[0m[2025-07-28T03:59:03Z] Failed to fetch live metrics for node ip-10-28-68-72.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=the server is currently unable to handle the request (get nodes.metrics.k8s.io ip-10-28-68-72.us-east-2.compute.internal) [31mplugin[0m=nodes
+[31mERRO[0m[2025-07-28T03:59:29Z] Failed to fetch live metrics for node ip-10-28-68-72.us-east-2.compute.internal  [31mcomponent[0m=metricsAgent [31merror[0m=nodemetrics.metrics.k8s.io "ip-10-28-68-72.us-east-2.compute.internal" not found [31mplugin[0m=nodes
+[36mINFO[0m[2025-07-28T04:12:29Z] Step krkn-hub-aws-openshift-qe-workers-infra-workload succeeded after 13m38s. 
+[36mINFO[0m[2025-07-28T04:12:29Z] Running step krkn-hub-aws-openshift-qe-move-pods-infra. 
+[36mINFO[0m[2025-07-28T04:18:55Z] Step krkn-hub-aws-openshift-qe-move-pods-infra succeeded after 6m26s. 
+[36mINFO[0m[2025-07-28T04:18:55Z] Running step krkn-hub-aws-redhat-chaos-observer-start. 
+[36mINFO[0m[2025-07-28T04:19:50Z] Step krkn-hub-aws-redhat-chaos-observer-start succeeded after 54s. 
+[36mINFO[0m[2025-07-28T04:19:50Z] Step phase pre succeeded after 1h6m32s.      
+[36mINFO[0m[2025-07-28T04:19:50Z] Running multi-stage phase test               
+[36mINFO[0m[2025-07-28T04:19:50Z] Running step krkn-hub-aws-redhat-chaos-start-krkn. 
+[36mINFO[0m[2025-07-28T04:20:26Z] Step krkn-hub-aws-redhat-chaos-start-krkn succeeded after 36s. 
+[36mINFO[0m[2025-07-28T04:20:26Z] Running step krkn-hub-aws-redhat-chaos-pod-scenarios-etcd-disruption. 
+[36mINFO[0m[2025-07-28T04:29:54Z] Step krkn-hub-aws-redhat-chaos-pod-scenarios-etcd-disruption succeeded after 9m27s. 
+[36mINFO[0m[2025-07-28T04:29:54Z] Running step krkn-hub-aws-redhat-chaos-container-scenarios-etcd-hangup. 
+[36mINFO[0m[2025-07-28T04:42:38Z] Step krkn-hub-aws-redhat-chaos-container-scenarios-etcd-hangup succeeded after 12m43s. 
+[36mINFO[0m[2025-07-28T04:42:38Z] Running step krkn-hub-aws-redhat-chaos-time-scenarios. 
+[36mINFO[0m[2025-07-28T04:52:16Z] Step krkn-hub-aws-redhat-chaos-time-scenarios succeeded after 9m37s. 
+[36mINFO[0m[2025-07-28T04:52:16Z] Running step krkn-hub-aws-redhat-chaos-pod-scenarios-ovn-disruption. 
+[36mINFO[0m[2025-07-28T05:06:33Z] Step krkn-hub-aws-redhat-chaos-pod-scenarios-ovn-disruption succeeded after 14m17s. 
+[36mINFO[0m[2025-07-28T05:06:33Z] Running step krkn-hub-aws-redhat-chaos-pod-scenarios-ovn-cp-disruption. 
+[36mINFO[0m[2025-07-28T05:19:29Z] Step krkn-hub-aws-redhat-chaos-pod-scenarios-ovn-cp-disruption succeeded after 12m55s. 
+[36mINFO[0m[2025-07-28T05:19:29Z] Step phase test succeeded after 59m38s.      
+[36mINFO[0m[2025-07-28T05:19:29Z] Running multi-stage phase post               
+[36mINFO[0m[2025-07-28T05:19:29Z] Signalling observer pod "krkn-hub-aws-openshift-qe-cluster-density-v2-observer" to terminate... 
+[36mINFO[0m[2025-07-28T05:19:29Z] Signalling observer pod "krkn-hub-aws-redhat-chaos-cerberus" to terminate... 
+[36mINFO[0m[2025-07-28T05:19:29Z] Running step krkn-hub-aws-redhat-chaos-observer-stop. 
+[36mINFO[0m[2025-07-28T05:19:34Z] Step krkn-hub-aws-openshift-qe-cluster-density-v2-observer succeeded after 2h6m16s. 
+[36mINFO[0m[2025-07-28T05:19:41Z] Step krkn-hub-aws-redhat-chaos-cerberus succeeded after 2h6m23s. 
+[36mINFO[0m[2025-07-28T05:19:44Z] Step krkn-hub-aws-redhat-chaos-observer-stop succeeded after 15s. 
+[36mINFO[0m[2025-07-28T05:19:44Z] Running step krkn-hub-aws-gather-aws-console. 
+[36mINFO[0m[2025-07-28T05:20:11Z] Step krkn-hub-aws-gather-aws-console succeeded after 27s. 
+[36mINFO[0m[2025-07-28T05:20:11Z] Running step krkn-hub-aws-gather-must-gather. 
+[36mINFO[0m[2025-07-28T05:22:18Z] Step krkn-hub-aws-gather-must-gather succeeded after 2m7s. 
+[36mINFO[0m[2025-07-28T05:22:18Z] Running step krkn-hub-aws-gather-extra.      
+[36mINFO[0m[2025-07-28T05:30:39Z] Step krkn-hub-aws-gather-extra succeeded after 8m21s. 
+[36mINFO[0m[2025-07-28T05:30:39Z] Running step krkn-hub-aws-gather-audit-logs. 
+[36mINFO[0m[2025-07-28T05:31:17Z] Step krkn-hub-aws-gather-audit-logs succeeded after 37s. 
+[36mINFO[0m[2025-07-28T05:31:17Z] Running step krkn-hub-aws-ipi-deprovision-deprovision. 
+[36mINFO[0m[2025-07-28T05:37:48Z] Step krkn-hub-aws-ipi-deprovision-deprovision succeeded after 6m31s. 
+[36mINFO[0m[2025-07-28T05:37:48Z] Running step krkn-hub-aws-aws-deprovision-users-and-policies. 
+[36mINFO[0m[2025-07-28T05:38:07Z] Step krkn-hub-aws-aws-deprovision-users-and-policies succeeded after 18s. 
+[36mINFO[0m[2025-07-28T05:38:07Z] Step phase post succeeded after 18m38s.      
+[36mINFO[0m[2025-07-28T05:38:07Z] Releasing leases for test krkn-hub-aws       
+[36mINFO[0m[2025-07-28T05:38:07Z] Ran for 2h36m26s                             
+[36mINFO[0m[2025-07-28T05:38:07Z] Reporting job state 'succeeded'              

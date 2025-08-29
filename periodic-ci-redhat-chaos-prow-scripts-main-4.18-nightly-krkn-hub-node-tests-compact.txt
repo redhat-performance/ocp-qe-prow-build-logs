@@ -1,0 +1,141 @@
+[36mINFO[0m[2025-07-14T04:01:53Z] ci-operator version v20250711-2a5b6676a      
+[36mINFO[0m[2025-07-14T04:01:53Z] Loading configuration from https://config.ci.openshift.org for redhat-chaos/prow-scripts@main [4.18-nightly] 
+[36mINFO[0m[2025-07-14T04:01:54Z] Resolved SHA missing for main in https://github.com/redhat-chaos/prow-scripts (will prevent caching) 
+[33mWARN[0m[2025-07-14T04:01:54Z] skipped directory "..2025_07_14_04_01_47.4126314874" when creating secret from directory "/secrets/ci-pull-credentials" 
+[36mINFO[0m[2025-07-14T04:01:54Z] Loading information from https://config.ci.openshift.org for integrated stream ocp/4.18 
+[36mINFO[0m[2025-07-14T04:01:54Z] Building release initial from a snapshot of ocp/4.18 
+[36mINFO[0m[2025-07-14T04:01:54Z] Requesting a release from https://multi.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly-multi/latest 
+[36mINFO[0m[2025-07-14T04:01:54Z] Resolved release multi-latest to quay.io/openshift-release-dev/ocp-release-nightly@sha256:94a311b476c1aaade5e3deaf4b962236c1d48d80c3bd980bce735f2b75deea1d 
+[36mINFO[0m[2025-07-14T04:01:54Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+[36mINFO[0m[2025-07-14T04:01:54Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-07-10-031259 
+[36mINFO[0m[2025-07-14T04:01:54Z] Using namespace https://console-openshift-console.apps.build06.ci.devcluster.openshift.com/k8s/cluster/projects/ci-op-m3h9rthp 
+[36mINFO[0m[2025-07-14T04:01:54Z] Setting arch for src                          [36march[0m=amd64 [36mreasons[0m=cerberus-main-prow-419, prow-scripts-418, perfscale-observer
+[36mINFO[0m[2025-07-14T04:01:54Z] Running [input:root], [input:cerberus.prow], [input:cli], [input:krkn.prow], [input:ocp-qe-perfscale-ci], [input:origin-centos-8], [input:ocp-4.12-upi-installer], [input:ocp-4.14-upi-installer], [input:ocp-4.16-upi-installer], [input:ci-ocp-qe-perfscale-ci-latest], [input:chaos-prow-scripts-latest], [release-inputs:initial], [release:latest], src, cerberus-main-prow-419, prow-scripts-418, perfscale-observer, [output:stable:cerberus-main-prow-419], [output:stable:prow-scripts-418], [output:stable:perfscale-observer], [images], krkn-hub-node-tests-compact 
+[36mINFO[0m[2025-07-14T04:01:55Z] Loading information from https://config.ci.openshift.org for cluster profile aws-chaos 
+[36mINFO[0m[2025-07-14T04:01:55Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ocp-qe-perfscale-ci. 
+[36mINFO[0m[2025-07-14T04:01:55Z] Tagging ocp/4.16:upi-installer into pipeline:ocp-4.16-upi-installer. 
+[36mINFO[0m[2025-07-14T04:01:55Z] Tagging ocp/4.12:upi-installer into pipeline:ocp-4.12-upi-installer. 
+[36mINFO[0m[2025-07-14T04:01:55Z] Tagging origin/centos:8 into pipeline:origin-centos-8. 
+[36mINFO[0m[2025-07-14T04:01:55Z] Tagging chaos/cerberus:cerberus-prow into pipeline:cerberus.prow. 
+[36mINFO[0m[2025-07-14T04:01:55Z] Tagging openshift/release:golang-1.18 into pipeline:root. 
+[36mINFO[0m[2025-07-14T04:01:55Z] Tagging ocp/4.14:upi-installer into pipeline:ocp-4.14-upi-installer. 
+[36mINFO[0m[2025-07-14T04:01:55Z] Tagging chaos/krkn:latest into pipeline:krkn.prow. 
+[36mINFO[0m[2025-07-14T04:01:55Z] Tagging chaos/prow-scripts:latest into pipeline:chaos-prow-scripts-latest. 
+[36mINFO[0m[2025-07-14T04:01:55Z] Tagging ocp/4.18:cli into pipeline:cli.      
+[36mINFO[0m[2025-07-14T04:01:55Z] Tagging ci/ocp-qe-perfscale-ci:latest into pipeline:ci-ocp-qe-perfscale-ci-latest. 
+[36mINFO[0m[2025-07-14T04:01:55Z] Waiting to import tags on imagestream (after taking snapshot) ci-op-m3h9rthp/stable-initial ... 
+[36mINFO[0m[2025-07-14T04:01:55Z] Importing release image latest.              
+[36mINFO[0m[2025-07-14T04:01:55Z] Requesting a release from https://amd64.ocp.releases.ci.openshift.org/api/v1/releasestream/4.18.0-0.nightly/latest 
+[36mINFO[0m[2025-07-14T04:01:55Z] Resolved release latest to registry.ci.openshift.org/ocp/release:4.18.0-0.nightly-2025-07-10-031259 
+[36mINFO[0m[2025-07-14T04:01:59Z] Building src                                 
+[36mINFO[0m[2025-07-14T04:01:59Z] Created build "src-amd64"                    
+[36mINFO[0m[2025-07-14T04:02:20Z] Importing release 4.18.0-0.nightly-2025-07-10-031259 created at 2025-07-10 03:14:43 +0000 UTC with 188 images to tag release:latest ... 
+[36mINFO[0m[2025-07-14T04:03:55Z] Imported release 4.18.0-0.nightly-2025-07-10-031259 created at 2025-07-10 03:14:43 +0000 UTC with 188 images to tag release:latest 
+[36mINFO[0m[2025-07-14T04:05:04Z] Imported tags on imagestream (after taking snapshot) ci-op-m3h9rthp/stable-initial 
+[36mINFO[0m[2025-07-14T04:06:38Z] Build src-amd64 succeeded after 3m19s        
+[36mINFO[0m[2025-07-14T04:06:38Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-14T04:06:39Z] Image ci-op-m3h9rthp/pipeline:src created     [36mdigest[0m=sha256:7ffd31fbf6487fc8bc8b5cc34b52902a0a09c7a8062ffdd5604ebfaf91548935 [36mfor-build[0m=src
+[36mINFO[0m[2025-07-14T04:06:39Z] Building cerberus-main-prow-419              
+[36mINFO[0m[2025-07-14T04:06:39Z] Building prow-scripts-418                    
+[36mINFO[0m[2025-07-14T04:06:39Z] Building perfscale-observer                  
+[36mINFO[0m[2025-07-14T04:06:39Z] Created build "perfscale-observer-amd64"     
+[36mINFO[0m[2025-07-14T04:06:39Z] Created build "cerberus-main-prow-419-amd64" 
+[36mINFO[0m[2025-07-14T04:06:39Z] Created build "prow-scripts-418-amd64"       
+[36mINFO[0m[2025-07-14T04:12:45Z] Build cerberus-main-prow-419-amd64 succeeded after 5m36s 
+[36mINFO[0m[2025-07-14T04:12:45Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-14T04:12:47Z] Image ci-op-m3h9rthp/pipeline:cerberus-main-prow-419 created  [36mdigest[0m=sha256:34b75b4285680c318133fcd3a3c7e0d1f6bfc308fb91d9390d9c9d80bc7d43a1 [36mfor-build[0m=cerberus-main-prow-419
+[36mINFO[0m[2025-07-14T04:12:47Z] Tagging cerberus-main-prow-419 into stable   
+[36mINFO[0m[2025-07-14T04:14:47Z] Build prow-scripts-418-amd64 succeeded after 7m38s 
+[36mINFO[0m[2025-07-14T04:14:48Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-14T04:14:49Z] Image ci-op-m3h9rthp/pipeline:prow-scripts-418 created  [36mdigest[0m=sha256:8887a75cbc6693c30d33c191a6810d678367140b7909c221aa2ba00168f51d05 [36mfor-build[0m=prow-scripts-418
+[36mINFO[0m[2025-07-14T04:14:49Z] Tagging prow-scripts-418 into stable         
+[36mINFO[0m[2025-07-14T04:17:55Z] Build perfscale-observer-amd64 succeeded after 5m26s 
+[36mINFO[0m[2025-07-14T04:17:55Z] Retrieving digests of member images          
+[36mINFO[0m[2025-07-14T04:17:56Z] Image ci-op-m3h9rthp/pipeline:perfscale-observer created  [36mdigest[0m=sha256:16ee4162eea33dbaa464a92f302518638bd46ea2edaea5ab5f5605d87768cbc2 [36mfor-build[0m=perfscale-observer
+[36mINFO[0m[2025-07-14T04:17:56Z] Tagging perfscale-observer into stable       
+[36mINFO[0m[2025-07-14T04:17:56Z] Acquiring leases for test krkn-hub-node-tests-compact: [aws-chaos-quota-slice] 
+[36mINFO[0m[2025-07-14T04:17:56Z] Acquired 1 lease(s) for aws-chaos-quota-slice: [us-west-2--aws-chaos-quota-slice-1] 
+[36mINFO[0m[2025-07-14T04:17:56Z] Running multi-stage test krkn-hub-node-tests-compact 
+[36mINFO[0m[2025-07-14T04:17:58Z] Running multi-stage phase pre                
+[36mINFO[0m[2025-07-14T04:17:58Z] Running step krkn-hub-node-tests-compact-openshift-qe-cluster-density-v2-observer. 
+[36mINFO[0m[2025-07-14T04:17:58Z] Running step krkn-hub-node-tests-compact-redhat-chaos-cerberus. 
+[36mINFO[0m[2025-07-14T04:17:58Z] Running step krkn-hub-node-tests-compact-ipi-conf. 
+[36mINFO[0m[2025-07-14T04:18:07Z] Step krkn-hub-node-tests-compact-ipi-conf succeeded after 9s. 
+[36mINFO[0m[2025-07-14T04:18:07Z] Running step krkn-hub-node-tests-compact-ipi-conf-telemetry. 
+[36mINFO[0m[2025-07-14T04:18:22Z] Step krkn-hub-node-tests-compact-ipi-conf-telemetry succeeded after 15s. 
+[36mINFO[0m[2025-07-14T04:18:22Z] Running step krkn-hub-node-tests-compact-ipi-conf-aws. 
+[36mINFO[0m[2025-07-14T04:18:35Z] Step krkn-hub-node-tests-compact-ipi-conf-aws succeeded after 12s. 
+[36mINFO[0m[2025-07-14T04:18:35Z] Running step krkn-hub-node-tests-compact-ipi-conf-aws-byo-ipv4-pool-public. 
+[36mINFO[0m[2025-07-14T04:18:45Z] Step krkn-hub-node-tests-compact-ipi-conf-aws-byo-ipv4-pool-public succeeded after 10s. 
+[36mINFO[0m[2025-07-14T04:18:45Z] Running step krkn-hub-node-tests-compact-ipi-install-monitoringpvc. 
+[36mINFO[0m[2025-07-14T04:18:53Z] Step krkn-hub-node-tests-compact-ipi-install-monitoringpvc succeeded after 7s. 
+[36mINFO[0m[2025-07-14T04:18:53Z] Running step krkn-hub-node-tests-compact-ipi-conf-aws-user-min-permissions. 
+[36mINFO[0m[2025-07-14T04:19:07Z] Step krkn-hub-node-tests-compact-ipi-conf-aws-user-min-permissions succeeded after 13s. 
+[36mINFO[0m[2025-07-14T04:19:07Z] Running step krkn-hub-node-tests-compact-aws-provision-iam-user. 
+[36mINFO[0m[2025-07-14T04:19:15Z] Step krkn-hub-node-tests-compact-aws-provision-iam-user succeeded after 8s. 
+[36mINFO[0m[2025-07-14T04:19:15Z] Running step krkn-hub-node-tests-compact-ipi-install-rbac. 
+[36mINFO[0m[2025-07-14T04:19:25Z] Step krkn-hub-node-tests-compact-ipi-install-rbac succeeded after 9s. 
+[36mINFO[0m[2025-07-14T04:19:25Z] Running step krkn-hub-node-tests-compact-openshift-cluster-bot-rbac. 
+[36mINFO[0m[2025-07-14T04:19:33Z] Step krkn-hub-node-tests-compact-openshift-cluster-bot-rbac succeeded after 8s. 
+[36mINFO[0m[2025-07-14T04:19:33Z] Running step krkn-hub-node-tests-compact-ipi-install-hosted-loki. 
+[36mINFO[0m[2025-07-14T04:19:41Z] Step krkn-hub-node-tests-compact-ipi-install-hosted-loki succeeded after 8s. 
+[36mINFO[0m[2025-07-14T04:19:41Z] Running step krkn-hub-node-tests-compact-ipi-install-install. 
+[36mINFO[0m[2025-07-14T05:03:47Z] Step krkn-hub-node-tests-compact-ipi-install-install succeeded after 44m5s. 
+[36mINFO[0m[2025-07-14T05:03:47Z] Running step krkn-hub-node-tests-compact-ipi-install-times-collection. 
+[36mINFO[0m[2025-07-14T05:03:57Z] Step krkn-hub-node-tests-compact-ipi-install-times-collection succeeded after 10s. 
+[36mINFO[0m[2025-07-14T05:03:57Z] Running step krkn-hub-node-tests-compact-nodes-readiness. 
+[36mINFO[0m[2025-07-14T05:04:22Z] Step krkn-hub-node-tests-compact-nodes-readiness succeeded after 24s. 
+[36mINFO[0m[2025-07-14T05:04:22Z] Running step krkn-hub-node-tests-compact-multiarch-validate-nodes. 
+[36mINFO[0m[2025-07-14T05:04:30Z] Step krkn-hub-node-tests-compact-multiarch-validate-nodes succeeded after 8s. 
+[36mINFO[0m[2025-07-14T05:04:30Z] Running step krkn-hub-node-tests-compact-openshift-qe-workers-infra-workload. 
+[36mINFO[0m[2025-07-14T05:16:57Z] Step krkn-hub-node-tests-compact-openshift-qe-workers-infra-workload succeeded after 12m26s. 
+[36mINFO[0m[2025-07-14T05:16:57Z] Running step krkn-hub-node-tests-compact-openshift-qe-move-pods-infra. 
+[36mINFO[0m[2025-07-14T05:23:11Z] Step krkn-hub-node-tests-compact-openshift-qe-move-pods-infra succeeded after 6m14s. 
+[36mINFO[0m[2025-07-14T05:23:11Z] Running step krkn-hub-node-tests-compact-redhat-chaos-observer-start. 
+[36mINFO[0m[2025-07-14T05:23:27Z] Step krkn-hub-node-tests-compact-redhat-chaos-observer-start succeeded after 16s. 
+[36mINFO[0m[2025-07-14T05:23:27Z] Step phase pre succeeded after 1h5m29s.      
+[36mINFO[0m[2025-07-14T05:23:27Z] Running multi-stage phase test               
+[36mINFO[0m[2025-07-14T05:23:27Z] Running step krkn-hub-node-tests-compact-redhat-chaos-start-krkn. 
+[36mINFO[0m[2025-07-14T05:23:37Z] Step krkn-hub-node-tests-compact-redhat-chaos-start-krkn succeeded after 9s. 
+[36mINFO[0m[2025-07-14T05:23:37Z] Running step krkn-hub-node-tests-compact-redhat-chaos-power-outage. 
+[36mINFO[0m[2025-07-14T05:51:10Z] Step krkn-hub-node-tests-compact-redhat-chaos-power-outage succeeded after 27m33s. 
+[36mINFO[0m[2025-07-14T05:51:10Z] Running step krkn-hub-node-tests-compact-redhat-chaos-zone-outage. 
+[36mINFO[0m[2025-07-14T06:15:28Z] Step krkn-hub-node-tests-compact-redhat-chaos-zone-outage succeeded after 24m17s. 
+[36mINFO[0m[2025-07-14T06:15:28Z] Running step krkn-hub-node-tests-compact-redhat-chaos-node-disruptions-master-outage. 
+[36mINFO[0m[2025-07-14T06:39:18Z] Step krkn-hub-node-tests-compact-redhat-chaos-node-disruptions-master-outage succeeded after 23m50s. 
+[36mINFO[0m[2025-07-14T06:39:18Z] Running step krkn-hub-node-tests-compact-redhat-chaos-network-chaos. 
+[36mINFO[0m[2025-07-14T06:59:14Z] Step krkn-hub-node-tests-compact-redhat-chaos-network-chaos succeeded after 19m56s. 
+[36mINFO[0m[2025-07-14T06:59:14Z] Running step krkn-hub-node-tests-compact-redhat-chaos-pod-network-chaos. 
+[36mINFO[0m[2025-07-14T07:09:25Z] Step krkn-hub-node-tests-compact-redhat-chaos-pod-network-chaos succeeded after 10m11s. 
+[36mINFO[0m[2025-07-14T07:09:25Z] Running step krkn-hub-node-tests-compact-redhat-chaos-hog-scenarios-memory. 
+[36mINFO[0m[2025-07-14T07:22:42Z] Step krkn-hub-node-tests-compact-redhat-chaos-hog-scenarios-memory succeeded after 13m16s. 
+[36mINFO[0m[2025-07-14T07:22:42Z] Running step krkn-hub-node-tests-compact-redhat-chaos-hog-scenarios-cpu. 
+[36mINFO[0m[2025-07-14T07:35:58Z] Step krkn-hub-node-tests-compact-redhat-chaos-hog-scenarios-cpu succeeded after 13m15s. 
+[36mINFO[0m[2025-07-14T07:35:58Z] Running step krkn-hub-node-tests-compact-redhat-chaos-hog-scenarios-io. 
+[36mINFO[0m[2025-07-14T07:49:18Z] Step krkn-hub-node-tests-compact-redhat-chaos-hog-scenarios-io succeeded after 13m20s. 
+[36mINFO[0m[2025-07-14T07:49:18Z] Running step krkn-hub-node-tests-compact-redhat-chaos-node-disruptions-worker-outage. 
+[36mINFO[0m[2025-07-14T08:09:06Z] Step krkn-hub-node-tests-compact-redhat-chaos-node-disruptions-worker-outage succeeded after 19m48s. 
+[36mINFO[0m[2025-07-14T08:09:06Z] Step phase test succeeded after 2h45m38s.    
+[36mINFO[0m[2025-07-14T08:09:06Z] Running multi-stage phase post               
+[36mINFO[0m[2025-07-14T08:09:06Z] Signalling observer pod "krkn-hub-node-tests-compact-redhat-chaos-cerberus" to terminate... 
+[36mINFO[0m[2025-07-14T08:09:06Z] Signalling observer pod "krkn-hub-node-tests-compact-openshift-qe-cluster-density-v2-observer" to terminate... 
+[36mINFO[0m[2025-07-14T08:09:06Z] Running step krkn-hub-node-tests-compact-redhat-chaos-observer-stop. 
+[36mINFO[0m[2025-07-14T08:09:10Z] Step krkn-hub-node-tests-compact-openshift-qe-cluster-density-v2-observer succeeded after 3h51m11s. 
+[36mINFO[0m[2025-07-14T08:09:19Z] Step krkn-hub-node-tests-compact-redhat-chaos-observer-stop succeeded after 13s. 
+[36mINFO[0m[2025-07-14T08:09:19Z] Running step krkn-hub-node-tests-compact-gather-aws-console. 
+[36mINFO[0m[2025-07-14T08:10:24Z] Step krkn-hub-node-tests-compact-gather-aws-console succeeded after 1m4s. 
+[36mINFO[0m[2025-07-14T08:10:24Z] Running step krkn-hub-node-tests-compact-gather-must-gather. 
+[36mINFO[0m[2025-07-14T08:12:05Z] Step krkn-hub-node-tests-compact-gather-must-gather succeeded after 1m40s. 
+[36mINFO[0m[2025-07-14T08:12:05Z] Running step krkn-hub-node-tests-compact-gather-extra. 
+[36mINFO[0m[2025-07-14T08:12:27Z] Step krkn-hub-node-tests-compact-redhat-chaos-cerberus succeeded after 3h54m29s. 
+[36mINFO[0m[2025-07-14T08:20:36Z] Step krkn-hub-node-tests-compact-gather-extra succeeded after 8m31s. 
+[36mINFO[0m[2025-07-14T08:20:36Z] Running step krkn-hub-node-tests-compact-gather-audit-logs. 
+[36mINFO[0m[2025-07-14T08:21:06Z] Step krkn-hub-node-tests-compact-gather-audit-logs succeeded after 30s. 
+[36mINFO[0m[2025-07-14T08:21:06Z] Running step krkn-hub-node-tests-compact-ipi-deprovision-deprovision. 
+[36mINFO[0m[2025-07-14T08:28:09Z] Step krkn-hub-node-tests-compact-ipi-deprovision-deprovision succeeded after 7m2s. 
+[36mINFO[0m[2025-07-14T08:28:09Z] Running step krkn-hub-node-tests-compact-aws-deprovision-users-and-policies. 
+[36mINFO[0m[2025-07-14T08:28:19Z] Step krkn-hub-node-tests-compact-aws-deprovision-users-and-policies succeeded after 10s. 
+[36mINFO[0m[2025-07-14T08:28:19Z] Step phase post succeeded after 19m13s.      
+[36mINFO[0m[2025-07-14T08:28:19Z] Releasing leases for test krkn-hub-node-tests-compact 
+[36mINFO[0m[2025-07-14T08:28:19Z] Ran for 4h26m25s                             
+[36mINFO[0m[2025-07-14T08:28:19Z] Reporting job state 'succeeded'  
